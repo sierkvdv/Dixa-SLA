@@ -34,6 +34,11 @@ HEADERS_V1 = {
 }
 
 
+# Compatibility helper: include both keys for APIs expecting either
+def compat_field(field_type: str) -> dict:
+    return {"_type": field_type, "type": field_type}
+
+
 # ----------------------------
 # Date parsing and CLI options
 # ----------------------------
@@ -239,72 +244,77 @@ def extract_fields(conv: Dict[str, Any]) -> Dict[str, Any]:
     }
 
 
-def fetch_day_conversations(day_dt: date) -> List[Dict[str, Any]]:
-    """Fetch one day's conversations for channel pstnPhone with pagination."""
+def fetch_day_conversations(day_dt: date) -> Tuple[List[Dict[str, Any]], str]:
+    """Fetch one day's conversations for channel pstnPhone with pagination.
+
+    Returns (rows, channel_field_used) for debug output.
+    """
     day_start = start_of_day_utc(day_dt)
     day_end = end_of_day_utc(day_dt)
-
-    base_conditions: List[Dict[str, Any]] = [
-        {"field": {"_type": "ChannelTypeField"}, "operator": "eq", "value": "pstnPhone"},
-        {
-            "field": {"_type": "CreatedAtField"},
-            "operator": "between",
-            "value": [format_iso_z(day_start), format_iso_z(day_end)],
-        },
+    # Trials for channel field/value combinations
+    channel_trials = [
+        (compat_field("ChannelTypeField"), "pstnPhone"),
+        (compat_field("ChannelTypeField"), "PstnPhone"),
+        (compat_field("InitialChannelField"), "pstnPhone"),
+        (compat_field("InitialChannelField"), "PstnPhone"),
     ]
 
-    results: List[Dict[str, Any]] = []
-    last_created_at: Optional[str] = None
-
-    while True:
-        conditions = list(base_conditions)
-        if last_created_at is not None:
-            conditions.append({
-                "field": {"_type": "CreatedAtField"},
-                "operator": "gt",
-                "value": last_created_at,
-            })
-
-        payload = {
+    def build_payload(channel_field_obj, channel_value, last_created_at=None):
+        conditions = [
+            {"field": channel_field_obj, "operator": "eq", "value": channel_value},
+            {"field": compat_field("CreatedAtField"), "operator": "between",
+             "value": [format_iso_z(day_start), format_iso_z(day_end)]},
+        ]
+        if last_created_at:
+            conditions.append({"field": compat_field("CreatedAtField"), "operator": "gt", "value": last_created_at})
+        return {
             "limit": 200,
             "sort": {"field": "createdAt", "order": "asc"},
-            "filters": {
-                "strategy": "and",
-                "conditions": conditions,
-            },
+            "filters": {"strategy": "and", "conditions": conditions}
         }
 
-        try:
-            resp_json = post_search_conversations(payload)
-        except Exception as exc:
-            print(f"Error fetching day {day_dt.isoformat()}: {exc}")
-            sys.stdout.flush()
+    results: List[Dict[str, Any]] = []
+    used_trial = None
+
+    for (field_obj, ch_val) in channel_trials:
+        last_created_at = None
+        trial_ok = False
+        while True:
+            payload = build_payload(field_obj, ch_val, last_created_at)
+            try:
+                resp_json = post_search_conversations(payload)
+            except Exception as exc:
+                if "HTTP 400" in str(exc):
+                    break
+                print(f"Transient error: {exc}")
+                break
+            items = extract_items_from_response(resp_json)
+            if not items:
+                trial_ok = True
+                break
+            for c in items:
+                results.append(extract_fields(c))
+            created_values = [c.get("createdAt") for c in items if c.get("createdAt")]
+            if len(items) < 200 or not created_values:
+                trial_ok = True
+                break
+            last_created_at = created_values[-1]
+            time.sleep(0.15)
+        if trial_ok:
+            used_trial = (field_obj, ch_val)
             break
 
-        items = extract_items_from_response(resp_json)
-        if not items:
-            break
+    if not results:
+        print(f"Day {day_dt.isoformat()}: all channel trials failed or returned 0")
+        return results, "-"
 
-        # Map fields and extend
-        for c in items:
-            results.append(extract_fields(c))
+    # optional debug
+    if used_trial is not None:
+        print(f"Using channel trial: field keys={list(used_trial[0].keys())}, value={used_trial[1]}")
 
-        # Prepare for pagination
-        if len(items) < 200:
-            break
-
-        # Track last createdAt from this page
-        # Use the max createdAt available
-        created_values = [c.get("createdAt") for c in items if c.get("createdAt")]
-        if not created_values:
-            break
-        # Items are sorted asc; last element should be max
-        last_created_at = created_values[-1]
-
-        # Respect rate limiting
-        time.sleep(0.15)
-
-    return results
+    # Infer channel field name for debug print in main
+    used_field_name = "InitialChannelField" if used_trial and "Initial" in used_trial[0].get("_type", "") else "ChannelTypeField"
+    return results, used_field_name
 
 
 def compute_columns(df: pd.DataFrame) -> pd.DataFrame:
@@ -347,6 +357,10 @@ def main(argv: Optional[List[str]] = None) -> None:
 
     start_dt, end_dt, label = determine_range_from_cli(argv)
 
+    # Debug info about payload casing/strategy
+    print("Debug: filters.strategy=AND; operators=UPPERCASE; channel value=PstnPhone")
+    sys.stdout.flush()
+
     start_d = normalize_date_only(start_dt)
     end_d = normalize_date_only(end_dt)
 
@@ -363,8 +377,8 @@ def main(argv: Optional[List[str]] = None) -> None:
         print(f"Day {processed}/{total_days}: {day.isoformat()} ...", end=" ")
         sys.stdout.flush()
 
-        day_rows = fetch_day_conversations(day)
-        print(f"{len(day_rows)} records")
+        day_rows, channel_field_used = fetch_day_conversations(day)
+        print(f"{len(day_rows)} records (channel={channel_field_used})")
         sys.stdout.flush()
         all_rows.extend(day_rows)
 
