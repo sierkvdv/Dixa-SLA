@@ -5,6 +5,10 @@ Export Dixa Conversations - Previous Month (Exports API + Detail Enrichment)
 - Filters initial_channel == pstnphone (telephone)
 - Enriches each record with details from /v1/conversations/{id}
 - Computes metrics and writes conversations_prev_month.csv (UTF-8)
+
+NOTE: Exports previous calendar month only.
+NOT for full-history Power BI source.
+Use export_dixa_refresh.py with --range/--daily-files.
 """
 
 import requests
@@ -13,9 +17,10 @@ import pandas as pd
 from datetime import datetime, timedelta
 import time
 import sys
+import os
 
 # Configuration
-API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmZTVlMWJmMC04ZTY3LTQwNjgtOTc5Zi03OTAyY2VkOThhYzgiLCJ0eXBlIjoiYXBpIiwib3JnX2lkIjoiMDljOTU0MGEtNTI1Zi00MmE4LWE4NGMtNzE5Y2JkZmNhOWFkIiwianRpIjoiMjNlOGFiYWQwNzUyNGE0ZWIzZTAxNGZjNTNkYWY0MzEifQ.NoU5eGkEWPtgmljdFEyzd8FAY82O2ZzEVvKDdZqsD2k"
+API_KEY = os.getenv("DIXA_TOKEN"); assert API_KEY, "Set DIXA_TOKEN"
 BASE_V1 = "https://dev.dixa.io/v1"
 BASE_EXPORTS = "https://exports.dixa.io/v1"
 
