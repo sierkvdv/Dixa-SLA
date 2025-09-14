@@ -81,6 +81,21 @@ Calendar = CALENDAR(DATE(2020,1,1), TODAY()+1)
 
 Mark as Date Table; relate Calendar[Date] -> Fact[createdAt]; slicer op Calendar[Date] (Between).
 
+### Config en run (kort)
+
+- Maak een `.env` in de projectroot met minimaal:
+  - `DIXA_TOKEN=...`
+  - Optioneel: `DIXA_USE_BEARER=true`, `DIXA_BASE_URL`, `DIXA_EXPORTS_BASE`
+
+Run:
+
+```
+python export_dixa_refresh.py --range 2025-06-01 2025-06-03 --single-file
+python export_dixa_refresh.py --range 2025-06-01 2025-06-03 --daily-files
+```
+
+Power BI: gebruik Folder.Files op `data/dixa_daily`. Calendar: `Calendar = CALENDAR(DATE(2020,1,1), TODAY()+1)`. Mark as Date Table.
+
 ### Smoke test / Expected results
 
 Run:

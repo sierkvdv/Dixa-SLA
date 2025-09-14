@@ -18,20 +18,24 @@ from datetime import datetime, timedelta
 import time
 import sys
 import os
+from dotenv import load_dotenv
+
+load_dotenv(override=True)
 
 # Configuration
 API_KEY = os.getenv("DIXA_TOKEN"); assert API_KEY, "Set DIXA_TOKEN"
-BASE_V1 = "https://dev.dixa.io/v1"
-BASE_EXPORTS = "https://exports.dixa.io/v1"
+USE_BEARER = os.getenv("DIXA_USE_BEARER", "true").lower() == "true"
+BASE_V1 = os.getenv("DIXA_BASE_URL", "https://api.dixa.io/v1")
+BASE_EXPORTS = os.getenv("DIXA_EXPORTS_BASE", "https://exports.dixa.io/v1")
 
 HEADERS_V1 = {
-    "Authorization": API_KEY,
+    "Authorization": (f"Bearer {API_KEY}" if USE_BEARER else API_KEY),
     "Accept": "application/json",
     "Content-Type": "application/json",
 }
 
 HEADERS_EXPORTS = {
-    "Authorization": f"Bearer {API_KEY}",
+    "Authorization": (f"Bearer {API_KEY}" if USE_BEARER else API_KEY),
     "Accept": "application/json",
 }
 

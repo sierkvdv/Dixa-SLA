@@ -18,29 +18,28 @@ import time
 import os
 import json
 from pathlib import Path
+from dotenv import load_dotenv
+load_dotenv(override=True)
 from datetime import datetime, timedelta, timezone, date
 from typing import Dict, List, Tuple, Any, Optional
 
 import pandas as pd
 import requests
 
-# Token and config from environment
 API_KEY = os.getenv("DIXA_TOKEN"); assert API_KEY, "Set DIXA_TOKEN"
-USE_BEARER = os.getenv("DIXA_USE_BEARER", "false").lower() == "true"
-
-
-BASE_V1 = "https://dev.dixa.io/v1"
+USE_BEARER = os.getenv("DIXA_USE_BEARER", "true").lower() == "true"
+BASE_V1 = os.getenv("DIXA_BASE_URL", "https://api.dixa.io/v1")
+BASE_EXPORTS = os.getenv("DIXA_EXPORTS_BASE", "https://exports.dixa.io/v1")
 
 HEADERS_V1 = {
     "Authorization": (f"Bearer {API_KEY}" if USE_BEARER else API_KEY),
     "Accept": "application/json",
     "Content-Type": "application/json",
 }
-
-
-# Compatibility helper: include both keys for APIs expecting either
-def compat_field(field_type: str) -> dict:
-    return {"_type": field_type, "type": field_type}
+HEADERS_EXPORTS = {
+    "Authorization": (f"Bearer {API_KEY}" if USE_BEARER else API_KEY),
+    "Accept": "application/json",
+}
 
 
 # ----------------------------
@@ -101,8 +100,8 @@ def determine_range_from_cli(argv: Optional[List[str]] = None) -> Tuple[datetime
     group.add_argument("--ytd", action="store_true", help="Use year-to-date from 2025-01-01 (UTC)")
     group.add_argument("--range", nargs=2, metavar=("START", "END"), help="Custom range (ISO or YYYY-MM-DD)")
 
-    parser.add_argument("--channel", default="pstnPhone",
-                        help="Channel filter; empty string means no channel filter (all)")
+    parser.add_argument("--channel", nargs="?", const="", default="",
+                        help="Channel filter; empty/omitted = ALL")
     parser.add_argument("--single-file", action="store_true",
                         help="Write single CSV conversations_ytd.csv (default)")
     parser.add_argument("--daily-files", action="store_true",
@@ -145,256 +144,54 @@ def determine_range_from_cli(argv: Optional[List[str]] = None) -> Tuple[datetime
 
 
 # ----------------------------
-# API client helpers
+# Exports API helpers
 # ----------------------------
 
-def post_search_conversations(payload: Dict[str, Any]) -> Tuple[Dict[str, Any], int, str]:
-    url = f"{BASE_V1}/search/conversations"
-    # Basic retry for transient failures
-    attempts = 0
-    last_exc: Optional[BaseException] = None
-    while attempts < 3:
-        attempts += 1
-        try:
-            # Debug: print payload before request
-            try:
-                print("Payload:", json.dumps(payload)[:400])
-            except Exception:
-                pass
-            r = requests.post(url, json=payload, headers=HEADERS_V1, timeout=60)
-            # Debug: print HTTP status and optional body
-            try:
-                print("HTTP:", r.status_code)
-                if r.status_code != 200:
-                    print("Body:", r.text[:400])
-            except Exception:
-                pass
-            if r.status_code != 200:
-                # If server error, retry; otherwise raise
-                if 500 <= r.status_code < 600 and attempts < 3:
-                    time.sleep(0.5)
-                    continue
-                raise requests.HTTPError(f"HTTP {r.status_code}: {r.text[:300]}")
-            return r.json(), r.status_code, r.text
-        except (requests.Timeout, requests.ConnectionError) as exc:
-            last_exc = exc
-            if attempts < 3:
-                time.sleep(0.5)
-                continue
-            raise
-        except Exception as exc:
-            last_exc = exc
-            raise
-    # Should not reach
-    if last_exc:
-        raise last_exc
-    return {}, 0, ""
+def _ms_to_iso(ms):
+    if ms is None: return None
+    import pandas as pd
+    return pd.to_datetime(int(ms), unit="ms", utc=True).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
-def extract_items_from_response(resp_json: Dict[str, Any]) -> List[Dict[str, Any]]:
-    """Attempt to extract list of conversations from the search response.
-
-    Tries common shapes: {data: {items|matches|results}}, {data: [...]}, top-level list.
-    """
-    if resp_json is None:
+def fetch_exports_day(day_iso: str) -> List[Dict[str, Any]]:
+    import requests
+    url = f"{BASE_EXPORTS}/conversation_export?created_after={day_iso}&created_before={day_iso}"
+    r = requests.get(url, headers=HEADERS_EXPORTS, timeout=60)
+    if r.status_code != 200:
+        print("Exports HTTP:", r.status_code, r.text[:300]); return []
+    try:
+        data = r.json()
+    except Exception:
         return []
-
-    if isinstance(resp_json, list):
-        return [x for x in resp_json if isinstance(x, dict)]
-
-    data = resp_json.get("data") if isinstance(resp_json, dict) else None
-    if isinstance(data, list):
-        return [x for x in data if isinstance(x, dict)]
-    if isinstance(data, dict):
-        for key in ("items", "matches", "results", "conversations"):
-            val = data.get(key)
-            if isinstance(val, list):
-                return [x for x in val if isinstance(x, dict)]
-    # Fallback: try top-level conventional keys
-    for key in ("items", "matches", "results", "conversations"):
-        val = resp_json.get(key) if isinstance(resp_json, dict) else None
-        if isinstance(val, list):
-            return [x for x in val if isinstance(x, dict)]
-    return []
+    return data if isinstance(data, list) else data.get("data", [])
 
 
-def extract_fields(conv: Dict[str, Any]) -> Dict[str, Any]:
-    """Extract required fields from a conversation without detail calls."""
-    conv_id = conv.get("id")
-    created_at = conv.get("createdAt")
-    answered_at = conv.get("answeredAt")
-    closed_at = conv.get("closedAt")
-    state = conv.get("state")
-    direction = conv.get("direction")
-    channel = conv.get("channel") or conv.get("initialChannel") or "pstnPhone"
-
-    # Assignment / assignee
-    assignee_id = conv.get("assigneeId")
-    assignee_name = conv.get("assigneeName")
-    assignment_reason = conv.get("assignmentReason")
-
-    assignment = conv.get("assignment") or {}
-    if assignee_id is None:
-        assignee = assignment.get("assignee") or {}
-        if isinstance(assignee, dict):
-            assignee_id = assignee.get("id", assignee_id)
-            assignee_name = assignee.get("name", assignee_name)
-    if assignment_reason is None:
-        assignment_reason = assignment.get("reason")
-
-    # Queue
-    queue_id = conv.get("queueId")
-    queue_name = conv.get("queueName")
-    if queue_id is None or queue_name is None:
-        queue = conv.get("queue") or {}
-        if isinstance(queue, dict):
-            queue_id = queue.get("id", queue_id)
-            queue_name = queue.get("name", queue_name)
-
+def map_export_row(rec: dict) -> Dict[str, Any]:
+    ch = (rec.get("initial_channel") or "").lower()
     return {
-        "id": conv_id,
-        "createdAt": created_at,
-        "answeredAt": answered_at,
-        "closedAt": closed_at,
-        "state": state,
-        "direction": direction,
-        "channel": channel,
-        "assigneeId": assignee_id,
-        "assigneeName": assignee_name,
-        "queueId": queue_id,
-        "queueName": queue_name,
-        "assignmentReason": assignment_reason,
+      "id": rec.get("id"),
+      "createdAt": _ms_to_iso(rec.get("created_at")),
+      "answeredAt": _ms_to_iso(rec.get("assigned_at")),
+      "closedAt": _ms_to_iso(rec.get("closed_at")),
+      "direction": rec.get("direction"),
+      "channel": ch,
+      "assigneeId": rec.get("assignee_id"),
+      "assigneeName": rec.get("assignee_name"),
+      "queueId": rec.get("queue_id"),
+      "queueName": rec.get("queue_name"),
     }
 
 
-def fetch_day_conversations(day_dt: date, channel_filter: Optional[str]) -> Tuple[List[Dict[str, Any]], str]:
-    """Fetch one day's conversations for channel pstnPhone with pagination.
-
-    Returns (rows, channel_field_used) for debug output.
-    """
-    day_start = start_of_day_utc(day_dt)
-    day_end = end_of_day_utc(day_dt)
-    # If channel filter is empty -> do not filter on channel
-    if channel_filter is None or str(channel_filter).strip() == "":
-        results: List[Dict[str, Any]] = []
-        last_created_at: Optional[str] = None
-        while True:
-            conditions = [
-                {"field": compat_field("CreatedAtField"), "operator": "between",
-                 "value": [format_iso_z(day_start), format_iso_z(day_end)]},
-            ]
-            # Optional simple channel filter when provided
-            if channel_filter:
-                conditions.append({
-                    "field": "channel", "operator": "eq", "value": channel_filter,
-                })
-            if last_created_at:
-                conditions.append({"field": compat_field("CreatedAtField"), "operator": "gt", "value": last_created_at})
-            payload = {
-                "limit": 200,
-                "sort": {"field": "createdAt", "order": "asc"},
-                "filters": {"strategy": "and", "conditions": conditions},
-            }
-            try:
-                resp_json, status_code, resp_text = post_search_conversations(payload)
-            except Exception as exc:
-                print(f"Error fetching day {day_dt.isoformat()} (no channel): {exc}")
-                sys.stdout.flush()
-                break
-            items = extract_items_from_response(resp_json)
-            if not items:
-                try:
-                    print("Empty results, sample body:", resp_text[:400])
-                except Exception:
-                    pass
-            if not items:
-                break
-            for c in items:
-                results.append(extract_fields(c))
-            created_values = [c.get("createdAt") for c in items if c.get("createdAt")]
-            if len(items) < 200 or not created_values:
-                break
-            last_created_at = created_values[-1]
-            time.sleep(0.15)
-        return results, "-"
-
-    # Trials for channel field/value combinations (provided channel and a capitalized variant)
-    cand_vals = [str(channel_filter)]
-    if channel_filter and (channel_filter[:1].upper() + channel_filter[1:]) != channel_filter:
-        cand_vals.append(channel_filter[:1].upper() + channel_filter[1:])
-    channel_trials = [
-        (compat_field("ChannelTypeField"), cand_vals[0]),
-        (compat_field("ChannelTypeField"), cand_vals[-1]),
-        (compat_field("InitialChannelField"), cand_vals[0]),
-        (compat_field("InitialChannelField"), cand_vals[-1]),
-    ]
-
-    def build_payload(channel_field_obj, channel_value, last_created_at=None):
-        conditions = [
-            {"field": channel_field_obj, "operator": "eq", "value": channel_value},
-            {"field": compat_field("CreatedAtField"), "operator": "between",
-             "value": [format_iso_z(day_start), format_iso_z(day_end)]},
-        ]
-        # Optional simple channel filter when provided (use original args.channel value)
-        if channel_filter:
-            conditions.append({
-                "field": "channel", "operator": "eq", "value": channel_filter,
-            })
-        if last_created_at:
-            conditions.append({"field": compat_field("CreatedAtField"), "operator": "gt", "value": last_created_at})
-        return {
-            "limit": 200,
-            "sort": {"field": "createdAt", "order": "asc"},
-            "filters": {"strategy": "and", "conditions": conditions}
-        }
-
-    results: List[Dict[str, Any]] = []
-    used_trial = None
-
-    for (field_obj, ch_val) in channel_trials:
-        last_created_at = None
-        trial_ok = False
-        while True:
-            payload = build_payload(field_obj, ch_val, last_created_at)
-            try:
-                resp_json, status_code, resp_text = post_search_conversations(payload)
-            except Exception as exc:
-                if "HTTP 400" in str(exc):
-                    break
-                print(f"Transient error: {exc}")
-                break
-            items = extract_items_from_response(resp_json)
-            if not items:
-                try:
-                    print("Empty results, sample body:", resp_text[:400])
-                except Exception:
-                    pass
-            if not items:
-                trial_ok = True
-                break
-            for c in items:
-                results.append(extract_fields(c))
-            created_values = [c.get("createdAt") for c in items if c.get("createdAt")]
-            if len(items) < 200 or not created_values:
-                trial_ok = True
-                break
-            last_created_at = created_values[-1]
-            time.sleep(0.15)
-        if trial_ok:
-            used_trial = (field_obj, ch_val)
-            break
-
-    if not results:
-        print(f"Day {day_dt.isoformat()}: all channel trials failed or returned 0")
-        return results, "-"
-
-    # optional debug
-    if used_trial is not None:
-        print(f"Using channel trial: field keys={list(used_trial[0].keys())}, value={used_trial[1]}")
-
-    # Infer channel field name for debug print in main
-    used_field_name = "InitialChannelField" if used_trial and "Initial" in used_trial[0].get("_type", "") else "ChannelTypeField"
-    return results, used_field_name
+def fetch_detail(conv_id: str) -> Optional[Dict[str, Any]]:
+    url = f"{BASE_V1}/conversations/{conv_id}"
+    try:
+        r = requests.get(url, headers=HEADERS_V1, timeout=30)
+        if r.status_code != 200:
+            return None
+        j = r.json()
+        return j.get("data")
+    except Exception:
+        return None
 
 
 def compute_columns(df: pd.DataFrame) -> pd.DataFrame:
@@ -437,9 +234,9 @@ def main(argv: Optional[List[str]] = None) -> None:
 
     start_dt, end_dt, label, args = determine_range_from_cli(argv)
 
-    # Debug info about payload casing/strategy
-    ch_dbg = args.channel if (args.channel is not None and str(args.channel).strip() != "") else "ALL"
-    print(f"Debug: filters.strategy=and; operators=lowercase; channel={ch_dbg}")
+    # Debug channel
+    ch_dbg = "ALL" if (args.channel or "").strip()=="" else args.channel
+    print(f"channel={ch_dbg}")
     sys.stdout.flush()
 
     start_d = normalize_date_only(start_dt)
@@ -466,8 +263,19 @@ def main(argv: Optional[List[str]] = None) -> None:
         print(f"Day {processed}/{total_days}: {day.isoformat()} ...", end=" ")
         sys.stdout.flush()
 
-        day_rows, channel_field_used = fetch_day_conversations(day, args.channel)
-        print(f"{len(day_rows)} records (channel={channel_field_used})")
+        # Fetch via Exports API for this day
+        rows_raw = fetch_exports_day(day.isoformat())
+        day_rows = [to_row(x) for x in rows_raw]
+        # Optional channel filter
+        if (args.channel or "") != "":
+            day_rows = [r for r in day_rows if (r.get("channel") or "") == str(args.channel).lower()]
+        # Optional enrichment (state/answeredAt) - could be toggled later
+        # for r in day_rows:
+        #     det = fetch_detail(r.get("id"))
+        #     if det:
+        #         r["state"] = det.get("state")
+        #         r["answeredAt"] = det.get("answeredAt") or r.get("answeredAt")
+        print("Exports day", day.isoformat(), "rows:", len(day_rows))
         sys.stdout.flush()
         if write_daily:
             # Write per-day CSV
