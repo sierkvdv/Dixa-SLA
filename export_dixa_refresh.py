@@ -342,10 +342,17 @@ def compute_columns(df: pd.DataFrame) -> pd.DataFrame:
     taken_from_forward = assignment_reason_lower == "forward"
     rejected_or_forwarded = answered.isna() | assignment_reason_lower.isin(["forward", "rejected"])  # type: ignore[attr-defined]
 
-    # Ensure pandas datetimes then compute CallDurationSec as closedAt - answeredAt
-    df["closedAt"] = pd.to_datetime(df["closedAt"], errors="coerce")
-    df["answeredAt"] = pd.to_datetime(df["answeredAt"], errors="coerce")
+    # Ensure pandas datetimes (UTC) then compute CallDurationSec as closedAt - answeredAt
+    df["closedAt"] = pd.to_datetime(df["closedAt"], utc=True, errors="coerce")
+    df["answeredAt"] = pd.to_datetime(df["answeredAt"], utc=True, errors="coerce")
+    if "assigned_at" in df.columns:
+        df["assigned_at"] = pd.to_datetime(df["assigned_at"], utc=True, errors="coerce")
+    # Primary: closedAt - answeredAt (seconds)
     df["CallDurationSec"] = (df["closedAt"] - df["answeredAt"]).dt.total_seconds()
+    # Fallback for rows without answeredAt: use assigned_at when available
+    if "assigned_at" in df.columns:
+        fallback = (df["closedAt"] - df["assigned_at"]).dt.total_seconds()
+        df["CallDurationSec"] = df["CallDurationSec"].fillna(fallback)
 
     df["AnsweredWithin1Min"] = within_1m
     df["TakenFromQueue"] = taken_from_queue
