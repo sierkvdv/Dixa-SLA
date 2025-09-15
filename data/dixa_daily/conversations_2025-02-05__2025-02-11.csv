@@ -1,0 +1,241 @@
+id,createdAt,answeredAt,queuedAt,closedAt,direction,channel,assigneeName,queueName,AnsweredWithin1Min,TakenFromQueue,TakenFromForward,RejectedOrForwarded
+17688,2025-02-05T08:00:25Z,,,2025-02-05T08:03:49Z,inbound,pstnphone,,,False,False,False,True
+17689,2025-02-05T08:01:24Z,2025-02-05T08:02:23Z,2025-02-05T08:02:06Z,2025-02-05T08:05:20Z,inbound,pstnphone,Sierk van der Velde,Technical service ,True,True,False,False
+17690,2025-02-05T08:19:05Z,,2025-02-05T08:19:26Z,2025-02-05T08:19:54Z,inbound,pstnphone,,Customer service ,False,False,False,True
+17691,2025-02-05T08:21:08Z,2025-02-05T08:22:01Z,2025-02-05T08:21:43Z,2025-02-05T08:23:33Z,inbound,pstnphone,Romy van Es,Customer service ,True,True,False,False
+17692,2025-02-05T08:26:44Z,2025-02-05T08:26:44Z,,2025-02-05T08:26:56Z,outbound,pstnphone,Marcus Preyer ,,True,False,True,True
+17693,2025-02-05T08:31:14Z,2025-02-05T08:32:24Z,2025-02-05T08:31:45Z,2025-02-05T08:34:23Z,inbound,pstnphone,Bart Jansen,Returns ,False,True,False,False
+17694,2025-02-05T08:41:12Z,2025-02-05T08:44:17Z,2025-02-05T08:41:51Z,2025-02-05T08:51:55Z,inbound,pstnphone,Marcus Preyer ,Customer service ,False,True,False,False
+17695,2025-02-05T08:45:13Z,2025-02-05T08:47:50Z,2025-02-05T08:46:02Z,2025-02-05T08:50:49Z,inbound,pstnphone,Sierk van der Velde,Technical service ,False,True,False,False
+17696,2025-02-05T08:56:14Z,2025-02-05T08:57:07Z,2025-02-05T08:56:58Z,2025-02-05T08:58:30Z,inbound,pstnphone,Roy Pietersz,Technical service ,True,True,False,False
+17697,2025-02-05T08:57:08Z,2025-02-05T08:57:08Z,,2025-02-05T09:05:48Z,outbound,pstnphone,Lars Ahlers ,,True,False,True,True
+17698,2025-02-05T08:57:27Z,2025-02-05T08:58:27Z,2025-02-05T08:58:16Z,2025-02-05T09:00:37Z,inbound,pstnphone,Sierk van der Velde,Technical service ,False,True,False,False
+17699,2025-02-05T09:04:30Z,2025-02-05T09:05:49Z,2025-02-05T09:05:23Z,2025-02-05T09:11:18Z,inbound,pstnphone,Sierk van der Velde,Technical service ,False,True,False,False
+17700,2025-02-05T09:09:16Z,2025-02-05T09:09:16Z,,2025-02-05T09:14:39Z,outbound,pstnphone,Roy Pietersz,,True,False,True,True
+17701,2025-02-05T09:09:51Z,2025-02-05T09:13:29Z,2025-02-05T09:10:34Z,2025-02-05T09:17:33Z,inbound,pstnphone,Sierk van der Velde,Technical service ,False,True,False,False
+17702,2025-02-05T09:17:18Z,2025-02-05T09:27:38Z,2025-02-05T09:17:47Z,2025-02-05T09:35:18Z,inbound,pstnphone,Roy Pietersz,Customer service ,False,True,False,False
+17703,2025-02-05T09:23:15Z,2025-02-05T09:24:35Z,2025-02-05T09:24:04Z,2025-02-05T09:34:29Z,inbound,pstnphone,Sierk van der Velde,Technical service ,False,True,False,False
+17704,2025-02-05T09:33:16Z,,,2025-02-05T09:36:43Z,inbound,pstnphone,,,False,False,False,True
+17705,2025-02-05T09:35:16Z,2025-02-05T09:37:02Z,2025-02-05T09:36:04Z,2025-02-05T09:37:57Z,inbound,pstnphone,Roy Pietersz,Technical service ,False,True,False,False
+17706,2025-02-05T09:37:06Z,2025-02-05T09:37:59Z,2025-02-05T09:37:53Z,2025-02-05T09:40:59Z,inbound,pstnphone,Sierk van der Velde,Technical service ,True,True,False,False
+17707,2025-02-05T09:39:37Z,2025-02-05T09:41:24Z,2025-02-05T09:40:32Z,2025-02-05T09:48:11Z,inbound,pstnphone,Roy Pietersz,Technical service ,False,True,False,False
+17708,2025-02-05T09:43:05Z,,,2025-02-05T09:46:07Z,inbound,pstnphone,,,False,False,False,True
+17709,2025-02-05T09:44:27Z,2025-02-05T09:45:34Z,2025-02-05T09:45:16Z,2025-02-05T09:55:26Z,inbound,pstnphone,Sierk van der Velde,Technical service ,False,True,False,False
+17710,2025-02-05T09:46:19Z,2025-02-05T09:50:10Z,2025-02-05T09:47:07Z,2025-02-05T09:56:09Z,inbound,pstnphone,Roy Pietersz,Technical service ,False,True,False,False
+17711,2025-02-05T09:55:02Z,2025-02-05T09:55:45Z,2025-02-05T09:55:29Z,2025-02-05T09:57:44Z,inbound,pstnphone,Romy van Es,Customer service ,True,True,False,False
+17712,2025-02-05T09:58:02Z,,,2025-02-05T09:58:25Z,inbound,pstnphone,,,False,False,False,True
+17713,2025-02-05T09:59:05Z,2025-02-05T10:00:34Z,2025-02-05T09:59:32Z,2025-02-05T10:06:35Z,inbound,pstnphone,Romy van Es,Customer service ,False,True,False,False
+17714,2025-02-05T10:11:37Z,,,2025-02-05T10:20:06Z,inbound,pstnphone,,,False,False,False,True
+17715,2025-02-05T10:12:07Z,2025-02-05T10:13:13Z,2025-02-05T10:12:57Z,2025-02-05T10:15:57Z,inbound,pstnphone,Sierk van der Velde,Technical service ,False,True,False,False
+17716,2025-02-05T10:12:42Z,2025-02-05T10:16:21Z,2025-02-05T10:13:31Z,2025-02-05T10:20:13Z,inbound,pstnphone,Roy Pietersz,Technical service ,False,True,False,False
+17717,2025-02-05T10:14:17Z,2025-02-05T10:15:11Z,2025-02-05T10:14:54Z,2025-02-05T10:24:50Z,inbound,pstnphone,Bart Jansen,Returns ,True,True,False,False
+17718,2025-02-05T10:16:28Z,2025-02-05T10:17:20Z,2025-02-05T10:17:17Z,2025-02-05T10:18:59Z,inbound,pstnphone,Sierk van der Velde,Technical service ,True,True,False,False
+17719,2025-02-05T10:18:31Z,,,2025-02-05T10:21:26Z,inbound,pstnphone,,,False,False,False,True
+17720,2025-02-05T10:21:01Z,2025-02-05T10:21:01Z,,2025-02-05T10:25:03Z,outbound,pstnphone,Roy Pietersz,,True,False,True,True
+17721,2025-02-05T10:21:55Z,2025-02-05T10:22:50Z,2025-02-05T10:22:35Z,2025-02-05T10:29:08Z,inbound,pstnphone,Sierk van der Velde,Technical service ,True,True,False,False
+17722,2025-02-05T10:36:05Z,,,2025-02-05T10:39:56Z,inbound,pstnphone,,,False,False,False,True
+17723,2025-02-05T10:36:09Z,2025-02-05T10:37:19Z,2025-02-05T10:36:48Z,2025-02-05T10:39:31Z,inbound,pstnphone,Roy Pietersz,Technical service ,False,True,False,False
+17724,2025-02-05T10:40:48Z,2025-02-05T10:41:34Z,2025-02-05T10:41:21Z,2025-02-05T10:44:55Z,inbound,pstnphone,Bart Jansen,Returns ,True,True,False,False
+17725,2025-02-05T10:41:08Z,2025-02-05T10:41:46Z,2025-02-05T10:41:33Z,2025-02-05T10:52:26Z,inbound,pstnphone,Sierk van der Velde,Technical service ,True,True,False,False
+17726,2025-02-05T10:48:36Z,2025-02-05T10:49:10Z,2025-02-05T10:49:02Z,2025-02-05T10:56:56Z,inbound,pstnphone,Romy van Es,Customer service ,True,True,False,False
+17727,2025-02-05T10:54:17Z,,2025-02-05T10:54:48Z,2025-02-05T10:54:50Z,inbound,pstnphone,,Returns ,False,False,False,True
+17728,2025-02-05T10:55:17Z,2025-02-05T11:14:24Z,2025-02-05T10:55:44Z,2025-02-05T11:14:27Z,inbound,pstnphone,Romy van Es,Customer service ,False,True,False,False
+17729,2025-02-05T10:58:41Z,,2025-02-05T10:59:45Z,2025-02-05T11:10:01Z,inbound,pstnphone,,Customer service ,False,False,False,True
+17730,2025-02-05T11:00:04Z,2025-02-05T11:01:23Z,2025-02-05T11:00:44Z,2025-02-05T11:04:31Z,inbound,pstnphone,Sierk van der Velde,Technical service ,False,True,False,False
+17731,2025-02-05T11:01:02Z,2025-02-05T11:01:57Z,2025-02-05T11:01:55Z,2025-02-05T11:03:10Z,inbound,pstnphone,Roy Pietersz,Technical service ,True,True,False,False
+17732,2025-02-05T11:11:53Z,,,2025-02-05T11:12:05Z,inbound,pstnphone,,,False,False,False,True
+17733,2025-02-05T11:12:00Z,2025-02-05T11:13:02Z,2025-02-05T11:12:52Z,2025-02-05T11:16:08Z,inbound,pstnphone,Sierk van der Velde,Technical service ,False,True,False,False
+17734,2025-02-05T11:12:38Z,2025-02-05T11:14:44Z,2025-02-05T11:13:04Z,2025-02-05T11:15:23Z,inbound,pstnphone,Romy van Es,Customer service ,False,True,False,False
+17735,2025-02-05T11:13:35Z,2025-02-05T11:13:35Z,,2025-02-05T11:14:44Z,outbound,pstnphone,Lars Ahlers ,,True,False,True,True
+17736,2025-02-05T11:13:54Z,2025-02-05T11:14:50Z,2025-02-05T11:14:44Z,2025-02-05T11:20:39Z,inbound,pstnphone,Roy Pietersz,Technical service ,True,True,False,False
+17737,2025-02-05T11:16:13Z,2025-02-05T11:17:30Z,2025-02-05T11:17:22Z,2025-02-05T11:20:16Z,inbound,pstnphone,Romy van Es,Customer service ,False,True,False,False
+17738,2025-02-05T11:17:29Z,2025-02-05T11:20:07Z,2025-02-05T11:17:55Z,2025-02-05T11:22:10Z,inbound,pstnphone,Sierk van der Velde,Technical service ,False,True,False,False
+17739,2025-02-05T11:27:57Z,2025-02-05T11:28:29Z,2025-02-05T11:28:23Z,2025-02-05T11:33:50Z,inbound,pstnphone,Roy Pietersz,Technical service ,True,True,False,False
+17740,2025-02-05T11:29:47Z,2025-02-05T11:29:47Z,,2025-02-05T11:31:19Z,outbound,pstnphone,Sierk van der Velde,,True,False,True,True
+17741,2025-02-05T11:31:36Z,2025-02-05T11:32:14Z,2025-02-05T11:32:00Z,2025-02-05T11:34:49Z,inbound,pstnphone,Romy van Es,Customer service ,True,True,False,False
+17742,2025-02-05T11:38:18Z,2025-02-05T11:42:23Z,2025-02-05T11:38:45Z,2025-02-05T12:13:31Z,inbound,pstnphone,Roy Pietersz,Technical service ,False,True,False,False
+17743,2025-02-05T11:42:38Z,2025-02-05T11:42:38Z,,2025-02-05T11:45:55Z,outbound,pstnphone,Sierk van der Velde,,True,False,True,True
+17744,2025-02-05T11:56:13Z,2025-02-05T11:56:57Z,2025-02-05T11:56:48Z,2025-02-05T11:59:09Z,inbound,pstnphone,Romy van Es,Customer service ,True,True,False,False
+17745,2025-02-05T12:08:25Z,,,2025-02-05T12:08:36Z,inbound,pstnphone,,,False,False,False,True
+17746,2025-02-05T12:19:51Z,,,2025-02-05T12:19:56Z,inbound,pstnphone,,,False,False,False,True
+17747,2025-02-05T12:33:48Z,,,2025-02-05T12:34:00Z,inbound,pstnphone,,,False,False,False,True
+17748,2025-02-05T12:42:52Z,,,2025-02-05T12:43:03Z,inbound,pstnphone,,,False,False,False,True
+17749,2025-02-05T13:19:20Z,2025-02-05T13:19:20Z,,2025-02-05T13:24:39Z,outbound,pstnphone,Sierk van der Velde,,True,False,True,True
+17750,2025-02-05T13:20:44Z,,,2025-02-05T13:20:55Z,inbound,pstnphone,,,False,False,False,True
+17751,2025-02-05T13:22:21Z,2025-02-05T13:22:21Z,,2025-02-05T13:23:29Z,outbound,pstnphone,Lars Ahlers ,,True,False,True,True
+17752,2025-02-05T13:28:00Z,2025-02-05T13:28:00Z,,2025-02-05T13:28:37Z,outbound,pstnphone,Sierk van der Velde,,True,False,True,True
+17753,2025-02-05T13:28:44Z,2025-02-05T13:28:44Z,,2025-02-05T13:30:30Z,outbound,pstnphone,Sierk van der Velde,,True,False,True,True
+17754,2025-02-05T13:30:37Z,2025-02-05T13:30:37Z,,2025-02-05T13:49:00Z,outbound,pstnphone,Lars Ahlers ,,True,False,True,True
+17755,2025-02-05T13:33:51Z,,,2025-02-05T13:34:02Z,inbound,pstnphone,,,False,False,False,True
+17756,2025-02-05T13:34:00Z,,,2025-02-05T13:34:11Z,inbound,pstnphone,,,False,False,False,True
+17757,2025-02-05T13:43:09Z,,,2025-02-05T13:43:20Z,inbound,pstnphone,,,False,False,False,True
+17758,2025-02-05T14:12:56Z,,,2025-02-05T14:13:05Z,inbound,pstnphone,,,False,False,False,True
+17759,2025-02-05T14:24:28Z,,,2025-02-05T14:24:36Z,inbound,pstnphone,,,False,False,False,True
+17760,2025-02-05T14:25:26Z,,,2025-02-05T14:25:38Z,inbound,pstnphone,,,False,False,False,True
+17761,2025-02-05T14:49:29Z,,,2025-02-05T14:49:40Z,inbound,pstnphone,,,False,False,False,True
+17762,2025-02-05T14:57:02Z,,,2025-02-05T14:57:13Z,inbound,pstnphone,,,False,False,False,True
+17763,2025-02-05T15:09:08Z,,,2025-02-05T15:09:19Z,inbound,pstnphone,,,False,False,False,True
+17764,2025-02-05T15:49:42Z,,,2025-02-05T15:49:53Z,inbound,pstnphone,,,False,False,False,True
+17765,2025-02-06T08:02:42Z,2025-02-06T08:02:42Z,,2025-02-06T08:05:23Z,outbound,pstnphone,Romy van Es,,True,False,True,True
+17766,2025-02-06T08:04:16Z,2025-02-06T08:05:19Z,2025-02-06T08:05:04Z,2025-02-06T08:10:36Z,inbound,pstnphone,Roy Pietersz,Technical service ,False,True,False,False
+17767,2025-02-06T08:04:19Z,,,2025-02-06T08:05:03Z,inbound,pstnphone,,,False,False,False,True
+17768,2025-02-06T08:05:08Z,2025-02-06T08:09:41Z,2025-02-06T08:05:43Z,2025-02-06T08:13:36Z,inbound,pstnphone,Bart Jansen,Returns ,False,True,False,False
+17769,2025-02-06T08:06:30Z,2025-02-06T08:17:20Z,2025-02-06T08:07:00Z,2025-02-06T08:21:10Z,inbound,pstnphone,Bart Jansen,Returns ,False,True,False,False
+17770,2025-02-06T08:10:23Z,,,2025-02-06T08:10:36Z,inbound,pstnphone,,,False,False,False,True
+17771,2025-02-06T08:11:18Z,2025-02-06T08:11:51Z,2025-02-06T08:11:45Z,2025-02-06T08:16:45Z,inbound,pstnphone,Romy van Es,Customer service ,True,True,False,False
+17772,2025-02-06T08:15:13Z,,,2025-02-06T08:15:26Z,inbound,pstnphone,,,False,False,False,True
+17773,2025-02-06T08:15:43Z,,2025-02-06T08:16:14Z,2025-02-06T08:17:34Z,inbound,pstnphone,,Returns ,False,False,False,True
+17774,2025-02-06T08:17:53Z,2025-02-06T08:26:52Z,2025-02-06T08:25:46Z,2025-02-06T08:28:13Z,inbound,pstnphone,Romy van Es,Returns ,False,True,False,False
+17775,2025-02-06T08:27:55Z,2025-02-06T08:27:55Z,,2025-02-06T08:36:47Z,outbound,pstnphone,Sierk van der Velde,,True,False,True,True
+17776,2025-02-06T08:33:40Z,2025-02-06T08:35:39Z,2025-02-06T08:34:16Z,2025-02-06T08:41:48Z,inbound,pstnphone,Bart Jansen,Returns ,False,True,False,False
+17777,2025-02-06T08:33:52Z,,,2025-02-06T08:35:37Z,inbound,pstnphone,,,False,False,False,True
+17778,2025-02-06T08:35:18Z,2025-02-06T08:35:18Z,,2025-02-06T08:36:09Z,outbound,pstnphone,Romy van Es,,True,False,True,True
+17779,2025-02-06T08:36:37Z,2025-02-06T08:37:41Z,2025-02-06T08:37:27Z,2025-02-06T08:41:42Z,inbound,pstnphone,Roy Pietersz,Technical service ,False,True,False,False
+17780,2025-02-06T08:36:43Z,2025-02-06T08:37:41Z,2025-02-06T08:37:30Z,2025-02-06T08:39:49Z,inbound,pstnphone,Sierk van der Velde,Technical service ,True,True,False,False
+17781,2025-02-06T08:43:14Z,2025-02-06T08:44:37Z,2025-02-06T08:44:05Z,2025-02-06T08:47:42Z,inbound,pstnphone,Roy Pietersz,Technical service ,False,True,False,False
+17782,2025-02-06T08:54:27Z,2025-02-06T08:55:27Z,2025-02-06T08:55:18Z,2025-02-06T09:13:52Z,inbound,pstnphone,Sierk van der Velde,Technical service ,True,True,False,False
+17783,2025-02-06T09:05:31Z,2025-02-06T09:06:04Z,2025-02-06T09:05:57Z,2025-02-06T09:17:01Z,inbound,pstnphone,Romy van Es,Customer service ,True,True,False,False
+17784,2025-02-06T09:07:09Z,2025-02-06T09:08:05Z,2025-02-06T09:07:56Z,2025-02-06T09:12:48Z,inbound,pstnphone,Roy Pietersz,Technical service ,True,True,False,False
+17785,2025-02-06T09:08:15Z,2025-02-06T09:14:40Z,2025-02-06T09:09:08Z,2025-02-06T09:19:50Z,inbound,pstnphone,Sierk van der Velde,Technical service ,False,True,False,False
+17786,2025-02-06T09:10:08Z,2025-02-06T09:15:08Z,2025-02-06T09:10:55Z,2025-02-06T09:17:58Z,inbound,pstnphone,Roy Pietersz,Technical service ,False,True,False,False
+17787,2025-02-06T09:13:50Z,2025-02-06T09:18:51Z,2025-02-06T09:14:39Z,2025-02-06T09:33:13Z,inbound,pstnphone,Roy Pietersz,Technical service ,False,True,False,False
+17788,2025-02-06T09:16:32Z,2025-02-06T09:16:32Z,,2025-02-06T09:16:55Z,outbound,pstnphone,Lars Ahlers ,,True,False,True,True
+17789,2025-02-06T09:17:31Z,2025-02-06T09:17:31Z,,2025-02-06T09:20:24Z,outbound,pstnphone,Lars Ahlers ,,True,False,True,True
+17790,2025-02-06T09:21:14Z,2025-02-06T09:21:14Z,,2025-02-06T09:21:30Z,outbound,pstnphone,Lars Ahlers ,,True,False,True,True
+17791,2025-02-06T09:26:11Z,2025-02-06T09:26:11Z,,2025-02-06T09:26:23Z,outbound,pstnphone,Lars Ahlers ,,True,False,True,True
+17792,2025-02-06T09:26:50Z,2025-02-06T09:26:50Z,,2025-02-06T09:27:45Z,outbound,pstnphone,Lars Ahlers ,,True,False,True,True
+17793,2025-02-06T09:27:58Z,2025-02-06T09:27:58Z,,2025-02-06T09:34:56Z,outbound,pstnphone,Lars Ahlers ,,True,False,True,True
+17794,2025-02-06T09:28:39Z,,,2025-02-06T09:30:29Z,inbound,pstnphone,,,False,False,False,True
+17795,2025-02-06T09:29:08Z,2025-02-06T09:30:08Z,2025-02-06T09:30:00Z,2025-02-06T09:47:12Z,inbound,pstnphone,Sierk van der Velde,Technical service ,True,True,False,False
+17796,2025-02-06T09:30:26Z,2025-02-06T09:43:39Z,2025-02-06T09:31:16Z,2025-02-06T09:48:14Z,inbound,pstnphone,Roy Pietersz,Technical service ,False,True,False,False
+17797,2025-02-06T09:30:43Z,2025-02-06T09:34:45Z,2025-02-06T09:31:14Z,2025-02-06T09:43:36Z,inbound,pstnphone,Roy Pietersz,Technical service ,False,True,False,False
+17798,2025-02-06T09:34:39Z,2025-02-06T09:47:17Z,2025-02-06T09:46:39Z,2025-02-06T09:47:21Z,inbound,pstnphone,Sierk van der Velde,Technical service ,False,True,False,False
+17799,2025-02-06T09:48:39Z,,2025-02-06T09:48:57Z,2025-02-06T10:10:36Z,inbound,pstnphone,,Returns ,False,False,False,True
+17800,2025-02-06T09:55:11Z,2025-02-06T09:55:41Z,2025-02-06T09:55:34Z,2025-02-06T10:08:37Z,inbound,pstnphone,Romy van Es,Customer service ,True,True,False,False
+17801,2025-02-06T09:57:16Z,2025-02-06T09:57:16Z,,2025-02-06T10:00:33Z,outbound,pstnphone,Roy Pietersz,,True,False,True,True
+17802,2025-02-06T09:57:22Z,,2025-02-06T09:57:50Z,2025-02-06T10:07:45Z,inbound,pstnphone,,Customer service ,False,False,False,True
+17803,2025-02-06T09:59:12Z,2025-02-06T09:59:12Z,,2025-02-06T10:00:05Z,outbound,pstnphone,Lars Ahlers ,,True,False,True,True
+17804,2025-02-06T10:01:05Z,2025-02-06T10:02:05Z,2025-02-06T10:01:54Z,2025-02-06T10:56:26Z,inbound,pstnphone,Sierk van der Velde,Technical service ,False,True,False,False
+17805,2025-02-06T10:05:45Z,2025-02-06T10:09:42Z,2025-02-06T10:06:36Z,2025-02-06T10:11:29Z,inbound,pstnphone,Roy Pietersz,Technical service ,False,True,False,False
+17806,2025-02-06T10:06:42Z,2025-02-06T10:12:09Z,2025-02-06T10:07:15Z,2025-02-06T10:16:01Z,inbound,pstnphone,Roy Pietersz,Technical service ,False,True,False,False
+17807,2025-02-06T10:06:56Z,2025-02-06T10:16:04Z,2025-02-06T10:07:26Z,2025-02-06T10:20:20Z,inbound,pstnphone,Roy Pietersz,Technical service ,False,True,False,False
+17808,2025-02-06T10:10:15Z,2025-02-06T10:20:25Z,2025-02-06T10:11:04Z,2025-02-06T10:21:39Z,inbound,pstnphone,Roy Pietersz,Technical service ,False,True,False,False
+17809,2025-02-06T10:25:15Z,2025-02-06T10:25:52Z,2025-02-06T10:25:42Z,2025-02-06T10:33:55Z,inbound,pstnphone,Romy van Es,Customer service ,True,True,False,False
+17810,2025-02-06T10:27:02Z,2025-02-06T10:28:23Z,2025-02-06T10:28:06Z,2025-02-06T10:39:18Z,inbound,pstnphone,Roy Pietersz,Technical service ,False,True,False,False
+17811,2025-02-06T10:30:38Z,2025-02-06T10:35:32Z,2025-02-06T10:31:04Z,2025-02-06T10:49:12Z,inbound,pstnphone,Romy van Es,Customer service ,False,True,False,False
+17812,2025-02-06T10:31:00Z,2025-02-06T10:31:00Z,,2025-02-06T10:31:43Z,outbound,pstnphone,Lars Ahlers ,,True,False,True,True
+17813,2025-02-06T10:31:55Z,2025-02-06T10:31:55Z,,2025-02-06T11:00:44Z,outbound,pstnphone,Lars Ahlers ,,True,False,True,True
+17814,2025-02-06T10:55:00Z,2025-02-06T10:55:59Z,2025-02-06T10:55:35Z,2025-02-06T10:58:08Z,inbound,pstnphone,Romy van Es,Customer service ,True,True,False,False
+17815,2025-02-06T11:09:14Z,,2025-02-06T11:09:43Z,2025-02-06T11:09:48Z,inbound,pstnphone,,Returns ,False,False,False,True
+17816,2025-02-06T11:09:56Z,2025-02-06T11:10:54Z,2025-02-06T11:10:44Z,2025-02-06T11:14:34Z,inbound,pstnphone,Sierk van der Velde,Technical service ,True,True,False,False
+17817,2025-02-06T11:12:20Z,2025-02-06T11:12:20Z,,2025-02-06T11:14:16Z,outbound,pstnphone,Jeremy Van t Hul,,True,False,True,True
+17818,2025-02-06T11:15:26Z,2025-02-06T11:17:22Z,2025-02-06T11:15:53Z,2025-02-06T11:22:40Z,inbound,pstnphone,Romy van Es,Customer service ,False,True,False,False
+17819,2025-02-06T11:17:05Z,2025-02-06T11:24:52Z,2025-02-06T11:17:30Z,2025-02-06T11:26:34Z,inbound,pstnphone,Romy van Es,Customer service ,False,True,False,False
+17820,2025-02-06T11:20:59Z,,2025-02-06T11:21:30Z,2025-02-06T11:36:00Z,inbound,pstnphone,,Returns ,False,False,False,True
+17821,2025-02-06T11:21:38Z,2025-02-06T11:32:59Z,2025-02-06T11:22:11Z,2025-02-06T11:39:56Z,inbound,pstnphone,Sierk van der Velde,Technical service ,False,True,False,False
+17822,2025-02-06T11:24:41Z,2025-02-06T11:25:40Z,2025-02-06T11:25:33Z,2025-02-06T11:28:41Z,inbound,pstnphone,Roy Pietersz,Technical service ,True,True,False,False
+17823,2025-02-06T11:26:41Z,,,2025-02-06T11:27:15Z,inbound,pstnphone,,,False,False,False,True
+17824,2025-02-06T11:27:58Z,,,2025-02-06T11:28:46Z,inbound,pstnphone,,,False,False,False,True
+17825,2025-02-06T11:28:53Z,2025-02-06T11:33:42Z,2025-02-06T11:29:21Z,2025-02-06T11:34:53Z,inbound,pstnphone,Romy van Es,Customer service ,False,True,False,False
+17826,2025-02-06T11:45:02Z,2025-02-06T11:46:01Z,2025-02-06T11:45:49Z,2025-02-06T11:50:18Z,inbound,pstnphone,Sierk van der Velde,Technical service ,True,True,False,False
+17827,2025-02-06T12:03:28Z,,,2025-02-06T12:03:39Z,inbound,pstnphone,,,False,False,False,True
+17828,2025-02-06T12:50:02Z,2025-02-06T12:50:02Z,,2025-02-06T13:01:13Z,outbound,pstnphone,Lars Ahlers ,,True,False,True,True
+17829,2025-02-06T13:15:17Z,,,2025-02-06T13:15:28Z,inbound,pstnphone,,,False,False,False,True
+17830,2025-02-06T13:15:39Z,,,2025-02-06T13:15:50Z,inbound,pstnphone,,,False,False,False,True
+17831,2025-02-06T13:16:07Z,,,2025-02-06T13:16:18Z,inbound,pstnphone,,,False,False,False,True
+17832,2025-02-06T13:22:22Z,,,2025-02-06T13:22:33Z,inbound,pstnphone,,,False,False,False,True
+17833,2025-02-06T13:24:30Z,,,2025-02-06T13:24:41Z,inbound,pstnphone,,,False,False,False,True
+17834,2025-02-06T13:41:51Z,2025-02-06T13:41:51Z,,2025-02-06T13:46:29Z,outbound,pstnphone,Roy Pietersz,,True,False,True,True
+17835,2025-02-06T13:45:51Z,,,2025-02-06T13:46:02Z,inbound,pstnphone,,,False,False,False,True
+17836,2025-02-06T13:47:50Z,,,2025-02-06T13:48:01Z,inbound,pstnphone,,,False,False,False,True
+17837,2025-02-06T13:53:00Z,2025-02-06T13:53:00Z,,2025-02-06T14:25:41Z,outbound,pstnphone,Sierk van der Velde,,True,False,True,True
+17838,2025-02-06T13:55:24Z,,,2025-02-06T13:55:35Z,inbound,pstnphone,,,False,False,False,True
+17839,2025-02-06T14:10:31Z,,,2025-02-06T14:10:42Z,inbound,pstnphone,,,False,False,False,True
+17840,2025-02-06T14:11:35Z,2025-02-06T14:11:35Z,,2025-02-06T14:16:36Z,outbound,pstnphone,Marcus Preyer ,,True,False,True,True
+17841,2025-02-06T14:18:03Z,,,2025-02-06T14:18:14Z,inbound,pstnphone,,,False,False,False,True
+17842,2025-02-06T14:26:09Z,,,2025-02-06T14:26:16Z,inbound,pstnphone,,,False,False,False,True
+17843,2025-02-06T14:37:12Z,,,2025-02-06T14:37:23Z,inbound,pstnphone,,,False,False,False,True
+17844,2025-02-06T14:42:04Z,,,2025-02-06T14:42:23Z,inbound,pstnphone,,,False,False,False,True
+17845,2025-02-06T14:42:28Z,,,2025-02-06T14:42:53Z,inbound,pstnphone,,,False,False,False,True
+17846,2025-02-06T14:42:59Z,,,2025-02-06T14:43:06Z,inbound,pstnphone,,,False,False,False,True
+17847,2025-02-06T14:45:17Z,2025-02-06T14:45:17Z,,2025-02-06T14:45:44Z,outbound,pstnphone,Roy Pietersz,,True,False,True,True
+17848,2025-02-06T14:46:30Z,,,2025-02-06T14:46:41Z,inbound,pstnphone,,,False,False,False,True
+17849,2025-02-06T14:52:16Z,2025-02-06T14:52:16Z,,2025-02-06T14:53:21Z,outbound,pstnphone,Lars Ahlers ,,True,False,True,True
+17850,2025-02-06T14:58:16Z,2025-02-06T14:58:16Z,,2025-02-06T15:17:20Z,outbound,pstnphone,Lars Ahlers ,,True,False,True,True
+17851,2025-02-06T15:03:49Z,,,2025-02-06T15:03:54Z,inbound,pstnphone,,,False,False,False,True
+17852,2025-02-06T17:08:20Z,,,2025-02-06T17:08:50Z,inbound,pstnphone,,,False,False,False,True
+17853,2025-02-07T08:01:46Z,2025-02-07T08:03:31Z,2025-02-07T08:02:13Z,2025-02-07T08:08:52Z,inbound,pstnphone,Romy van Es,Customer service ,False,True,False,False
+17854,2025-02-07T08:10:04Z,2025-02-07T08:10:58Z,2025-02-07T08:10:38Z,2025-02-07T08:12:47Z,inbound,pstnphone,Romy van Es,Customer service ,True,True,False,False
+17855,2025-02-07T08:12:12Z,2025-02-07T08:12:55Z,2025-02-07T08:12:44Z,2025-02-07T08:16:09Z,inbound,pstnphone,Bart Jansen,Returns ,True,True,False,False
+17856,2025-02-07T08:12:50Z,2025-02-07T08:15:04Z,2025-02-07T08:13:23Z,2025-02-07T08:17:10Z,inbound,pstnphone,Romy van Es,Customer service ,False,True,False,False
+17857,2025-02-07T08:18:06Z,,,2025-02-07T08:18:10Z,inbound,pstnphone,,,False,False,False,True
+17858,2025-02-07T08:18:13Z,2025-02-07T08:19:26Z,2025-02-07T08:18:50Z,2025-02-07T08:23:39Z,inbound,pstnphone,Romy van Es,Customer service ,False,True,False,False
+17859,2025-02-07T08:19:07Z,,,2025-02-07T08:19:25Z,inbound,pstnphone,,,False,False,False,True
+17860,2025-02-07T08:20:13Z,2025-02-07T08:24:51Z,2025-02-07T08:20:40Z,2025-02-07T08:28:26Z,inbound,pstnphone,Romy van Es,Customer service ,False,True,False,False
+17861,2025-02-07T08:20:57Z,,2025-02-07T08:21:38Z,2025-02-07T08:21:49Z,inbound,pstnphone,,Customer service ,False,False,False,True
+17862,2025-02-07T08:28:05Z,,,2025-02-07T08:28:16Z,inbound,pstnphone,,,False,False,False,True
+17863,2025-02-07T08:31:53Z,,,2025-02-07T08:33:57Z,inbound,pstnphone,,,False,False,False,True
+17864,2025-02-07T08:35:47Z,2025-02-07T08:37:15Z,2025-02-07T08:36:45Z,2025-02-07T09:04:17Z,inbound,pstnphone,Sierk van der Velde,Technical service ,False,True,False,False
+17865,2025-02-07T08:36:06Z,2025-02-07T08:36:58Z,2025-02-07T08:36:45Z,2025-02-07T08:39:38Z,inbound,pstnphone,Bart Jansen,Returns ,True,True,False,False
+17866,2025-02-07T08:36:31Z,2025-02-07T08:37:14Z,2025-02-07T08:37:00Z,2025-02-07T08:41:06Z,inbound,pstnphone,Romy van Es,Customer service ,True,True,False,False
+17867,2025-02-07T08:38:16Z,2025-02-07T08:39:20Z,2025-02-07T08:39:03Z,2025-02-07T08:50:15Z,inbound,pstnphone,Chris Kastanje,Technical service ,False,True,False,False
+17868,2025-02-07T08:40:33Z,2025-02-07T08:48:01Z,2025-02-07T08:41:24Z,2025-02-07T09:04:32Z,inbound,pstnphone,Roy Pietersz,Technical service ,False,True,False,False
+17869,2025-02-07T08:40:48Z,2025-02-07T08:51:04Z,2025-02-07T08:41:36Z,2025-02-07T09:01:58Z,inbound,pstnphone,Chris Kastanje,Technical service ,False,True,False,False
+17870,2025-02-07T08:41:05Z,2025-02-07T09:03:35Z,2025-02-07T08:42:45Z,2025-02-07T09:03:38Z,inbound,pstnphone,Jeremy Van t Hul,Technical service ,False,True,False,False
+17871,2025-02-07T08:42:55Z,2025-02-07T09:03:46Z,2025-02-07T08:56:53Z,2025-02-07T09:03:48Z,inbound,pstnphone,Jeremy Van t Hul,Technical service ,False,True,False,False
+17872,2025-02-07T08:47:18Z,2025-02-07T09:02:04Z,2025-02-07T08:47:41Z,2025-02-07T09:11:59Z,inbound,pstnphone,Chris Kastanje,Technical service ,False,True,False,False
+17873,2025-02-07T08:57:27Z,2025-02-07T09:04:26Z,2025-02-07T08:58:28Z,2025-02-07T09:06:48Z,inbound,pstnphone,Sierk van der Velde,Technical service ,False,True,False,False
+17874,2025-02-07T08:58:27Z,2025-02-07T08:59:08Z,2025-02-07T08:58:51Z,2025-02-07T09:01:44Z,inbound,pstnphone,Romy van Es,Customer service ,True,True,False,False
+17875,2025-02-07T09:00:12Z,2025-02-07T09:04:37Z,2025-02-07T09:00:34Z,2025-02-07T09:11:52Z,inbound,pstnphone,Roy Pietersz,Technical service ,False,True,False,False
+17876,2025-02-07T09:16:05Z,2025-02-07T09:17:05Z,2025-02-07T09:16:49Z,2025-02-07T09:22:52Z,inbound,pstnphone,Chris Kastanje,Technical service ,True,True,False,False
+17877,2025-02-07T09:27:36Z,2025-02-07T09:28:25Z,2025-02-07T09:28:16Z,2025-02-07T09:29:51Z,inbound,pstnphone,Romy van Es,Customer service ,True,True,False,False
+17878,2025-02-07T09:32:54Z,2025-02-07T09:33:53Z,2025-02-07T09:33:40Z,2025-02-07T09:35:42Z,inbound,pstnphone,Romy van Es,Customer service ,True,True,False,False
+17879,2025-02-07T09:35:44Z,2025-02-07T09:38:18Z,2025-02-07T09:36:07Z,2025-02-07T09:47:38Z,inbound,pstnphone,Sierk van der Velde,Technical service ,False,True,False,False
+17880,2025-02-07T09:42:04Z,,,2025-02-07T09:42:23Z,inbound,pstnphone,,,False,False,False,True
+17881,2025-02-07T09:42:37Z,2025-02-07T09:43:19Z,2025-02-07T09:43:02Z,2025-02-07T09:45:58Z,inbound,pstnphone,Roy Pietersz,Technical service ,True,True,False,False
+17882,2025-02-07T09:43:49Z,,,2025-02-07T09:47:02Z,inbound,pstnphone,,,False,False,False,True
+17883,2025-02-07T09:48:26Z,2025-02-07T09:49:29Z,2025-02-07T09:49:15Z,2025-02-07T09:53:31Z,inbound,pstnphone,Romy van Es,Customer service ,False,True,False,False
+17884,2025-02-07T09:56:09Z,2025-02-07T09:56:09Z,,2025-02-07T09:58:43Z,outbound,pstnphone,Roy Pietersz,,True,False,True,True
+17885,2025-02-07T09:56:19Z,2025-02-07T09:56:19Z,,2025-02-07T10:02:14Z,outbound,pstnphone,Sierk van der Velde,,True,False,True,True
+17886,2025-02-07T10:07:51Z,2025-02-07T10:08:49Z,2025-02-07T10:08:40Z,2025-02-07T10:11:13Z,inbound,pstnphone,Roy Pietersz,Technical service ,True,True,False,False
+17887,2025-02-07T10:11:45Z,2025-02-07T10:12:53Z,2025-02-07T10:12:42Z,2025-02-07T10:22:18Z,inbound,pstnphone,Chris Kastanje,Technical service ,False,True,False,False
+17888,2025-02-07T10:12:13Z,2025-02-07T10:13:19Z,2025-02-07T10:13:01Z,2025-02-07T10:17:01Z,inbound,pstnphone,Sierk van der Velde,Technical service ,False,True,False,False
+17889,2025-02-07T10:42:00Z,,,2025-02-07T10:42:02Z,inbound,pstnphone,,,False,False,False,True
+17890,2025-02-07T10:51:38Z,2025-02-07T10:52:25Z,2025-02-07T10:52:13Z,2025-02-07T11:00:40Z,inbound,pstnphone,Bart Jansen,Returns ,True,True,False,False
+17891,2025-02-07T11:00:54Z,2025-02-07T11:08:24Z,2025-02-07T11:01:22Z,2025-02-07T11:11:20Z,inbound,pstnphone,Romy van Es,Customer service ,False,True,False,False
+17892,2025-02-07T11:25:30Z,2025-02-07T11:25:30Z,,2025-02-07T11:28:49Z,outbound,pstnphone,Chris Kastanje,,True,False,True,True
+17893,2025-02-07T11:30:42Z,2025-02-07T11:30:42Z,,2025-02-07T11:43:27Z,outbound,pstnphone,Chris Kastanje,,True,False,True,True
+17894,2025-02-07T11:34:01Z,2025-02-07T11:35:13Z,2025-02-07T11:34:38Z,2025-02-07T11:39:59Z,inbound,pstnphone,Sierk van der Velde,Technical service ,False,True,False,False
+17895,2025-02-07T11:41:36Z,2025-02-07T11:41:36Z,,2025-02-07T11:43:39Z,outbound,pstnphone,Sierk van der Velde,,True,False,True,True
+17896,2025-02-07T11:46:18Z,2025-02-07T11:46:18Z,,2025-02-07T11:47:17Z,outbound,pstnphone,Romy van Es,,True,False,True,True
+17897,2025-02-07T11:49:31Z,2025-02-07T11:49:31Z,,2025-02-07T11:50:06Z,outbound,pstnphone,Chris Kastanje,,True,False,True,True
+17898,2025-02-07T11:50:07Z,2025-02-07T11:51:15Z,2025-02-07T11:50:58Z,2025-02-07T11:55:22Z,inbound,pstnphone,Sierk van der Velde,Technical service ,False,True,False,False
+17899,2025-02-07T11:50:28Z,2025-02-07T11:50:28Z,,2025-02-07T11:51:04Z,outbound,pstnphone,Chris Kastanje,,True,False,True,True
+17900,2025-02-07T11:57:20Z,2025-02-07T11:58:53Z,2025-02-07T11:58:09Z,2025-02-07T11:59:39Z,inbound,pstnphone,Sierk van der Velde,Technical service ,False,True,False,False
+17901,2025-02-07T12:29:01Z,,,2025-02-07T12:29:07Z,inbound,pstnphone,,,False,False,False,True
+17902,2025-02-07T12:33:17Z,,,2025-02-07T12:33:21Z,inbound,pstnphone,,,False,False,False,True
+17903,2025-02-07T12:45:11Z,,,2025-02-07T12:45:22Z,inbound,pstnphone,,,False,False,False,True
+17904,2025-02-07T13:15:19Z,,,2025-02-07T13:15:25Z,inbound,pstnphone,,,False,False,False,True
+17905,2025-02-07T13:24:00Z,2025-02-07T13:24:00Z,,2025-02-07T13:32:55Z,outbound,pstnphone,Chris Kastanje,,True,False,True,True
+17906,2025-02-07T13:36:46Z,,,2025-02-07T13:36:57Z,inbound,pstnphone,,,False,False,False,True
+17907,2025-02-07T13:40:35Z,,,2025-02-07T13:40:46Z,inbound,pstnphone,,,False,False,False,True
+17908,2025-02-07T13:48:23Z,2025-02-07T13:48:23Z,,2025-02-07T13:55:30Z,outbound,pstnphone,Chris Kastanje,,True,False,True,True
+17909,2025-02-07T14:41:16Z,,,2025-02-07T14:41:23Z,inbound,pstnphone,,,False,False,False,True
+17910,2025-02-07T14:46:41Z,,,2025-02-07T14:46:52Z,inbound,pstnphone,,,False,False,False,True
+17911,2025-02-07T15:43:01Z,,,2025-02-07T15:43:12Z,inbound,pstnphone,,,False,False,False,True
+17912,2025-02-10T08:40:17Z,,,2025-02-10T08:40:59Z,inbound,pstnphone,,,False,False,False,True
+17913,2025-02-10T08:41:00Z,,2025-02-10T08:41:34Z,2025-02-10T08:48:12Z,inbound,pstnphone,,Returns ,False,False,False,True
+17914,2025-02-10T09:04:35Z,2025-02-10T09:05:46Z,2025-02-10T09:05:39Z,2025-02-10T09:13:57Z,inbound,pstnphone,Roy Pietersz,Technical service ,False,True,False,False
+17915,2025-02-10T09:11:48Z,2025-02-10T09:13:04Z,2025-02-10T09:12:21Z,2025-02-10T09:15:03Z,inbound,pstnphone,Romy van Es,Customer service ,False,True,False,False
+17916,2025-02-10T09:14:35Z,2025-02-10T09:14:35Z,,2025-02-10T09:14:40Z,outbound,pstnphone,Roy Pietersz,,True,False,True,True
+17917,2025-02-10T09:15:02Z,2025-02-10T09:15:02Z,,2025-02-10T09:15:05Z,outbound,pstnphone,Roy Pietersz,,True,False,True,True
+17918,2025-02-10T09:21:33Z,2025-02-10T09:21:33Z,,2025-02-10T09:21:38Z,outbound,pstnphone,Roy Pietersz,,True,False,True,True
+17919,2025-02-10T09:23:43Z,2025-02-10T09:23:43Z,,2025-02-10T09:23:56Z,outbound,pstnphone,Roy Pietersz,,True,False,True,True
+17920,2025-02-10T09:26:52Z,2025-02-10T09:27:30Z,2025-02-10T09:27:16Z,2025-02-10T09:31:46Z,inbound,pstnphone,Romy van Es,Customer service ,True,True,False,False
+17921,2025-02-10T09:35:08Z,2025-02-10T09:44:05Z,2025-02-10T09:35:58Z,2025-02-10T10:03:25Z,inbound,pstnphone,Roy Pietersz,Technical service ,False,True,False,False
+17922,2025-02-10T10:49:05Z,2025-02-10T10:50:00Z,2025-02-10T10:49:54Z,2025-02-10T10:50:55Z,inbound,pstnphone,Roy Pietersz,Technical service ,True,True,False,False
+17923,2025-02-10T11:47:30Z,2025-02-10T11:48:12Z,2025-02-10T11:48:03Z,2025-02-10T11:53:05Z,inbound,pstnphone,Romy van Es,Customer service ,True,True,False,False
+17924,2025-02-10T11:52:22Z,2025-02-10T11:55:24Z,2025-02-10T11:52:46Z,2025-02-10T11:57:47Z,inbound,pstnphone,Romy van Es,Customer service ,False,True,False,False
+17925,2025-02-10T12:34:23Z,,,2025-02-10T12:34:35Z,inbound,pstnphone,,,False,False,False,True
+17926,2025-02-10T12:39:44Z,,,2025-02-10T12:39:55Z,inbound,pstnphone,,,False,False,False,True
+17927,2025-02-10T14:56:58Z,,,2025-02-10T14:57:09Z,inbound,pstnphone,,,False,False,False,True

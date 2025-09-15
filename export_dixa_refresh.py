@@ -49,6 +49,10 @@ HEADERS_EXPORTS = {
 DEFAULT_START_ISO = os.getenv("DIXA_START_ISO", "2020-01-01T00:00:00Z")
 DEFAULT_END_ISO = os.getenv("DIXA_END_ISO")  # optional
 
+# Windowed export config
+WINDOW_DAYS = int(os.getenv("DIXA_WINDOW_DAYS", "7"))  # 7 = week
+BASE_DELAY = float(os.getenv("DIXA_BASE_DELAY", "7.5"))  # seconds between windows
+
 
 def parse_iso_utc(dt_str: str) -> datetime:
     """Parse ISO string or YYYY-MM-DD into aware UTC datetime.
@@ -153,9 +157,20 @@ def _ms_to_iso(ms):
     return pd.to_datetime(int(ms), unit="ms", utc=True).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
+def ms_to_iso(ms):
+    return _ms_to_iso(ms)
+
+
 def fetch_exports_day(day_iso: str) -> List[Dict[str, Any]]:
     import requests
-    url = f"{BASE_EXPORTS}/conversation_export?created_after={day_iso}&created_before={day_iso}"
+    fields = (
+        "id,initial_channel,direction,created_at,queued_at,assigned_at,closed_at,"
+        "queue_id,queue_name,assignee_id,assignee_name"
+    )
+    url = (
+        f"{BASE_EXPORTS}/conversation_export?created_after={day_iso}&created_before={day_iso}"
+        f"&fields={fields}"
+    )
     r = requests.get(url, headers=HEADERS_EXPORTS, timeout=60)
     if r.status_code != 200:
         print("Exports HTTP:", r.status_code, r.text[:300]); return []
@@ -171,6 +186,7 @@ def map_export_row(rec: dict) -> Dict[str, Any]:
     return {
       "id": rec.get("id"),
       "createdAt": _ms_to_iso(rec.get("created_at")),
+      "queuedAt": _ms_to_iso(rec.get("queued_at")),
       "answeredAt": _ms_to_iso(rec.get("assigned_at")),
       "closedAt": _ms_to_iso(rec.get("closed_at")),
       "direction": rec.get("direction"),
@@ -194,6 +210,100 @@ def fetch_detail(conv_id: str) -> Optional[Dict[str, Any]]:
         return None
 
 
+def map_row(rec: dict) -> Dict[str, Any]:
+    def ms_to_int(ms):
+        return None if ms is None else int(ms)
+
+    created_ms  = rec.get("created_at")
+    answered_ms = rec.get("assigned_at")
+    queued_ms   = rec.get("queued_at")
+    closed_ms   = rec.get("closed_at")
+
+    ans1m = (
+        created_ms is not None and answered_ms is not None
+        and (ms_to_int(answered_ms) - ms_to_int(created_ms)) <= 60_000
+    )
+
+    taken_from_queue   = (queued_ms  is not None and answered_ms is not None)
+    taken_from_forward = (queued_ms  is None     and answered_ms is not None)
+    rejected_or_fwd    = (answered_ms is None) or taken_from_forward
+
+    return {
+      "id": rec.get("id"),
+      "createdAt": ms_to_iso(created_ms),
+      "queued_at":   ms_to_iso(queued_ms),
+      "assigned_at": ms_to_iso(answered_ms),
+      "answeredAt": ms_to_iso(answered_ms),
+      "queuedAt":   ms_to_iso(queued_ms),
+      "closedAt":   ms_to_iso(closed_ms),
+      "direction": (rec.get("direction") or ""),
+      "channel":   (rec.get("initial_channel") or "").lower(),
+      "assigneeName": rec.get("assignee_name"),
+      "queueName":    rec.get("queue_name"),
+      "AnsweredWithin1Min": ans1m,
+      "TakenFromQueue":     taken_from_queue,
+      "TakenFromForward":   taken_from_forward,
+      "RejectedOrForwarded": rejected_or_fwd
+    }
+
+
+def date_windows(start_d: date, end_d: date, step_days: int):
+    cur = start_d
+    from datetime import timedelta
+    while cur <= end_d:
+        win_end = min(end_d, cur + timedelta(days=step_days - 1))
+        yield cur, win_end
+        cur = win_end + timedelta(days=1)
+
+
+def fetch_exports_window(win_start_d: date, win_end_d: date, max_retries: int = 6) -> List[Dict[str, Any]]:
+    import requests
+    created_after = win_start_d.isoformat()
+    created_before = win_end_d.isoformat()
+    fields = (
+        "id,initial_channel,direction,created_at,queued_at,assigned_at,closed_at,"
+        "queue_id,queue_name,assignee_id,assignee_name"
+    )
+    url = (
+        f"{BASE_EXPORTS}/conversation_export?created_after={created_after}&created_before={created_before}"
+        f"&fields={fields}"
+    )
+    delay = BASE_DELAY
+    tries = 0
+    while True:
+        r = requests.get(url, headers=HEADERS_EXPORTS, timeout=60)
+        if r.status_code == 200:
+            try:
+                data = r.json()
+            except Exception:
+                return []
+            return data if isinstance(data, list) else data.get("data", [])
+        if r.status_code == 429:
+            ra = r.headers.get("Retry-After")
+            try:
+                wait = float(ra) if ra else delay
+            except Exception:
+                wait = delay
+            wait = max(wait, BASE_DELAY)
+            print(f"429 rate limited, waiting {wait:.1f}s ...")
+            time.sleep(wait)
+            tries += 1
+            delay = min(delay * 1.5, 60)
+            if tries >= max_retries:
+                print("Giving up window due to repeated 429")
+                return []
+            continue
+        if 500 <= r.status_code < 600:
+            time.sleep(delay)
+            tries += 1
+            if tries >= max_retries:
+                print(f"Server error {r.status_code}, giving up")
+                return []
+            continue
+        print(f"Exports HTTP {r.status_code}: {r.text[:200]}")
+        return []
+
+
 def compute_columns(df: pd.DataFrame) -> pd.DataFrame:
     if df.empty:
         # Ensure columns exist
@@ -211,19 +321,37 @@ def compute_columns(df: pd.DataFrame) -> pd.DataFrame:
     created = pd.to_datetime(df["createdAt"], utc=True, errors="coerce") if "createdAt" in df.columns else pd.Series(pd.NaT, index=df.index)
     answered = pd.to_datetime(df.get("answeredAt"), utc=True, errors="coerce")
 
-    # Computed
+    # Computed using enriched fields where available
     within_1m = (answered - created).dt.total_seconds() <= 60
     within_1m = within_1m.fillna(False)
 
-    assignment_reason = df.get("assignmentReason").fillna("")
-    taken_from_queue = assignment_reason == "queue"
-    taken_from_forward = assignment_reason == "forward"
-    rejected_or_forwarded = answered.isna() | assignment_reason.isin(["forward", "rejected"])  # type: ignore[attr-defined]
+    # Prefer 'assignment.reason' if present; fallback to 'assignmentReason'; else empty string
+    if "assignment.reason" in df.columns:
+        assignment_reason_series = df["assignment.reason"].fillna("")
+    elif "assignmentReason" in df.columns:
+        assignment_reason_series = df["assignmentReason"].fillna("")
+    else:
+        assignment_reason_series = pd.Series([""] * len(df), index=df.index)
+
+    assignment_reason_lower = assignment_reason_series.astype(str).str.lower()
+    taken_from_queue = assignment_reason_lower == "queue"
+    taken_from_forward = assignment_reason_lower == "forward"
+    rejected_or_forwarded = answered.isna() | assignment_reason_lower.isin(["forward", "rejected"])  # type: ignore[attr-defined]
 
     df["AnsweredWithin1Min"] = within_1m
     df["TakenFromQueue"] = taken_from_queue
     df["TakenFromForward"] = taken_from_forward
     df["RejectedOrForwarded"] = rejected_or_forwarded
+
+    # FairTTASeconds: time-to-answer from queuedAt (fallback createdAt) to answeredAt (fallback assignment.assignedAt)
+    queued = pd.to_datetime(df.get("queuedAt"), utc=True, errors="coerce") if "queuedAt" in df.columns else pd.Series(pd.NaT, index=df.index)
+    assigned_detail = pd.to_datetime(df.get("assignment.assignedAt"), utc=True, errors="coerce") if "assignment.assignedAt" in df.columns else pd.Series(pd.NaT, index=df.index)
+    effective_answered = answered.combine_first(assigned_detail)
+    start_time = queued.combine_first(created)
+    fair_seconds = (effective_answered - start_time).dt.total_seconds()
+    # If no answered timestamp at all, leave empty (NaN)
+    fair_seconds = fair_seconds.where(~effective_answered.isna(), other=pd.NA)
+    df["FairTTASeconds"] = fair_seconds
 
     return df
 
@@ -248,7 +376,6 @@ def main(argv: Optional[List[str]] = None) -> None:
 
     all_rows: List[Dict[str, Any]] = []
 
-    day = start_d
     processed = 0
     # Output mode: default single-file unless --daily-files explicitly set
     write_daily = bool(args.daily_files)
@@ -258,38 +385,56 @@ def main(argv: Optional[List[str]] = None) -> None:
     daily_dir = Path("data/dixa_daily")
     daily_dir.mkdir(parents=True, exist_ok=True)
 
-    while day <= end_d:
+    for (w_start, w_end) in date_windows(start_d, end_d, WINDOW_DAYS):
         processed += 1
-        print(f"Day {processed}/{total_days}: {day.isoformat()} ...", end=" ")
+        win_label = f"{w_start.isoformat()}->{w_end.isoformat()}"
+        print(f"Window {win_label} ...", end=" ")
         sys.stdout.flush()
 
-        # Fetch via Exports API for this day
-        rows_raw = fetch_exports_day(day.isoformat())
-        day_rows = [to_row(x) for x in rows_raw]
-        # Optional channel filter
+        rows_raw = fetch_exports_window(w_start, w_end)
+        if not rows_raw:
+            print("no rows (skipping write)")
+            sys.stdout.flush()
+            time.sleep(BASE_DELAY)
+            continue
+
+        rows = [map_row(x) for x in rows_raw]
         if (args.channel or "") != "":
-            day_rows = [r for r in day_rows if (r.get("channel") or "") == str(args.channel).lower()]
-        # Optional enrichment (state/answeredAt) - could be toggled later
-        # for r in day_rows:
-        #     det = fetch_detail(r.get("id"))
-        #     if det:
-        #         r["state"] = det.get("state")
-        #         r["answeredAt"] = det.get("answeredAt") or r.get("answeredAt")
-        print("Exports day", day.isoformat(), "rows:", len(day_rows))
+            rows = [r for r in rows if (r.get("channel") or "") == str(args.channel).lower()]
+
+        # Detail enrichment per conversation id
+        for r in rows:
+            conv_id = r.get("id")
+            if not conv_id:
+                continue
+            try:
+                det = fetch_detail(conv_id)
+            except Exception:
+                det = None
+            if not det:
+                continue
+            ans = det.get("answeredAt")
+            if ans:
+                r["answeredAt"] = ans
+            assignment = det.get("assignment") or {}
+            r["assignment.assignedAt"] = assignment.get("assignedAt")
+            r["assignment.reason"] = assignment.get("reason")
+            if "offeredAt" in assignment:
+                r["assignment.offeredAt"] = assignment.get("offeredAt")
+            time.sleep(0.1)
+
+        print(f"{len(rows)} rows")
         sys.stdout.flush()
-        if write_daily:
-            # Write per-day CSV
-            out = daily_dir / f"conversations_{day.isoformat()}.csv"
-            df_day = pd.DataFrame(day_rows)
+
+        if write_daily and rows:
+            out = daily_dir / f"conversations_{w_start.isoformat()}__{w_end.isoformat()}.csv"
+            df_day = pd.DataFrame(rows)
             df_day = compute_columns(df_day)
             df_day.to_csv(out, index=False, encoding="utf-8")
-        if write_single:
-            all_rows.extend(day_rows)
+        if write_single and rows:
+            all_rows.extend(rows)
 
-        # Courtesy delay between days
-        time.sleep(0.05)
-
-        day = day + timedelta(days=1)
+        time.sleep(BASE_DELAY)
 
     if write_single:
         if not all_rows:
@@ -312,8 +457,29 @@ def main(argv: Optional[List[str]] = None) -> None:
 
         # Write CSV (single file)
         if args.single_file:
+            # Ensure required export columns exist and in order
+            required_cols = [
+                "createdAt",
+                "queued_at",
+                "assigned_at",
+                "answeredAt",
+                "assignmentReason",
+                "AnsweredWithin1Min",
+                "TakenFromQueue",
+                "TakenFromForward",
+                "RejectedOrForwarded",
+                "FairTTASeconds",
+            ]
+            # Backfill assignmentReason from assignment.reason if missing
+            if "assignmentReason" not in df_all.columns and "assignment.reason" in df_all.columns:
+                df_all["assignmentReason"] = df_all["assignment.reason"]
+            # Add any missing required columns as empty
+            for c in required_cols:
+                if c not in df_all.columns:
+                    df_all[c] = pd.NA
+            df_export = df_all.reindex(columns=required_cols)
             out = "conversations_ytd.csv"
-            df_all.to_csv(out, index=False, encoding="utf-8")
+            df_export.to_csv(out, index=False, encoding="utf-8")
 
         # Summary
         total_calls = len(df_all)

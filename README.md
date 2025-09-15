@@ -96,6 +96,23 @@ python export_dixa_refresh.py --range 2025-06-01 2025-06-03 --daily-files
 
 Power BI: gebruik Folder.Files op `data/dixa_daily`. Calendar: `Calendar = CALENDAR(DATE(2020,1,1), TODAY()+1)`. Mark as Date Table.
 
+### Stappenplan (korte handleiding)
+
+1. Draai `export_dixa_refresh.py` om `conversations_ytd.csv` te genereren.
+2. Open Power BI Desktop, kies Get Data → Text/CSV en selecteer dit bestand.
+3. Stel kolomtypen in:
+   - createdAt, queued_at, answeredAt: Date/Time
+   - AnsweredWithin1Min, TakenFromQueue, TakenFromForward, RejectedOrForwarded: True/False
+   - FairTTASeconds: Decimal Number
+4. Maak measures (DAX) zoals:
+   - AantalGesprekken = COUNTROWS('Table')
+   - Perc_AnsweredWithin1Min = DIVIDE(CALCULATE(COUNTROWS('Table'), 'Table'[AnsweredWithin1Min] = TRUE()), [AantalGesprekken])
+   - Perc_TakenFromQueue = DIVIDE(CALCULATE(COUNTROWS('Table'), 'Table'[TakenFromQueue] = TRUE()), [AantalGesprekken])
+   - Perc_TakenFromForward = DIVIDE(CALCULATE(COUNTROWS('Table'), 'Table'[TakenFromForward] = TRUE()), [AantalGesprekken])
+   - Perc_RejectedOrForwarded = DIVIDE(CALCULATE(COUNTROWS('Table'), 'Table'[RejectedOrForwarded] = TRUE()), [AantalGesprekken])
+   - Gem_FairTTA = AVERAGE('Table'[FairTTASeconds])
+5. Bouw een matrix-visual met `assigneeName` op de rijen en bovenstaande measures in de kolommen om agenten te vergelijken.
+
 ### Smoke test / Expected results
 
 Run:
