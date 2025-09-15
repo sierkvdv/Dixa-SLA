@@ -25,6 +25,7 @@ from typing import Dict, List, Tuple, Any, Optional
 
 import pandas as pd
 import requests
+import numpy as np
 
 API_KEY = os.getenv("DIXA_TOKEN"); assert API_KEY, "Set DIXA_TOKEN"
 USE_BEARER = os.getenv("DIXA_USE_BEARER", "true").lower() == "true"
@@ -332,6 +333,19 @@ def compute_columns(df: pd.DataFrame) -> pd.DataFrame:
     answered = to_dt_series("answeredAt")
     assigned_plain = to_dt_series("assigned_at") if "assigned_at" in df.columns else pd.Series(pd.NaT, index=df.index)
     closed = to_dt_series("closedAt")
+    queued = to_dt_series("queuedAt")
+    assigned_detail = to_dt_series("assignment.assignedAt")
+
+    # Ensure the DataFrame columns themselves are UTC datetimes (per requirement)
+    df["closedAt"] = closed
+    df["answeredAt"] = answered
+    if "assigned_at" in df.columns:
+        df["assigned_at"] = assigned_plain
+
+    # Bepaal call origin
+    assignment_reason = df["assignment.reason"].str.lower().fillna("") if "assignment.reason" in df.columns else pd.Series([""] * len(df), index=df.index)
+    df["CallType"] = np.where(df["TakenFromQueue"], "queue",
+                        np.where(df["TakenFromForward"], "forward", "direct"))
 
     # Computed using enriched fields where available
     within_1m = (answered - created).dt.total_seconds() <= 60
@@ -355,34 +369,31 @@ def compute_columns(df: pd.DataFrame) -> pd.DataFrame:
     df["answeredAt"] = pd.to_datetime(df["answeredAt"], utc=True, errors="coerce")
     if "assigned_at" in df.columns:
         df["assigned_at"] = pd.to_datetime(df["assigned_at"], utc=True, errors="coerce")
-    # Primary: closed - answered (seconds) using the already-cast local Series
-    call_duration = (closed - answered).dt.total_seconds()
-    # Fallback for rows without answeredAt: use assigned_at when available
+    # Primary: closedAt - answeredAt in seconds (using DataFrame columns)
+    df["CallDurationSec"] = (df["closedAt"] - df["answeredAt"]).dt.total_seconds()
+    # Fallback: where answeredAt is missing, use assigned_at when available
     if "assigned_at" in df.columns:
-        fallback = (closed - assigned_plain).dt.total_seconds()
-        call_duration = call_duration.fillna(fallback)
-    df["CallDurationSec"] = call_duration
+        fallback = (df["closedAt"] - df["assigned_at"]).dt.total_seconds()
+        df["CallDurationSec"] = df["CallDurationSec"].fillna(fallback)
 
     df["AnsweredWithin1Min"] = within_1m
     df["TakenFromQueue"] = taken_from_queue
     df["TakenFromForward"] = taken_from_forward
     df["RejectedOrForwarded"] = rejected_or_forwarded
 
-    # CallType derived from assignment reason (queue/forward/direct)
+    # CallType: queue if queuedAt exists; forward if assignment.reason == 'forward'; else direct
     call_type = pd.Series("direct", index=df.index)
-    call_type = call_type.mask(assignment_reason_lower == "queue", "queue")
+    call_type = call_type.mask(~queued.isna(), "queue")
     call_type = call_type.mask(assignment_reason_lower == "forward", "forward")
     df["CallType"] = call_type
 
     # Binnen1MinFair: FairTTASeconds <= 60 and CallType == 'direct'
-    fair = pd.to_numeric(df.get("FairTTASeconds"), errors="coerce")
-    df["Binnen1MinFair"] = (fair <= 60) & (df["CallType"].astype(str) == "direct")
+    fair = pd.to_numeric(df.get("FairTTASeconds"), errors="coerce") if "FairTTASeconds" in df.columns else pd.Series([pd.NA] * len(df), index=df.index)
+    df["Binnen1MinFair"] = (fair <= 60) & (df["CallType"] == "direct")
 
     # CallDurationSec already computed above
 
     # FairTTASeconds: time-to-answer from queuedAt (fallback createdAt) to answeredAt (fallback assignment.assignedAt)
-    queued = to_dt_series("queuedAt")
-    assigned_detail = to_dt_series("assignment.assignedAt")
     effective_answered = answered.combine_first(assigned_detail)
     start_time = queued.combine_first(created)
     # Compute fair seconds using datetime-aware Series with aligned dtypes

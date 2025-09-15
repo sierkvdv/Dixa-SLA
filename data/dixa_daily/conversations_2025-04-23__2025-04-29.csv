@@ -1,361 +1,361 @@
-id,createdAt,queued_at,assigned_at,answeredAt,queuedAt,closedAt,direction,channel,assigneeName,queueName,AnsweredWithin1Min,TakenFromQueue,TakenFromForward,RejectedOrForwarded,CallDurationSec,CallType,Binnen1MinFair,FairTTASeconds
-21723,2025-04-23T06:49:33Z,,,,,2025-04-23 06:49:40+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21724,2025-04-23T06:55:45Z,,,,,2025-04-23 06:55:55+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21725,2025-04-23T06:56:10Z,,,,,2025-04-23 06:56:16+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21726,2025-04-23T07:02:20Z,2025-04-23T07:03:08Z,2025-04-23 07:03:23+00:00,2025-04-23 07:03:23+00:00,2025-04-23T07:03:08Z,2025-04-23 07:08:10+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,287.0,direct,False,15.0
-21727,2025-04-23T07:03:29Z,2025-04-23T07:04:12Z,2025-04-23 07:09:54+00:00,2025-04-23 07:09:54+00:00,2025-04-23T07:04:12Z,2025-04-23 07:20:37+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,643.0,direct,False,342.0
-21728,2025-04-23T07:07:00Z,2025-04-23T07:07:52Z,2025-04-23 07:09:53+00:00,2025-04-23 07:09:53+00:00,2025-04-23T07:07:52Z,2025-04-23 07:12:51+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,178.0,direct,False,121.0
-21729,2025-04-23T07:08:51Z,2025-04-23T07:09:56Z,,,2025-04-23T07:09:56Z,2025-04-23 07:15:18+00:00,inbound,pstnphone,,Customer service ,False,False,False,True,,direct,False,
-21730,2025-04-23T07:08:55Z,2025-04-23T07:09:51Z,2025-04-23 07:13:06+00:00,2025-04-23 07:13:06+00:00,2025-04-23T07:09:51Z,2025-04-23 07:16:13+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,187.0,direct,False,195.0
-21731,2025-04-23T07:10:24Z,2025-04-23T07:11:12Z,2025-04-23 07:16:21+00:00,2025-04-23 07:16:21+00:00,2025-04-23T07:11:12Z,2025-04-23 07:19:33+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,192.0,direct,False,309.0
-21732,2025-04-23T07:13:08Z,2025-04-23T07:13:57Z,2025-04-23 07:19:38+00:00,2025-04-23 07:19:38+00:00,2025-04-23T07:13:57Z,2025-04-23 07:25:30+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,352.0,direct,False,341.0
-21733,2025-04-23T07:14:06Z,2025-04-23T07:15:22Z,2025-04-23 07:15:30+00:00,2025-04-23 07:15:30+00:00,2025-04-23T07:15:22Z,2025-04-23 07:23:44+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,494.0,direct,False,8.0
-21734,2025-04-23T07:15:26Z,2025-04-23T07:16:39Z,2025-04-23 07:20:41+00:00,2025-04-23 07:20:41+00:00,2025-04-23T07:16:39Z,2025-04-23 07:25:47+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,306.0,direct,False,242.0
-21735,2025-04-23T07:17:30Z,2025-04-23T07:18:17Z,2025-04-23 07:25:56+00:00,2025-04-23 07:25:56+00:00,2025-04-23T07:18:17Z,2025-04-23 07:27:48+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,112.0,direct,False,459.0
-21736,2025-04-23T07:17:31Z,2025-04-23T07:18:39Z,2025-04-23 07:27:27+00:00,2025-04-23 07:27:27+00:00,2025-04-23T07:18:39Z,2025-04-23 07:34:20+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,413.0,direct,False,528.0
-21737,2025-04-23T07:19:18Z,2025-04-23T07:20:18Z,2025-04-23 07:20:26+00:00,2025-04-23 07:20:26+00:00,2025-04-23T07:20:18Z,2025-04-23 07:29:28+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,False,False,False,False,542.0,direct,False,8.0
-21738,2025-04-23T07:20:57Z,2025-04-23T07:21:45Z,2025-04-23 07:28:13+00:00,2025-04-23 07:28:13+00:00,2025-04-23T07:21:45Z,2025-04-23 07:31:40+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,207.0,direct,False,388.0
-21739,2025-04-23T07:21:27Z,2025-04-23T07:22:30Z,2025-04-23 07:36:06+00:00,2025-04-23 07:36:06+00:00,2025-04-23T07:22:30Z,2025-04-23 07:37:08+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,62.0,direct,False,816.0
-21740,2025-04-23T07:26:35Z,2025-04-23T07:27:49Z,2025-04-23 07:32:05+00:00,2025-04-23 07:32:05+00:00,2025-04-23T07:27:49Z,2025-04-23 07:36:48+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,283.0,direct,False,256.0
-21741,2025-04-23T07:27:01Z,,,,,2025-04-23 07:27:16+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21742,2025-04-23T07:29:17Z,2025-04-23T07:30:27Z,2025-04-23 07:37:39+00:00,2025-04-23 07:37:39+00:00,2025-04-23T07:30:27Z,2025-04-23 07:44:18+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,399.0,direct,False,432.0
-21743,2025-04-23T07:32:44Z,2025-04-23T07:33:31Z,2025-04-23 07:37:12+00:00,2025-04-23 07:37:12+00:00,2025-04-23T07:33:31Z,2025-04-23 07:41:39+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,267.0,direct,False,221.0
-21744,2025-04-23T07:35:46Z,2025-04-23T07:36:40Z,2025-04-23 07:42:07+00:00,2025-04-23 07:42:07+00:00,2025-04-23T07:36:40Z,2025-04-23 07:43:30+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,83.0,direct,False,327.0
-21745,2025-04-23T07:37:10Z,2025-04-23T07:38:03Z,2025-04-23 07:45:52+00:00,2025-04-23 07:45:52+00:00,2025-04-23T07:38:03Z,2025-04-23 07:50:16+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,264.0,direct,False,469.0
-21746,2025-04-23T07:40:08Z,2025-04-23T07:40:56Z,,,2025-04-23T07:40:56Z,2025-04-23 07:44:56+00:00,inbound,pstnphone,,Customer service ,False,False,False,True,,direct,False,
-21747,2025-04-23T07:44:27Z,2025-04-23T07:45:37Z,2025-04-23 07:45:55+00:00,2025-04-23 07:45:55+00:00,2025-04-23T07:45:37Z,2025-04-23 07:53:33+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,458.0,direct,False,18.0
-21748,2025-04-23T07:44:34Z,2025-04-23T07:45:44Z,2025-04-23 07:52:33+00:00,2025-04-23 07:52:33+00:00,2025-04-23T07:45:44Z,2025-04-23 07:58:39+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,366.0,direct,False,409.0
-21749,2025-04-23T07:45:10Z,,2025-04-23 07:45:10+00:00,2025-04-23 07:45:10+00:00,,2025-04-23 07:46:16+00:00,outbound,pstnphone,Chris Kastanje,,True,False,False,False,66.0,direct,False,0.0
-21750,2025-04-23T07:47:05Z,,2025-04-23 07:47:05+00:00,2025-04-23 07:47:05+00:00,,2025-04-23 07:48:18+00:00,outbound,pstnphone,Chris Kastanje,,True,False,False,False,73.0,direct,False,0.0
-21751,2025-04-23T07:49:51Z,2025-04-23T07:50:55Z,2025-04-23 07:54:22+00:00,2025-04-23 07:54:22+00:00,2025-04-23T07:50:55Z,2025-04-23 08:01:45+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,443.0,direct,False,207.0
-21752,2025-04-23T07:59:40Z,2025-04-23T08:00:50Z,2025-04-23 08:04:05+00:00,2025-04-23 08:04:05+00:00,2025-04-23T08:00:50Z,2025-04-23 08:10:12+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,367.0,direct,False,195.0
-21753,2025-04-23T07:59:49Z,2025-04-23T08:00:59Z,2025-04-23 08:04:21+00:00,2025-04-23 08:04:21+00:00,2025-04-23T08:00:59Z,2025-04-23 08:07:48+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,207.0,direct,False,202.0
-21754,2025-04-23T08:02:05Z,2025-04-23T08:03:33Z,2025-04-23 08:08:56+00:00,2025-04-23 08:08:56+00:00,2025-04-23T08:03:33Z,2025-04-23 08:13:50+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,294.0,direct,False,323.0
-21755,2025-04-23T08:02:36Z,,,,,2025-04-23 08:03:52+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21756,2025-04-23T08:13:41Z,2025-04-23T08:14:51Z,2025-04-23 08:15:27+00:00,2025-04-23 08:15:27+00:00,2025-04-23T08:14:51Z,2025-04-23 08:22:23+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,416.0,direct,False,36.0
-21757,2025-04-23T08:15:53Z,2025-04-23T08:16:46Z,2025-04-23 08:18:49+00:00,2025-04-23 08:18:49+00:00,2025-04-23T08:16:46Z,2025-04-23 08:24:46+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,357.0,direct,False,123.0
-21758,2025-04-23T08:19:01Z,2025-04-23T08:19:47Z,2025-04-23 08:25:39+00:00,2025-04-23 08:25:39+00:00,2025-04-23T08:19:47Z,2025-04-23 08:25:41+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,2.0,direct,False,352.0
-21759,2025-04-23T08:25:26Z,2025-04-23T08:26:07Z,2025-04-23 08:26:17+00:00,2025-04-23 08:26:17+00:00,2025-04-23T08:26:07Z,2025-04-23 08:30:55+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,True,False,False,False,278.0,direct,False,10.0
-21760,2025-04-23T08:26:50Z,,2025-04-23 08:26:50+00:00,2025-04-23 08:26:50+00:00,,2025-04-23 08:27:55+00:00,outbound,pstnphone,Sierk van der Velde,,True,False,False,False,65.0,direct,False,0.0
-21761,2025-04-23T08:29:47Z,2025-04-23T08:30:35Z,2025-04-23 08:30:49+00:00,2025-04-23 08:30:49+00:00,2025-04-23T08:30:35Z,2025-04-23 08:38:16+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,447.0,direct,False,14.0
-21762,2025-04-23T08:30:05Z,2025-04-23T08:31:09Z,2025-04-23 08:31:22+00:00,2025-04-23 08:31:22+00:00,2025-04-23T08:31:09Z,2025-04-23 08:37:15+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,353.0,direct,False,13.0
-21763,2025-04-23T08:30:10Z,2025-04-23T08:30:59Z,,,2025-04-23T08:30:59Z,2025-04-23 08:31:29+00:00,inbound,pstnphone,,Customer service ,False,False,False,True,,direct,False,
-21764,2025-04-23T08:35:33Z,,,,,2025-04-23 08:36:09+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21765,2025-04-23T08:38:21Z,,,,,2025-04-23 08:40:07+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21766,2025-04-23T08:40:46Z,2025-04-23T08:41:41Z,2025-04-23 08:41:55+00:00,2025-04-23 08:41:55+00:00,2025-04-23T08:41:41Z,2025-04-23 08:49:38+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,463.0,direct,False,14.0
-21767,2025-04-23T08:43:36Z,2025-04-23T08:44:24Z,2025-04-23 08:44:49+00:00,2025-04-23 08:44:49+00:00,2025-04-23T08:44:24Z,2025-04-23 08:51:10+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,381.0,direct,False,25.0
-21768,2025-04-23T08:45:18Z,2025-04-23T08:46:29Z,2025-04-23 08:51:57+00:00,2025-04-23 08:51:57+00:00,2025-04-23T08:46:29Z,2025-04-23 09:03:38+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,701.0,direct,False,328.0
-21769,2025-04-23T08:45:32Z,2025-04-23T08:47:22Z,2025-04-23 09:03:49+00:00,2025-04-23 09:03:49+00:00,2025-04-23T08:47:22Z,2025-04-23 09:07:58+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,249.0,direct,False,987.0
-21770,2025-04-23T08:47:51Z,2025-04-23T08:49:01Z,2025-04-23 09:03:53+00:00,2025-04-23 09:03:53+00:00,2025-04-23T08:49:01Z,2025-04-23 09:04:40+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,47.0,direct,False,892.0
-21771,2025-04-23T08:48:04Z,,,,,2025-04-23 08:48:05+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21772,2025-04-23T08:48:08Z,2025-04-23T08:49:18Z,,,2025-04-23T08:49:18Z,2025-04-23 08:50:27+00:00,inbound,pstnphone,,Technical service ,False,False,False,True,,direct,False,
-21773,2025-04-23T08:48:37Z,,2025-04-23 08:48:37+00:00,2025-04-23 08:48:37+00:00,,2025-04-23 08:50:49+00:00,outbound,pstnphone,Chris Kastanje,,True,False,False,False,132.0,direct,False,0.0
-21774,2025-04-23T08:49:08Z,2025-04-23T08:50:13Z,2025-04-23 08:52:08+00:00,2025-04-23 08:52:08+00:00,2025-04-23T08:50:13Z,2025-04-23 08:52:49+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,41.0,direct,False,115.0
-21775,2025-04-23T08:50:04Z,,2025-04-23 08:50:04+00:00,2025-04-23 08:50:04+00:00,,2025-04-23 08:51:09+00:00,outbound,pstnphone,Sierk van der Velde,,True,False,False,False,65.0,direct,False,0.0
-21776,2025-04-23T08:50:06Z,2025-04-23T08:50:59Z,2025-04-23 08:51:18+00:00,2025-04-23 08:51:18+00:00,2025-04-23T08:50:59Z,2025-04-23 09:03:39+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,741.0,direct,False,19.0
-21777,2025-04-23T08:50:19Z,2025-04-23T08:51:08Z,2025-04-23 08:56:28+00:00,2025-04-23 08:56:28+00:00,2025-04-23T08:51:08Z,2025-04-23 09:00:38+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,250.0,direct,False,320.0
-21778,2025-04-23T08:50:43Z,2025-04-23T08:51:41Z,2025-04-23 09:04:46+00:00,2025-04-23 09:04:46+00:00,2025-04-23T08:51:41Z,2025-04-23 09:15:44+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,658.0,direct,False,785.0
-21779,2025-04-23T08:52:33Z,2025-04-23T08:53:46Z,,,2025-04-23T08:53:46Z,2025-04-23 08:55:31+00:00,inbound,pstnphone,,Technical service ,False,False,False,True,,direct,False,
-21780,2025-04-23T08:52:43Z,2025-04-23T08:53:49Z,2025-04-23 09:08:02+00:00,2025-04-23 09:08:02+00:00,2025-04-23T08:53:49Z,2025-04-23 09:29:55+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,1313.0,direct,False,853.0
-21781,2025-04-23T09:03:53Z,2025-04-23T09:05:02Z,2025-04-23 09:23:51+00:00,2025-04-23 09:23:51+00:00,2025-04-23T09:05:02Z,2025-04-23 09:29:33+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,342.0,direct,False,1129.0
-21782,2025-04-23T09:04:59Z,2025-04-23T09:20:15Z,2025-04-23 09:49:36+00:00,2025-04-23 09:49:36+00:00,2025-04-23T09:20:15Z,2025-04-23 09:49:38+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,2.0,direct,False,1761.0
-21783,2025-04-23T09:07:55Z,2025-04-23T09:09:49Z,2025-04-23 09:30:03+00:00,2025-04-23 09:30:03+00:00,2025-04-23T09:09:49Z,2025-04-23 09:37:54+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,471.0,direct,False,1214.0
-21784,2025-04-23T09:08:13Z,2025-04-23T09:08:59Z,2025-04-23 09:11:44+00:00,2025-04-23 09:11:44+00:00,2025-04-23T09:08:59Z,2025-04-23 09:13:06+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,82.0,direct,False,165.0
-21785,2025-04-23T09:10:48Z,2025-04-23T09:11:40Z,2025-04-23 09:16:28+00:00,2025-04-23 09:16:28+00:00,2025-04-23T09:11:40Z,2025-04-23 09:18:56+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,148.0,direct,False,288.0
-21786,2025-04-23T09:13:01Z,2025-04-23T09:13:54Z,2025-04-23 09:19:02+00:00,2025-04-23 09:19:02+00:00,2025-04-23T09:13:54Z,2025-04-23 09:23:06+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,244.0,direct,False,308.0
-21787,2025-04-23T09:13:11Z,,,,,2025-04-23 09:13:44+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21788,2025-04-23T09:16:00Z,2025-04-23T09:17:11Z,2025-04-23 09:38:26+00:00,2025-04-23 09:38:26+00:00,2025-04-23T09:17:11Z,2025-04-23 09:48:32+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,606.0,direct,False,1275.0
-21789,2025-04-23T09:16:20Z,2025-04-23T09:17:09Z,2025-04-23 09:23:12+00:00,2025-04-23 09:23:12+00:00,2025-04-23T09:17:09Z,2025-04-23 09:25:57+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,165.0,direct,False,363.0
-21790,2025-04-23T09:17:35Z,,,,,2025-04-23 09:17:52+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21791,2025-04-23T09:17:44Z,2025-04-23T09:18:55Z,2025-04-23 09:35:06+00:00,2025-04-23 09:35:06+00:00,2025-04-23T09:18:55Z,2025-04-23 09:42:45+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,459.0,direct,False,971.0
-21792,2025-04-23T09:20:10Z,2025-04-23T09:21:09Z,2025-04-23 09:26:17+00:00,2025-04-23 09:26:17+00:00,2025-04-23T09:21:09Z,2025-04-23 09:28:47+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,150.0,direct,False,308.0
-21793,2025-04-23T09:31:12Z,2025-04-23T09:32:25Z,2025-04-23 09:39:28+00:00,2025-04-23 09:39:28+00:00,2025-04-23T09:32:25Z,2025-04-23 09:42:57+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,209.0,direct,False,423.0
-21794,2025-04-23T09:36:29Z,2025-04-23T09:37:22Z,2025-04-23 09:37:39+00:00,2025-04-23 09:37:39+00:00,2025-04-23T09:37:22Z,2025-04-23 09:43:05+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,326.0,direct,False,17.0
-21795,2025-04-23T09:39:14Z,2025-04-23T09:40:27Z,2025-04-23 09:44:20+00:00,2025-04-23 09:44:20+00:00,2025-04-23T09:40:27Z,2025-04-23 09:49:31+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,311.0,direct,False,233.0
-21796,2025-04-23T09:39:21Z,,,,,2025-04-23 09:39:34+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21797,2025-04-23T09:40:06Z,2025-04-23T09:45:26Z,2025-04-23 09:49:41+00:00,2025-04-23 09:49:41+00:00,2025-04-23T09:45:26Z,2025-04-23 09:49:42+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,1.0,direct,False,255.0
-21798,2025-04-23T09:44:14Z,2025-04-23T09:46:08Z,2025-04-23 09:51:55+00:00,2025-04-23 09:51:55+00:00,2025-04-23T09:46:08Z,2025-04-23 09:52:50+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,55.0,direct,False,347.0
-21799,2025-04-23T09:45:03Z,2025-04-23T09:46:13Z,2025-04-23 09:48:41+00:00,2025-04-23 09:48:41+00:00,2025-04-23T09:46:13Z,2025-04-23 10:11:20+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,1359.0,direct,False,148.0
-21800,2025-04-23T09:47:21Z,2025-04-23T09:48:09Z,2025-04-23 09:49:09+00:00,2025-04-23 09:49:09+00:00,2025-04-23T09:48:09Z,2025-04-23 09:51:17+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,128.0,direct,False,60.0
-21801,2025-04-23T09:48:27Z,,,,,2025-04-23 09:50:23+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21802,2025-04-23T09:50:00Z,2025-04-23T09:51:12Z,2025-04-23 09:51:28+00:00,2025-04-23 09:51:28+00:00,2025-04-23T09:51:12Z,2025-04-23 09:52:28+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,60.0,direct,False,16.0
-21803,2025-04-23T09:50:37Z,2025-04-23T09:51:38Z,2025-04-23 09:52:39+00:00,2025-04-23 09:52:39+00:00,2025-04-23T09:51:38Z,2025-04-23 09:57:29+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,290.0,direct,False,61.0
-21804,2025-04-23T09:53:18Z,2025-04-23T09:54:15Z,2025-04-23 09:54:43+00:00,2025-04-23 09:54:43+00:00,2025-04-23T09:54:15Z,2025-04-23 10:03:47+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,False,False,False,False,544.0,direct,False,28.0
-21805,2025-04-23T09:56:52Z,2025-04-23T09:57:45Z,2025-04-23 10:01:00+00:00,2025-04-23 10:01:00+00:00,2025-04-23T09:57:45Z,2025-04-23 10:01:34+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,34.0,direct,False,195.0
-21806,2025-04-23T09:57:56Z,2025-04-23T09:59:10Z,2025-04-23 10:07:41+00:00,2025-04-23 10:07:41+00:00,2025-04-23T09:59:10Z,2025-04-23 10:12:39+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,298.0,direct,False,511.0
-21807,2025-04-23T09:59:37Z,2025-04-23T10:00:41Z,2025-04-23 10:01:01+00:00,2025-04-23 10:01:01+00:00,2025-04-23T10:00:41Z,2025-04-23 10:02:13+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,72.0,direct,False,20.0
-21808,2025-04-23T10:01:41Z,,2025-04-23 10:01:41+00:00,2025-04-23 10:01:41+00:00,,2025-04-23 10:05:28+00:00,outbound,pstnphone,Chris Kastanje,,True,False,False,False,227.0,direct,False,0.0
-21809,2025-04-23T10:14:44Z,,2025-04-23 10:14:44+00:00,2025-04-23 10:14:44+00:00,,2025-04-23 10:18:50+00:00,outbound,pstnphone,Chris Kastanje,,True,False,False,False,246.0,direct,False,0.0
-21810,2025-04-23T10:17:23Z,2025-04-23T10:18:30Z,2025-04-23 10:18:42+00:00,2025-04-23 10:18:42+00:00,2025-04-23T10:18:30Z,2025-04-23 10:57:55+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,2353.0,direct,False,12.0
-21811,2025-04-23T10:28:03Z,2025-04-23T10:28:59Z,2025-04-23 10:31:57+00:00,2025-04-23 10:31:57+00:00,2025-04-23T10:28:59Z,2025-04-23 10:36:06+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,249.0,direct,False,178.0
-21812,2025-04-23T10:35:23Z,2025-04-23T10:36:31Z,2025-04-23 10:39:08+00:00,2025-04-23 10:39:08+00:00,2025-04-23T10:36:31Z,2025-04-23 10:44:14+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,306.0,direct,False,157.0
-21813,2025-04-23T11:20:50Z,,,,,2025-04-23 11:21:01+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21814,2025-04-23T11:32:24Z,,,,,2025-04-23 11:32:34+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21815,2025-04-23T12:45:13Z,,,,,2025-04-23 12:45:27+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21816,2025-04-23T12:50:34Z,,,,,2025-04-23 12:50:46+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21817,2025-04-23T12:51:40Z,,2025-04-23 12:51:40+00:00,2025-04-23 12:51:40+00:00,,2025-04-23 12:57:04+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,324.0,direct,False,0.0
-21818,2025-04-23T12:59:00Z,,,,,2025-04-23 12:59:11+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21819,2025-04-23T13:01:12Z,,2025-04-23 13:01:12+00:00,2025-04-23 13:01:12+00:00,,2025-04-23 13:07:50+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,398.0,direct,False,0.0
-21820,2025-04-23T13:06:31Z,,,,,2025-04-23 13:06:36+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21821,2025-04-23T13:22:33Z,,2025-04-23 13:22:33+00:00,2025-04-23 13:22:33+00:00,,2025-04-23 13:24:20+00:00,outbound,pstnphone,Chris Kastanje,,True,False,False,False,107.0,direct,False,0.0
-21822,2025-04-23T13:27:15Z,,,,,2025-04-23 13:27:22+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21823,2025-04-23T13:45:24Z,,,,,2025-04-23 13:45:35+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21824,2025-04-23T13:54:52Z,,2025-04-23 13:54:52+00:00,2025-04-23 13:54:52+00:00,,2025-04-23 13:58:07+00:00,outbound,pstnphone,Sierk van der Velde,,True,False,False,False,195.0,direct,False,0.0
-21825,2025-04-23T14:13:15Z,,,,,2025-04-23 14:13:28+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21826,2025-04-23T14:20:24Z,,2025-04-23 14:20:24+00:00,2025-04-23 14:20:24+00:00,,2025-04-23 14:49:15+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,1731.0,direct,False,0.0
-21827,2025-04-23T14:40:36Z,,,,,2025-04-23 14:40:47+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21828,2025-04-23T15:01:37Z,,,,,2025-04-23 15:01:41+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21829,2025-04-23T15:17:20Z,,,,,2025-04-23 15:17:31+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21830,2025-04-24T07:00:28Z,2025-04-24T07:01:10Z,2025-04-24 07:01:25+00:00,2025-04-24 07:01:25+00:00,2025-04-24T07:01:10Z,2025-04-24 07:06:46+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,True,False,False,False,321.0,direct,False,15.0
-21831,2025-04-24T07:05:43Z,2025-04-24T07:06:31Z,2025-04-24 07:10:14+00:00,2025-04-24 07:10:14+00:00,2025-04-24T07:06:31Z,2025-04-24 07:14:36+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,False,False,False,False,262.0,direct,False,223.0
-21832,2025-04-24T07:11:47Z,2025-04-24T07:12:45Z,2025-04-24 07:15:01+00:00,2025-04-24 07:15:01+00:00,2025-04-24T07:12:45Z,2025-04-24 07:31:38+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,997.0,direct,False,136.0
-21833,2025-04-24T07:14:50Z,2025-04-24T07:15:33Z,2025-04-24 07:31:45+00:00,2025-04-24 07:31:45+00:00,2025-04-24T07:15:33Z,2025-04-24 07:34:20+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,155.0,direct,False,972.0
-21834,2025-04-24T07:15:47Z,2025-04-24T07:16:31Z,2025-04-24 07:16:50+00:00,2025-04-24 07:16:50+00:00,2025-04-24T07:16:31Z,2025-04-24 07:19:32+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,False,False,False,False,162.0,direct,False,19.0
-21835,2025-04-24T07:18:27Z,,,,,2025-04-24 07:19:32+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21836,2025-04-24T07:19:39Z,2025-04-24T07:20:36Z,2025-04-24 07:20:45+00:00,2025-04-24 07:20:45+00:00,2025-04-24T07:20:36Z,2025-04-24 07:26:26+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,False,False,False,False,341.0,direct,False,9.0
-21837,2025-04-24T07:20:31Z,2025-04-24T07:21:24Z,2025-04-24 07:22:42+00:00,2025-04-24 07:22:42+00:00,2025-04-24T07:21:24Z,2025-04-24 07:28:32+00:00,inbound,pstnphone,Bart Jansen,Returns ,False,False,False,False,350.0,direct,False,78.0
-21838,2025-04-24T07:21:18Z,2025-04-24T07:29:14Z,2025-04-24 07:34:23+00:00,2025-04-24 07:34:23+00:00,2025-04-24T07:29:14Z,2025-04-24 07:34:25+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,2.0,direct,False,309.0
-21839,2025-04-24T07:21:45Z,2025-04-24T07:22:37Z,2025-04-24 07:29:48+00:00,2025-04-24 07:29:48+00:00,2025-04-24T07:22:37Z,2025-04-24 07:34:22+00:00,inbound,pstnphone,Bart Jansen,Returns ,False,False,False,False,274.0,direct,False,431.0
-21840,2025-04-24T07:21:56Z,2025-04-24T07:22:46Z,2025-04-24 07:27:48+00:00,2025-04-24 07:27:48+00:00,2025-04-24T07:22:46Z,2025-04-24 07:29:34+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,False,False,False,False,106.0,direct,False,302.0
-21841,2025-04-24T07:32:21Z,,2025-04-24 07:32:21+00:00,2025-04-24 07:32:21+00:00,,2025-04-24 07:37:08+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,287.0,direct,False,0.0
-21842,2025-04-24T07:36:45Z,2025-04-24T07:37:35Z,2025-04-24 07:37:42+00:00,2025-04-24 07:37:42+00:00,2025-04-24T07:37:35Z,2025-04-24 07:40:29+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,True,False,False,False,167.0,direct,False,7.0
-21843,2025-04-24T07:37:02Z,2025-04-24T07:38:03Z,2025-04-24 07:40:25+00:00,2025-04-24 07:40:25+00:00,2025-04-24T07:38:03Z,2025-04-24 07:45:21+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,296.0,direct,False,142.0
-21844,2025-04-24T07:37:51Z,,2025-04-24 07:37:51+00:00,2025-04-24 07:37:51+00:00,,2025-04-24 07:40:21+00:00,outbound,pstnphone,Roy Pietersz,,True,False,False,False,150.0,direct,False,0.0
-21845,2025-04-24T07:38:49Z,,,,,2025-04-24 07:44:15+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21846,2025-04-24T07:48:45Z,,2025-04-24 07:48:45+00:00,2025-04-24 07:48:45+00:00,,2025-04-24 07:51:09+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,144.0,direct,False,0.0
-21847,2025-04-24T07:53:43Z,2025-04-24T07:54:29Z,2025-04-24 07:54:38+00:00,2025-04-24 07:54:38+00:00,2025-04-24T07:54:29Z,2025-04-24 07:56:07+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,True,False,False,False,89.0,direct,False,9.0
-21848,2025-04-24T07:55:40Z,,2025-04-24 07:55:40+00:00,2025-04-24 07:55:40+00:00,,2025-04-24 07:59:49+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,249.0,direct,False,0.0
-21849,2025-04-24T07:56:39Z,2025-04-24T07:57:53Z,2025-04-24 07:58:39+00:00,2025-04-24 07:58:39+00:00,2025-04-24T07:57:53Z,2025-04-24 08:04:09+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,False,False,False,False,330.0,direct,False,46.0
-21850,2025-04-24T08:01:00Z,,,,,2025-04-24 08:02:01+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21851,2025-04-24T08:01:34Z,,,,,2025-04-24 08:01:42+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21852,2025-04-24T08:06:07Z,2025-04-24T08:06:52Z,2025-04-24 08:06:58+00:00,2025-04-24 08:06:58+00:00,2025-04-24T08:06:52Z,2025-04-24 08:10:33+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,True,False,False,False,215.0,direct,False,6.0
-21853,2025-04-24T08:07:14Z,2025-04-24T08:08:25Z,2025-04-24 08:10:37+00:00,2025-04-24 08:10:37+00:00,2025-04-24T08:08:25Z,2025-04-24 08:22:11+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,694.0,direct,False,132.0
-21854,2025-04-24T08:12:22Z,2025-04-24T08:13:17Z,2025-04-24 08:23:06+00:00,2025-04-24 08:23:06+00:00,2025-04-24T08:13:17Z,2025-04-24 08:26:21+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,195.0,direct,False,589.0
-21855,2025-04-24T08:14:00Z,2025-04-24T08:14:33Z,2025-04-24 08:14:57+00:00,2025-04-24 08:14:57+00:00,2025-04-24T08:14:33Z,2025-04-24 08:23:20+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,True,False,False,False,503.0,direct,False,24.0
-21856,2025-04-24T08:16:43Z,2025-04-24T08:17:48Z,2025-04-24 08:26:25+00:00,2025-04-24 08:26:25+00:00,2025-04-24T08:17:48Z,2025-04-24 08:28:39+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,134.0,direct,False,517.0
-21857,2025-04-24T08:18:20Z,2025-04-24T08:25:36Z,2025-04-24 08:28:42+00:00,2025-04-24 08:28:42+00:00,2025-04-24T08:25:36Z,2025-04-24 08:28:44+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,2.0,direct,False,186.0
-21858,2025-04-24T08:19:15Z,2025-04-24T08:20:04Z,2025-04-24 08:20:20+00:00,2025-04-24 08:20:20+00:00,2025-04-24T08:20:04Z,2025-04-24 08:24:07+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,False,False,False,False,227.0,direct,False,16.0
-21859,2025-04-24T08:39:10Z,,,,,2025-04-24 08:43:02+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21860,2025-04-24T08:41:00Z,2025-04-24T08:41:57Z,2025-04-24 08:42:36+00:00,2025-04-24 08:42:36+00:00,2025-04-24T08:41:57Z,2025-04-24 08:48:45+00:00,inbound,pstnphone,Bart Jansen,Returns ,False,False,False,False,369.0,direct,False,39.0
-21861,2025-04-24T08:41:57Z,2025-04-24T08:42:46Z,2025-04-24 08:42:55+00:00,2025-04-24 08:42:55+00:00,2025-04-24T08:42:46Z,2025-04-24 08:44:14+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,True,False,False,False,79.0,direct,False,9.0
-21862,2025-04-24T08:44:05Z,,,,,2025-04-24 08:46:18+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21863,2025-04-24T08:44:48Z,2025-04-24T08:45:37Z,2025-04-24 08:47:28+00:00,2025-04-24 08:47:28+00:00,2025-04-24T08:45:37Z,2025-04-24 08:49:24+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,False,False,False,False,116.0,direct,False,111.0
-21864,2025-04-24T08:46:46Z,2025-04-24T08:47:34Z,2025-04-24 08:51:41+00:00,2025-04-24 08:51:41+00:00,2025-04-24T08:47:34Z,2025-04-24 08:53:32+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,False,False,False,False,111.0,direct,False,247.0
-21865,2025-04-24T09:01:59Z,2025-04-24T09:03:51Z,2025-04-24 09:04:14+00:00,2025-04-24 09:04:14+00:00,2025-04-24T09:03:51Z,2025-04-24 09:06:07+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,113.0,direct,False,23.0
-21866,2025-04-24T09:05:16Z,2025-04-24T09:06:08Z,2025-04-24 09:06:17+00:00,2025-04-24 09:06:17+00:00,2025-04-24T09:06:08Z,2025-04-24 09:13:22+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,False,False,False,False,425.0,direct,False,9.0
-21867,2025-04-24T09:13:15Z,2025-04-24T09:14:26Z,2025-04-24 09:15:06+00:00,2025-04-24 09:15:06+00:00,2025-04-24T09:14:26Z,2025-04-24 09:21:41+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,395.0,direct,False,40.0
-21868,2025-04-24T09:21:28Z,2025-04-24T09:22:21Z,2025-04-24 09:22:34+00:00,2025-04-24 09:22:34+00:00,2025-04-24T09:22:21Z,2025-04-24 09:28:10+00:00,inbound,pstnphone,Bart Jansen,Returns ,False,False,False,False,336.0,direct,False,13.0
-21869,2025-04-24T09:22:53Z,2025-04-24T09:23:42Z,2025-04-24 09:23:51+00:00,2025-04-24 09:23:51+00:00,2025-04-24T09:23:42Z,2025-04-24 09:26:31+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,True,False,False,False,160.0,direct,False,9.0
-21870,2025-04-24T09:23:19Z,2025-04-24T09:24:28Z,2025-04-24 09:24:36+00:00,2025-04-24 09:24:36+00:00,2025-04-24T09:24:28Z,2025-04-24 09:28:11+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,215.0,direct,False,8.0
-21871,2025-04-24T09:25:20Z,2025-04-24T09:26:15Z,2025-04-24 09:26:35+00:00,2025-04-24 09:26:35+00:00,2025-04-24T09:26:15Z,2025-04-24 09:28:26+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,False,False,False,False,111.0,direct,False,20.0
-21872,2025-04-24T09:31:22Z,2025-04-24T09:32:31Z,2025-04-24 09:32:53+00:00,2025-04-24 09:32:53+00:00,2025-04-24T09:32:31Z,2025-04-24 09:36:29+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,216.0,direct,False,22.0
-21873,2025-04-24T09:32:54Z,2025-04-24T09:34:02Z,2025-04-24 09:36:33+00:00,2025-04-24 09:36:33+00:00,2025-04-24T09:34:02Z,2025-04-24 09:40:13+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,220.0,direct,False,151.0
-21874,2025-04-24T09:36:49Z,2025-04-24T09:37:38Z,2025-04-24 09:37:47+00:00,2025-04-24 09:37:47+00:00,2025-04-24T09:37:38Z,2025-04-24 09:39:36+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,True,False,False,False,109.0,direct,False,9.0
-21875,2025-04-24T09:37:08Z,2025-04-24T09:37:53Z,2025-04-24 09:44:41+00:00,2025-04-24 09:44:41+00:00,2025-04-24T09:37:53Z,2025-04-24 09:57:13+00:00,inbound,pstnphone,Bart Jansen,Returns ,False,False,False,False,752.0,direct,False,408.0
-21876,2025-04-24T09:40:52Z,2025-04-24T09:41:42Z,2025-04-24 09:41:50+00:00,2025-04-24 09:41:50+00:00,2025-04-24T09:41:42Z,2025-04-24 09:43:46+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,True,False,False,False,116.0,direct,False,8.0
-21877,2025-04-24T09:48:42Z,2025-04-24T09:49:38Z,2025-04-24 09:49:45+00:00,2025-04-24 09:49:45+00:00,2025-04-24T09:49:38Z,2025-04-24 09:58:31+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,526.0,direct,False,7.0
-21878,2025-04-24T09:52:26Z,2025-04-24T09:53:38Z,2025-04-24 10:00:55+00:00,2025-04-24 10:00:55+00:00,2025-04-24T09:53:38Z,2025-04-24 10:05:13+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,258.0,direct,False,437.0
-21879,2025-04-24T09:55:44Z,2025-04-24T09:56:43Z,2025-04-24 09:56:54+00:00,2025-04-24 09:56:54+00:00,2025-04-24T09:56:43Z,2025-04-24 09:58:28+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,False,False,False,False,94.0,direct,False,11.0
-21880,2025-04-24T09:56:41Z,2025-04-24T10:00:42Z,2025-04-24 10:07:40+00:00,2025-04-24 10:07:40+00:00,2025-04-24T10:00:42Z,2025-04-24 10:07:42+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,2.0,direct,False,418.0
-21881,2025-04-24T09:56:45Z,2025-04-24T09:57:42Z,2025-04-24 09:57:52+00:00,2025-04-24 09:57:52+00:00,2025-04-24T09:57:42Z,2025-04-24 10:19:18+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,False,False,False,False,1286.0,direct,False,10.0
-21882,2025-04-24T10:03:51Z,2025-04-24T10:04:49Z,2025-04-24 10:05:16+00:00,2025-04-24 10:05:16+00:00,2025-04-24T10:04:49Z,2025-04-24 10:07:36+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,140.0,direct,False,27.0
-21883,2025-04-24T10:05:10Z,2025-04-24T10:05:56Z,2025-04-24 10:06:03+00:00,2025-04-24 10:06:03+00:00,2025-04-24T10:05:56Z,2025-04-24 10:13:46+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,True,False,False,False,463.0,direct,False,7.0
-21884,2025-04-24T10:06:40Z,,,,,2025-04-24 10:07:55+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21885,2025-04-24T10:11:59Z,2025-04-24T10:12:51Z,,,2025-04-24T10:12:51Z,2025-04-24 10:15:28+00:00,inbound,pstnphone,,Customer service ,False,False,False,True,,direct,False,
-21886,2025-04-24T10:14:21Z,2025-04-24T10:15:32Z,2025-04-24 10:15:40+00:00,2025-04-24 10:15:40+00:00,2025-04-24T10:15:32Z,2025-04-24 10:22:03+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,383.0,direct,False,8.0
-21887,2025-04-24T10:27:47Z,2025-04-24T10:28:36Z,2025-04-24 10:28:45+00:00,2025-04-24 10:28:45+00:00,2025-04-24T10:28:36Z,2025-04-24 10:30:48+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,True,False,False,False,123.0,direct,False,9.0
-21888,2025-04-24T10:29:46Z,2025-04-24T10:31:03Z,2025-04-24 10:31:23+00:00,2025-04-24 10:31:23+00:00,2025-04-24T10:31:03Z,2025-04-24 10:34:32+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,189.0,direct,False,20.0
-21889,2025-04-24T10:39:03Z,,2025-04-24 10:39:03+00:00,2025-04-24 10:39:03+00:00,,2025-04-24 10:40:21+00:00,outbound,pstnphone,Sierk van der Velde,,True,False,False,False,78.0,direct,False,0.0
-21890,2025-04-24T10:54:23Z,2025-04-24T10:55:02Z,2025-04-24 10:55:18+00:00,2025-04-24 10:55:18+00:00,2025-04-24T10:55:02Z,2025-04-24 10:58:30+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,True,False,False,False,192.0,direct,False,16.0
-21891,2025-04-24T10:54:37Z,2025-04-24T10:55:43Z,2025-04-24 10:55:54+00:00,2025-04-24 10:55:54+00:00,2025-04-24T10:55:43Z,2025-04-24 10:56:55+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,61.0,direct,False,11.0
-21892,2025-04-24T11:01:03Z,,,,,2025-04-24 11:01:14+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21893,2025-04-24T11:14:02Z,,,,,2025-04-24 11:14:13+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21894,2025-04-24T11:34:50Z,,,,,2025-04-24 11:35:01+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21895,2025-04-24T11:35:09Z,,2025-04-24 11:35:09+00:00,2025-04-24 11:35:09+00:00,,2025-04-24 11:39:06+00:00,outbound,pstnphone,Roy Pietersz,,True,False,False,False,237.0,direct,False,0.0
-21896,2025-04-24T11:38:13Z,,,,,2025-04-24 11:38:20+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21897,2025-04-24T11:38:26Z,,,,,2025-04-24 11:38:36+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21898,2025-04-24T11:41:45Z,,,,,2025-04-24 11:41:54+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21899,2025-04-24T11:43:43Z,,,,,2025-04-24 11:43:48+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21900,2025-04-24T11:57:34Z,,,,,2025-04-24 11:57:38+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21901,2025-04-24T12:00:29Z,,,,,2025-04-24 12:00:57+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21902,2025-04-24T12:13:02Z,,,,,2025-04-24 12:13:13+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21903,2025-04-24T12:15:22Z,,2025-04-24 12:15:22+00:00,2025-04-24 12:15:22+00:00,,2025-04-24 12:17:36+00:00,outbound,pstnphone,Sierk van der Velde,,True,False,False,False,134.0,direct,False,0.0
-21904,2025-04-24T12:17:38Z,,2025-04-24 12:17:38+00:00,2025-04-24 12:17:38+00:00,,2025-04-24 12:18:05+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,27.0,direct,False,0.0
-21905,2025-04-24T12:18:13Z,,2025-04-24 12:18:13+00:00,2025-04-24 12:18:13+00:00,,2025-04-24 12:18:39+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,26.0,direct,False,0.0
-21906,2025-04-24T12:24:20Z,,,,,2025-04-24 12:24:31+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21907,2025-04-24T12:30:39Z,,2025-04-24 12:30:39+00:00,2025-04-24 12:30:39+00:00,,2025-04-24 12:40:16+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,577.0,direct,False,0.0
-21908,2025-04-24T12:33:14Z,,,,,2025-04-24 12:33:25+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21909,2025-04-24T12:53:51Z,,,,,2025-04-24 12:54:02+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21910,2025-04-24T13:18:00Z,,,,,2025-04-24 13:18:28+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21911,2025-04-24T13:18:51Z,,2025-04-24 13:18:51+00:00,2025-04-24 13:18:51+00:00,,2025-04-24 13:19:35+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,44.0,direct,False,0.0
-21912,2025-04-24T13:23:42Z,,2025-04-24 13:23:42+00:00,2025-04-24 13:23:42+00:00,,2025-04-24 13:41:05+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,1043.0,direct,False,0.0
-21913,2025-04-24T13:27:29Z,,,,,2025-04-24 13:27:35+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21914,2025-04-24T13:41:31Z,,,,,2025-04-24 13:41:45+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21915,2025-04-24T13:57:31Z,,,,,2025-04-24 13:57:37+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21916,2025-04-24T14:11:42Z,,2025-04-24 14:11:42+00:00,2025-04-24 14:11:42+00:00,,2025-04-24 14:13:13+00:00,outbound,pstnphone,Bart Jansen,,True,False,False,False,91.0,direct,False,0.0
-21917,2025-04-24T14:39:10Z,,2025-04-24 14:39:10+00:00,2025-04-24 14:39:10+00:00,,2025-04-24 14:40:23+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,73.0,direct,False,0.0
-21918,2025-04-24T14:41:21Z,,2025-04-24 14:41:21+00:00,2025-04-24 14:41:21+00:00,,2025-04-24 14:42:39+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,78.0,direct,False,0.0
-21919,2025-04-24T14:42:09Z,,,,,2025-04-24 14:42:32+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21920,2025-04-24T14:46:42Z,,2025-04-24 14:46:42+00:00,2025-04-24 14:46:42+00:00,,2025-04-24 14:49:32+00:00,outbound,pstnphone,Jeremy Van t Hul,,True,False,False,False,170.0,direct,False,0.0
-21921,2025-04-25T06:41:10Z,,2025-04-25 06:41:10+00:00,2025-04-25 06:41:10+00:00,,2025-04-25 06:43:02+00:00,outbound,pstnphone,Bart Jansen,,True,False,False,False,112.0,direct,False,0.0
-21922,2025-04-25T07:00:04Z,2025-04-25T07:00:50Z,2025-04-25 07:01:45+00:00,2025-04-25 07:01:45+00:00,2025-04-25T07:00:50Z,2025-04-25 07:03:32+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,107.0,direct,False,55.0
-21923,2025-04-25T07:08:32Z,2025-04-25T07:09:21Z,2025-04-25 07:09:37+00:00,2025-04-25 07:09:37+00:00,2025-04-25T07:09:21Z,2025-04-25 07:11:35+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,118.0,direct,False,16.0
-21924,2025-04-25T07:12:11Z,2025-04-25T07:12:57Z,2025-04-25 07:13:56+00:00,2025-04-25 07:13:56+00:00,2025-04-25T07:12:57Z,2025-04-25 07:15:04+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,68.0,direct,False,59.0
-21925,2025-04-25T07:14:25Z,2025-04-25T07:15:44Z,2025-04-25 07:15:54+00:00,2025-04-25 07:15:54+00:00,2025-04-25T07:15:44Z,2025-04-25 07:25:08+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,554.0,direct,False,10.0
-21926,2025-04-25T07:15:40Z,2025-04-25T07:16:40Z,2025-04-25 07:16:51+00:00,2025-04-25 07:16:51+00:00,2025-04-25T07:16:40Z,2025-04-25 07:22:42+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,False,False,False,False,351.0,direct,False,11.0
-21927,2025-04-25T07:18:26Z,2025-04-25T07:19:22Z,2025-04-25 07:19:27+00:00,2025-04-25 07:19:27+00:00,2025-04-25T07:19:22Z,2025-04-25 07:48:26+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,1739.0,direct,False,5.0
-21928,2025-04-25T07:20:30Z,,,,,2025-04-25 07:21:36+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21929,2025-04-25T07:21:51Z,2025-04-25T07:22:33Z,2025-04-25 07:22:51+00:00,2025-04-25 07:22:51+00:00,2025-04-25T07:22:33Z,2025-04-25 07:24:11+00:00,inbound,pstnphone,Danique Kos,Customer service ,True,False,False,False,80.0,direct,False,18.0
-21930,2025-04-25T07:25:11Z,2025-04-25T07:26:21Z,2025-04-25 07:27:26+00:00,2025-04-25 07:27:26+00:00,2025-04-25T07:26:21Z,2025-04-25 07:31:13+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,227.0,direct,False,65.0
-21931,2025-04-25T07:25:42Z,2025-04-25T07:26:55Z,2025-04-25 07:37:04+00:00,2025-04-25 07:37:04+00:00,2025-04-25T07:26:55Z,2025-04-25 07:39:39+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,155.0,direct,False,609.0
-21932,2025-04-25T07:27:51Z,2025-04-25T07:28:47Z,2025-04-25 07:36:35+00:00,2025-04-25 07:36:35+00:00,2025-04-25T07:28:47Z,2025-04-25 07:38:42+00:00,inbound,pstnphone,Danique Kos,Returns ,False,False,False,False,127.0,direct,False,468.0
-21933,2025-04-25T07:31:36Z,2025-04-25T07:32:49Z,2025-04-25 07:39:47+00:00,2025-04-25 07:39:47+00:00,2025-04-25T07:32:49Z,2025-04-25 07:46:14+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,387.0,direct,False,418.0
-21934,2025-04-25T07:33:18Z,2025-04-25T07:34:29Z,2025-04-25 07:49:00+00:00,2025-04-25 07:49:00+00:00,2025-04-25T07:34:29Z,2025-04-25 07:58:35+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,575.0,direct,False,871.0
-21935,2025-04-25T07:33:58Z,2025-04-25T07:34:51Z,2025-04-25 07:40:00+00:00,2025-04-25 07:40:00+00:00,2025-04-25T07:34:51Z,2025-04-25 07:44:01+00:00,inbound,pstnphone,Danique Kos,Returns ,False,False,False,False,241.0,direct,False,309.0
-21936,2025-04-25T07:39:38Z,2025-04-25T07:40:28Z,2025-04-25 07:44:16+00:00,2025-04-25 07:44:16+00:00,2025-04-25T07:40:28Z,2025-04-25 07:47:56+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,220.0,direct,False,228.0
-21937,2025-04-25T07:39:53Z,2025-04-25T07:40:56Z,2025-04-25 07:50:43+00:00,2025-04-25 07:50:43+00:00,2025-04-25T07:40:56Z,2025-04-25 08:04:38+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,835.0,direct,False,587.0
-21938,2025-04-25T07:43:30Z,2025-04-25T07:44:42Z,2025-04-25 08:03:43+00:00,2025-04-25 08:03:43+00:00,2025-04-25T07:44:42Z,2025-04-25 08:12:28+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,525.0,direct,False,1141.0
-21939,2025-04-25T07:51:49Z,,2025-04-25 07:51:49+00:00,2025-04-25 07:51:49+00:00,,2025-04-25 07:52:03+00:00,outbound,pstnphone,Bart Jansen,,True,False,False,False,14.0,direct,False,0.0
-21940,2025-04-25T07:54:11Z,,2025-04-25 07:54:11+00:00,2025-04-25 07:54:11+00:00,,2025-04-25 07:54:28+00:00,outbound,pstnphone,Bart Jansen,,True,False,False,False,17.0,direct,False,0.0
-21941,2025-04-25T07:54:16Z,2025-04-25T07:55:28Z,2025-04-25 08:05:34+00:00,2025-04-25 08:05:34+00:00,2025-04-25T07:55:28Z,2025-04-25 08:11:30+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,356.0,direct,False,606.0
-21942,2025-04-25T07:54:52Z,2025-04-25T07:56:07Z,2025-04-25 08:11:37+00:00,2025-04-25 08:11:37+00:00,2025-04-25T07:56:07Z,2025-04-25 08:19:19+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,462.0,direct,False,930.0
-21943,2025-04-25T07:54:58Z,,2025-04-25 07:54:58+00:00,2025-04-25 07:54:58+00:00,,2025-04-25 07:57:09+00:00,outbound,pstnphone,Bart Jansen,,True,False,False,False,131.0,direct,False,0.0
-21944,2025-04-25T07:56:41Z,2025-04-25T08:00:14Z,2025-04-25 08:13:51+00:00,2025-04-25 08:13:51+00:00,2025-04-25T08:00:14Z,2025-04-25 08:14:02+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,11.0,direct,False,817.0
-21945,2025-04-25T07:57:29Z,2025-04-25T07:58:17Z,2025-04-25 07:58:42+00:00,2025-04-25 07:58:42+00:00,2025-04-25T07:58:17Z,2025-04-25 08:01:03+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,141.0,direct,False,25.0
-21946,2025-04-25T07:59:11Z,2025-04-25T08:00:00Z,2025-04-25 08:07:16+00:00,2025-04-25 08:07:16+00:00,2025-04-25T08:00:00Z,2025-04-25 08:09:28+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,132.0,direct,False,436.0
-21947,2025-04-25T08:03:14Z,2025-04-25T08:04:26Z,2025-04-25 08:12:30+00:00,2025-04-25 08:12:30+00:00,2025-04-25T08:04:26Z,2025-04-25 08:16:10+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,220.0,direct,False,484.0
-21948,2025-04-25T08:06:12Z,2025-04-25T08:07:05Z,2025-04-25 08:10:02+00:00,2025-04-25 08:10:02+00:00,2025-04-25T08:07:05Z,2025-04-25 08:10:59+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,57.0,direct,False,177.0
-21949,2025-04-25T08:07:08Z,,,,,2025-04-25 08:08:27+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21950,2025-04-25T08:09:04Z,,,,,2025-04-25 08:09:13+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21951,2025-04-25T08:11:40Z,2025-04-25T08:12:38Z,2025-04-25 08:12:53+00:00,2025-04-25 08:12:53+00:00,2025-04-25T08:12:38Z,2025-04-25 08:13:28+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,35.0,direct,False,15.0
-21952,2025-04-25T08:15:42Z,2025-04-25T08:16:41Z,2025-04-25 08:16:49+00:00,2025-04-25 08:16:49+00:00,2025-04-25T08:16:41Z,2025-04-25 08:23:43+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,False,False,False,False,414.0,direct,False,8.0
-21953,2025-04-25T08:17:00Z,2025-04-25T08:17:57Z,,,2025-04-25T08:17:57Z,2025-04-25 08:21:22+00:00,inbound,pstnphone,,Returns ,False,False,False,True,,direct,False,
-21954,2025-04-25T08:19:39Z,,2025-04-25 08:19:39+00:00,2025-04-25 08:19:39+00:00,,2025-04-25 08:38:08+00:00,outbound,pstnphone,Roy Pietersz,,True,False,False,False,1109.0,direct,False,0.0
-21955,2025-04-25T08:21:50Z,,2025-04-25 08:21:50+00:00,2025-04-25 08:21:50+00:00,,2025-04-25 08:32:34+00:00,outbound,pstnphone,Bart Jansen,,True,False,False,False,644.0,direct,False,0.0
-21956,2025-04-25T08:24:49Z,2025-04-25T08:26:16Z,2025-04-25 08:26:45+00:00,2025-04-25 08:26:45+00:00,2025-04-25T08:26:16Z,2025-04-25 08:39:38+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,773.0,direct,False,29.0
-21957,2025-04-25T08:35:46Z,,,,,2025-04-25 08:36:40+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21958,2025-04-25T08:36:46Z,2025-04-25T08:37:46Z,2025-04-25 08:37:59+00:00,2025-04-25 08:37:59+00:00,2025-04-25T08:37:46Z,2025-04-25 08:45:34+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,False,False,False,False,455.0,direct,False,13.0
-21959,2025-04-25T08:40:08Z,2025-04-25T08:41:20Z,2025-04-25 08:41:37+00:00,2025-04-25 08:41:37+00:00,2025-04-25T08:41:20Z,2025-04-25 08:46:09+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,272.0,direct,False,17.0
-21960,2025-04-25T08:41:05Z,,,,,2025-04-25 08:45:51+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21961,2025-04-25T08:42:06Z,,,,,2025-04-25 08:42:18+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21962,2025-04-25T08:45:05Z,2025-04-25T08:46:06Z,2025-04-25 08:46:24+00:00,2025-04-25 08:46:24+00:00,2025-04-25T08:46:06Z,2025-04-25 08:50:29+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,245.0,direct,False,18.0
-21963,2025-04-25T08:45:29Z,2025-04-25T08:46:26Z,2025-04-25 08:46:40+00:00,2025-04-25 08:46:40+00:00,2025-04-25T08:46:26Z,2025-04-25 08:54:01+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,False,False,False,False,441.0,direct,False,14.0
-21964,2025-04-25T08:48:54Z,,,,,2025-04-25 08:52:16+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21965,2025-04-25T08:50:03Z,2025-04-25T08:50:59Z,2025-04-25 08:51:25+00:00,2025-04-25 08:51:25+00:00,2025-04-25T08:50:59Z,2025-04-25 08:53:48+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,143.0,direct,False,26.0
-21966,2025-04-25T08:54:20Z,2025-04-25T08:55:20Z,2025-04-25 08:55:40+00:00,2025-04-25 08:55:40+00:00,2025-04-25T08:55:20Z,2025-04-25 09:06:53+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,False,False,False,False,673.0,direct,False,20.0
-21967,2025-04-25T08:55:10Z,,,,,2025-04-25 08:56:31+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21968,2025-04-25T08:56:45Z,2025-04-25T08:57:38Z,2025-04-25 08:57:55+00:00,2025-04-25 08:57:55+00:00,2025-04-25T08:57:38Z,2025-04-25 08:58:52+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,57.0,direct,False,17.0
-21969,2025-04-25T08:58:54Z,,,,,2025-04-25 08:59:13+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21970,2025-04-25T08:59:49Z,2025-04-25T09:00:48Z,2025-04-25 09:06:58+00:00,2025-04-25 09:06:58+00:00,2025-04-25T09:00:48Z,2025-04-25 09:24:55+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,False,False,False,False,1077.0,direct,False,370.0
-21971,2025-04-25T09:02:44Z,2025-04-25T09:03:54Z,2025-04-25 09:04:02+00:00,2025-04-25 09:04:02+00:00,2025-04-25T09:03:54Z,2025-04-25 09:08:09+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,247.0,direct,False,8.0
-21972,2025-04-25T09:03:30Z,2025-04-25T09:04:24Z,2025-04-25 09:10:29+00:00,2025-04-25 09:10:29+00:00,2025-04-25T09:04:24Z,2025-04-25 09:11:56+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,87.0,direct,False,365.0
-21973,2025-04-25T09:05:38Z,2025-04-25T09:06:25Z,2025-04-25 09:13:06+00:00,2025-04-25 09:13:06+00:00,2025-04-25T09:06:25Z,2025-04-25 09:15:58+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,172.0,direct,False,401.0
-21974,2025-04-25T09:09:32Z,,,,,2025-04-25 09:09:37+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21975,2025-04-25T09:10:22Z,,,,,2025-04-25 09:11:01+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21976,2025-04-25T09:11:14Z,,2025-04-25 09:11:14+00:00,2025-04-25 09:11:14+00:00,,2025-04-25 09:13:50+00:00,outbound,pstnphone,Roy Pietersz,,True,False,False,False,156.0,direct,False,0.0
-21977,2025-04-25T09:15:10Z,2025-04-25T09:15:57Z,2025-04-25 09:16:13+00:00,2025-04-25 09:16:13+00:00,2025-04-25T09:15:57Z,2025-04-25 09:35:25+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,1152.0,direct,False,16.0
-21978,2025-04-25T09:16:09Z,,2025-04-25 09:16:09+00:00,2025-04-25 09:16:09+00:00,,2025-04-25 09:18:09+00:00,outbound,pstnphone,Roy Pietersz,,True,False,False,False,120.0,direct,False,0.0
-21979,2025-04-25T09:17:14Z,2025-04-25T09:17:47Z,2025-04-25 09:27:01+00:00,2025-04-25 09:27:01+00:00,2025-04-25T09:17:47Z,2025-04-25 09:31:34+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,False,False,False,False,273.0,direct,False,554.0
-21980,2025-04-25T09:17:48Z,2025-04-25T09:18:37Z,2025-04-25 09:18:50+00:00,2025-04-25 09:18:50+00:00,2025-04-25T09:18:37Z,2025-04-25 09:21:01+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,131.0,direct,False,13.0
-21981,2025-04-25T09:21:14Z,2025-04-25T09:22:20Z,2025-04-25 09:23:13+00:00,2025-04-25 09:23:13+00:00,2025-04-25T09:22:20Z,2025-04-25 09:28:07+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,294.0,direct,False,53.0
-21982,2025-04-25T09:21:33Z,,2025-04-25 09:21:33+00:00,2025-04-25 09:21:33+00:00,,2025-04-25 09:27:06+00:00,outbound,pstnphone,Roy Pietersz,,True,False,False,False,333.0,direct,False,0.0
-21983,2025-04-25T09:28:36Z,,2025-04-25 09:28:36+00:00,2025-04-25 09:28:36+00:00,,2025-04-25 09:36:36+00:00,outbound,pstnphone,Jeremy Van t Hul,,True,False,False,False,480.0,direct,False,0.0
-21984,2025-04-25T09:29:28Z,,,,,2025-04-25 09:29:47+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21985,2025-04-25T09:38:11Z,2025-04-25T09:39:23Z,2025-04-25 09:39:37+00:00,2025-04-25 09:39:37+00:00,2025-04-25T09:39:23Z,2025-04-25 09:50:40+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,663.0,direct,False,14.0
-21986,2025-04-25T09:38:47Z,,,,,2025-04-25 09:41:27+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21987,2025-04-25T09:40:01Z,2025-04-25T09:40:56Z,2025-04-25 09:44:40+00:00,2025-04-25 09:44:40+00:00,2025-04-25T09:40:56Z,2025-04-25 09:54:17+00:00,inbound,pstnphone,Bart Jansen,Returns ,False,False,False,False,577.0,direct,False,224.0
-21988,2025-04-25T09:44:04Z,2025-04-25T09:45:18Z,2025-04-25 09:46:46+00:00,2025-04-25 09:46:46+00:00,2025-04-25T09:45:18Z,2025-04-25 10:03:44+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,1018.0,direct,False,88.0
-21989,2025-04-25T09:45:25Z,2025-04-25T09:46:05Z,2025-04-25 09:46:16+00:00,2025-04-25 09:46:16+00:00,2025-04-25T09:46:05Z,2025-04-25 09:55:57+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,True,False,False,False,581.0,direct,False,11.0
-21990,2025-04-25T09:49:05Z,,,,,2025-04-25 09:51:30+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21991,2025-04-25T09:50:10Z,,,,,2025-04-25 09:50:59+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21992,2025-04-25T09:52:02Z,2025-04-25T09:53:14Z,2025-04-25 09:53:29+00:00,2025-04-25 09:53:29+00:00,2025-04-25T09:53:14Z,2025-04-25 09:55:38+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,129.0,direct,False,15.0
-21993,2025-04-25T09:52:20Z,,,,,2025-04-25 09:53:12+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21994,2025-04-25T09:53:20Z,2025-04-25T09:54:26Z,2025-04-25 09:56:15+00:00,2025-04-25 09:56:15+00:00,2025-04-25T09:54:26Z,2025-04-25 09:58:10+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,115.0,direct,False,109.0
-21995,2025-04-25T10:01:13Z,2025-04-25T10:01:43Z,2025-04-25 10:01:57+00:00,2025-04-25 10:01:57+00:00,2025-04-25T10:01:43Z,2025-04-25 10:09:51+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,True,False,False,False,474.0,direct,False,14.0
-21996,2025-04-25T10:03:21Z,2025-04-25T10:04:30Z,2025-04-25 10:04:43+00:00,2025-04-25 10:04:43+00:00,2025-04-25T10:04:30Z,2025-04-25 10:08:25+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,222.0,direct,False,13.0
-21997,2025-04-25T10:07:13Z,,,,,2025-04-25 10:09:01+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-21998,2025-04-25T10:09:55Z,,2025-04-25 10:09:55+00:00,2025-04-25 10:09:55+00:00,,2025-04-25 10:11:59+00:00,outbound,pstnphone,Bart Jansen,,True,False,False,False,124.0,direct,False,0.0
-21999,2025-04-25T10:10:48Z,2025-04-25T10:11:56Z,2025-04-25 10:12:28+00:00,2025-04-25 10:12:28+00:00,2025-04-25T10:11:56Z,2025-04-25 10:17:22+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,294.0,direct,False,32.0
-22000,2025-04-25T10:12:08Z,,2025-04-25 10:12:08+00:00,2025-04-25 10:12:08+00:00,,2025-04-25 10:13:03+00:00,outbound,pstnphone,Bart Jansen,,True,False,False,False,55.0,direct,False,0.0
-22001,2025-04-25T10:12:18Z,2025-04-25T10:13:12Z,2025-04-25 10:19:20+00:00,2025-04-25 10:19:20+00:00,2025-04-25T10:13:12Z,2025-04-25 10:29:16+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,596.0,direct,False,368.0
-22002,2025-04-25T10:19:19Z,,2025-04-25 10:19:19+00:00,2025-04-25 10:19:19+00:00,,2025-04-25 10:20:04+00:00,outbound,pstnphone,Danique Kos,,True,False,False,False,45.0,direct,False,0.0
-22003,2025-04-25T10:25:51Z,,2025-04-25 10:25:51+00:00,2025-04-25 10:25:51+00:00,,2025-04-25 10:26:32+00:00,outbound,pstnphone,Jeremy Van t Hul,,True,False,False,False,41.0,direct,False,0.0
-22004,2025-04-25T10:27:03Z,2025-04-25T10:27:58Z,2025-04-25 10:28:10+00:00,2025-04-25 10:28:10+00:00,2025-04-25T10:27:58Z,2025-04-25 10:32:21+00:00,inbound,pstnphone,Bart Jansen,Returns ,False,False,False,False,251.0,direct,False,12.0
-22005,2025-04-25T10:45:03Z,,,,,2025-04-25 10:45:07+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22006,2025-04-25T10:45:18Z,2025-04-25T10:46:37Z,2025-04-25 10:46:57+00:00,2025-04-25 10:46:57+00:00,2025-04-25T10:46:37Z,2025-04-25 10:52:16+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,319.0,direct,False,20.0
-22007,2025-04-25T10:58:02Z,2025-04-25T10:58:52Z,2025-04-25 10:59:02+00:00,2025-04-25 10:59:02+00:00,2025-04-25T10:58:52Z,2025-04-25 11:23:55+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,True,False,False,False,1493.0,direct,False,10.0
-22008,2025-04-25T11:02:05Z,,,,,2025-04-25 11:02:16+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22009,2025-04-25T11:07:51Z,,,,,2025-04-25 11:08:09+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22010,2025-04-25T11:09:18Z,,2025-04-25 11:09:18+00:00,2025-04-25 11:09:18+00:00,,2025-04-25 11:10:22+00:00,outbound,pstnphone,Danique Kos,,True,False,False,False,64.0,direct,False,0.0
-22011,2025-04-25T11:13:10Z,,2025-04-25 11:13:10+00:00,2025-04-25 11:13:10+00:00,,2025-04-25 11:13:51+00:00,outbound,pstnphone,Danique Kos,,True,False,False,False,41.0,direct,False,0.0
-22012,2025-04-25T11:28:46Z,,2025-04-25 11:28:46+00:00,2025-04-25 11:28:46+00:00,,2025-04-25 11:29:07+00:00,outbound,pstnphone,Roy Pietersz,,True,False,False,False,21.0,direct,False,0.0
-22013,2025-04-25T11:29:15Z,,2025-04-25 11:29:15+00:00,2025-04-25 11:29:15+00:00,,2025-04-25 11:39:16+00:00,outbound,pstnphone,Roy Pietersz,,True,False,False,False,601.0,direct,False,0.0
-22014,2025-04-25T11:30:16Z,,,,,2025-04-25 11:30:26+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22015,2025-04-25T11:36:44Z,,,,,2025-04-25 11:36:50+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22016,2025-04-25T11:37:31Z,,,,,2025-04-25 11:37:41+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22017,2025-04-25T11:37:49Z,,,,,2025-04-25 11:38:01+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22018,2025-04-25T11:45:15Z,,,,,2025-04-25 11:45:25+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22019,2025-04-25T11:52:11Z,,,,,2025-04-25 11:52:22+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22020,2025-04-25T12:13:38Z,,2025-04-25 12:13:38+00:00,2025-04-25 12:13:38+00:00,,2025-04-25 12:14:00+00:00,outbound,pstnphone,Jeremy Van t Hul,,True,False,False,False,22.0,direct,False,0.0
-22021,2025-04-25T12:14:20Z,,2025-04-25 12:14:20+00:00,2025-04-25 12:14:20+00:00,,2025-04-25 12:15:27+00:00,outbound,pstnphone,Jeremy Van t Hul,,True,False,False,False,67.0,direct,False,0.0
-22022,2025-04-25T12:18:09Z,,2025-04-25 12:18:09+00:00,2025-04-25 12:18:09+00:00,,2025-04-25 12:21:30+00:00,outbound,pstnphone,Bart Jansen,,True,False,False,False,201.0,direct,False,0.0
-22023,2025-04-25T12:19:30Z,,2025-04-25 12:19:30+00:00,2025-04-25 12:19:30+00:00,,2025-04-25 12:20:26+00:00,outbound,pstnphone,Jeremy Van t Hul,,True,False,False,False,56.0,direct,False,0.0
-22024,2025-04-25T12:20:33Z,,2025-04-25 12:20:33+00:00,2025-04-25 12:20:33+00:00,,2025-04-25 12:22:23+00:00,outbound,pstnphone,Jeremy Van t Hul,,True,False,False,False,110.0,direct,False,0.0
-22025,2025-04-25T12:22:58Z,,2025-04-25 12:22:58+00:00,2025-04-25 12:22:58+00:00,,2025-04-25 12:23:10+00:00,outbound,pstnphone,Bart Jansen,,True,False,False,False,12.0,direct,False,0.0
-22026,2025-04-25T12:23:26Z,,2025-04-25 12:23:26+00:00,2025-04-25 12:23:26+00:00,,2025-04-25 12:29:33+00:00,outbound,pstnphone,Bart Jansen,,True,False,False,False,367.0,direct,False,0.0
-22027,2025-04-25T12:26:09Z,,,,,2025-04-25 12:26:19+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22028,2025-04-25T12:32:46Z,,2025-04-25 12:32:46+00:00,2025-04-25 12:32:46+00:00,,2025-04-25 12:34:47+00:00,outbound,pstnphone,Jeremy Van t Hul,,True,False,False,False,121.0,direct,False,0.0
-22029,2025-04-25T12:58:05Z,,2025-04-25 12:58:05+00:00,2025-04-25 12:58:05+00:00,,2025-04-25 13:00:37+00:00,outbound,pstnphone,Danique Kos,,True,False,False,False,152.0,direct,False,0.0
-22030,2025-04-25T13:01:31Z,,,,,2025-04-25 13:01:39+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22031,2025-04-25T13:06:50Z,,2025-04-25 13:06:50+00:00,2025-04-25 13:06:50+00:00,,2025-04-25 13:10:03+00:00,outbound,pstnphone,Chris Kastanje,,True,False,False,False,193.0,direct,False,0.0
-22032,2025-04-25T13:07:26Z,,,,,2025-04-25 13:07:31+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22033,2025-04-25T13:08:46Z,,2025-04-25 13:08:46+00:00,2025-04-25 13:08:46+00:00,,2025-04-25 13:10:08+00:00,outbound,pstnphone,Roy Pietersz,,True,False,False,False,82.0,direct,False,0.0
-22034,2025-04-25T13:11:23Z,,2025-04-25 13:11:23+00:00,2025-04-25 13:11:23+00:00,,2025-04-25 13:16:53+00:00,outbound,pstnphone,Roy Pietersz,,True,False,False,False,330.0,direct,False,0.0
-22035,2025-04-25T13:11:36Z,,2025-04-25 13:11:36+00:00,2025-04-25 13:11:36+00:00,,2025-04-25 13:23:02+00:00,outbound,pstnphone,Chris Kastanje,,True,False,False,False,686.0,direct,False,0.0
-22036,2025-04-25T13:12:01Z,,2025-04-25 13:12:01+00:00,2025-04-25 13:12:01+00:00,,2025-04-25 13:18:25+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,384.0,direct,False,0.0
-22037,2025-04-25T13:14:14Z,,,,,2025-04-25 13:14:44+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22038,2025-04-25T13:15:42Z,,,,,2025-04-25 13:16:12+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22039,2025-04-25T13:20:50Z,,2025-04-25 13:20:50+00:00,2025-04-25 13:20:50+00:00,,2025-04-25 13:26:20+00:00,outbound,pstnphone,Bart Jansen,,True,False,False,False,330.0,direct,False,0.0
-22040,2025-04-25T13:23:11Z,,2025-04-25 13:23:11+00:00,2025-04-25 13:23:11+00:00,,2025-04-25 13:23:55+00:00,outbound,pstnphone,Chris Kastanje,,True,False,False,False,44.0,direct,False,0.0
-22041,2025-04-25T13:36:34Z,,2025-04-25 13:36:34+00:00,2025-04-25 13:36:34+00:00,,2025-04-25 13:38:45+00:00,outbound,pstnphone,Chris Kastanje,,True,False,False,False,131.0,direct,False,0.0
-22042,2025-04-25T13:36:48Z,,2025-04-25 13:36:48+00:00,2025-04-25 13:36:48+00:00,,2025-04-25 14:01:09+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,1461.0,direct,False,0.0
-22043,2025-04-25T13:47:56Z,,2025-04-25 13:47:56+00:00,2025-04-25 13:47:56+00:00,,2025-04-25 13:50:52+00:00,outbound,pstnphone,Chris Kastanje,,True,False,False,False,176.0,direct,False,0.0
-22044,2025-04-25T14:03:26Z,,2025-04-25 14:03:26+00:00,2025-04-25 14:03:26+00:00,,2025-04-25 14:04:09+00:00,outbound,pstnphone,Jeremy Van t Hul,,True,False,False,False,43.0,direct,False,0.0
-22045,2025-04-25T14:05:50Z,,,,,2025-04-25 14:06:18+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22046,2025-04-25T14:08:07Z,,2025-04-25 14:08:07+00:00,2025-04-25 14:08:07+00:00,,2025-04-25 14:40:29+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,1942.0,direct,False,0.0
-22047,2025-04-25T14:30:07Z,,,,,2025-04-25 14:30:18+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22048,2025-04-25T14:30:40Z,,,,,2025-04-25 14:30:45+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22049,2025-04-25T15:03:41Z,,,,,2025-04-25 15:03:53+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22050,2025-04-28T06:34:05Z,,,,,2025-04-28 06:34:14+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22051,2025-04-28T07:08:24Z,2025-04-28T07:09:10Z,2025-04-28 07:16:58+00:00,2025-04-28 07:16:58+00:00,2025-04-28T07:09:10Z,2025-04-28 07:18:39+00:00,inbound,pstnphone,Romy van Es,Customer service ,False,False,False,False,101.0,direct,False,468.0
-22052,2025-04-28T07:33:48Z,2025-04-28T07:34:54Z,2025-04-28 07:35:07+00:00,2025-04-28 07:35:07+00:00,2025-04-28T07:34:54Z,2025-04-28 07:43:54+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,527.0,direct,False,13.0
-22053,2025-04-28T07:34:11Z,2025-04-28T07:35:07Z,2025-04-28 07:43:56+00:00,2025-04-28 07:43:56+00:00,2025-04-28T07:35:07Z,2025-04-28 07:47:50+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,234.0,direct,False,529.0
-22054,2025-04-28T07:39:50Z,,2025-04-28 07:39:50+00:00,2025-04-28 07:39:50+00:00,,2025-04-28 07:44:44+00:00,outbound,pstnphone,Marcus Preyer ,,True,False,False,False,294.0,direct,False,0.0
-22055,2025-04-28T08:08:12Z,2025-04-28T08:09:01Z,2025-04-28 08:09:10+00:00,2025-04-28 08:09:10+00:00,2025-04-28T08:09:01Z,2025-04-28 08:12:34+00:00,inbound,pstnphone,Romy van Es,Customer service ,True,False,False,False,204.0,direct,False,9.0
-22056,2025-04-28T08:12:53Z,,,,,2025-04-28 08:14:03+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22057,2025-04-28T08:14:06Z,2025-04-28T08:14:59Z,2025-04-28 08:15:07+00:00,2025-04-28 08:15:07+00:00,2025-04-28T08:14:59Z,2025-04-28 08:16:03+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,56.0,direct,False,8.0
-22058,2025-04-28T08:16:09Z,2025-04-28T08:17:17Z,2025-04-28 08:17:27+00:00,2025-04-28 08:17:27+00:00,2025-04-28T08:17:17Z,2025-04-28 08:21:21+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,234.0,direct,False,10.0
-22059,2025-04-28T08:18:04Z,2025-04-28T08:18:49Z,2025-04-28 08:18:55+00:00,2025-04-28 08:18:55+00:00,2025-04-28T08:18:49Z,2025-04-28 08:23:09+00:00,inbound,pstnphone,Romy van Es,Customer service ,True,False,False,False,254.0,direct,False,6.0
-22060,2025-04-28T08:24:18Z,2025-04-28T08:25:41Z,2025-04-28 08:29:22+00:00,2025-04-28 08:29:22+00:00,2025-04-28T08:25:41Z,2025-04-28 08:34:04+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,282.0,direct,False,221.0
-22061,2025-04-28T08:51:28Z,,,,,2025-04-28 08:51:59+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22062,2025-04-28T08:55:22Z,2025-04-28T08:56:33Z,2025-04-28 08:56:35+00:00,2025-04-28 08:56:35+00:00,2025-04-28T08:56:33Z,2025-04-28 09:09:19+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,764.0,direct,False,2.0
-22063,2025-04-28T09:03:03Z,,,,,2025-04-28 09:04:24+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22064,2025-04-28T09:04:31Z,2025-04-28T09:05:30Z,2025-04-28 09:09:21+00:00,2025-04-28 09:09:21+00:00,2025-04-28T09:05:30Z,2025-04-28 09:12:51+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,210.0,direct,False,231.0
-22065,2025-04-28T09:14:33Z,2025-04-28T09:15:39Z,2025-04-28 09:15:48+00:00,2025-04-28 09:15:48+00:00,2025-04-28T09:15:39Z,2025-04-28 09:26:35+00:00,inbound,pstnphone,Romy van Es,Customer service ,False,False,False,False,647.0,direct,False,9.0
-22066,2025-04-28T09:15:28Z,2025-04-28T09:16:21Z,2025-04-28 09:28:57+00:00,2025-04-28 09:28:57+00:00,2025-04-28T09:16:21Z,2025-04-28 09:32:03+00:00,inbound,pstnphone,Romy van Es,Customer service ,False,False,False,False,186.0,direct,False,756.0
-22067,2025-04-28T09:31:53Z,2025-04-28T09:32:40Z,2025-04-28 09:36:11+00:00,2025-04-28 09:36:11+00:00,2025-04-28T09:32:40Z,2025-04-28 09:43:30+00:00,inbound,pstnphone,Romy van Es,Customer service ,False,False,False,False,439.0,direct,False,211.0
-22068,2025-04-28T09:33:10Z,2025-04-28T09:34:14Z,2025-04-28 09:34:21+00:00,2025-04-28 09:34:21+00:00,2025-04-28T09:34:14Z,2025-04-28 09:37:11+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,170.0,direct,False,7.0
-22069,2025-04-28T09:37:32Z,2025-04-28T09:38:25Z,2025-04-28 09:45:34+00:00,2025-04-28 09:45:34+00:00,2025-04-28T09:38:25Z,2025-04-28 09:55:28+00:00,inbound,pstnphone,Romy van Es,Customer service ,False,False,False,False,594.0,direct,False,429.0
-22070,2025-04-28T09:39:05Z,2025-04-28T09:40:56Z,2025-04-28 09:41:00+00:00,2025-04-28 09:41:00+00:00,2025-04-28T09:40:56Z,2025-04-28 09:46:01+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,301.0,direct,False,4.0
-22071,2025-04-28T09:44:51Z,2025-04-28T09:45:42Z,2025-04-28 09:46:27+00:00,2025-04-28 09:46:27+00:00,2025-04-28T09:45:42Z,2025-04-28 09:49:05+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,158.0,direct,False,45.0
-22072,2025-04-28T09:54:39Z,2025-04-28T09:55:22Z,,,2025-04-28T09:55:22Z,2025-04-28 10:17:54+00:00,inbound,pstnphone,,Returns ,False,False,False,True,,direct,False,
-22073,2025-04-28T10:06:11Z,2025-04-28T10:07:23Z,2025-04-28 10:07:34+00:00,2025-04-28 10:07:34+00:00,2025-04-28T10:07:23Z,2025-04-28 10:15:52+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,498.0,direct,False,11.0
-22074,2025-04-28T10:18:57Z,,2025-04-28 10:18:57+00:00,2025-04-28 10:18:57+00:00,,2025-04-28 10:20:36+00:00,outbound,pstnphone,Romy van Es,,True,False,False,False,99.0,direct,False,0.0
-22075,2025-04-28T10:19:36Z,2025-04-28T10:24:43Z,2025-04-28 10:24:48+00:00,2025-04-28 10:24:48+00:00,2025-04-28T10:24:43Z,2025-04-28 10:24:50+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,2.0,direct,False,5.0
-22076,2025-04-28T10:42:14Z,,,,,2025-04-28 10:42:27+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22077,2025-04-28T10:44:23Z,2025-04-28T10:45:20Z,2025-04-28 10:50:56+00:00,2025-04-28 10:50:56+00:00,2025-04-28T10:45:20Z,2025-04-28 10:55:44+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,288.0,direct,False,336.0
-22078,2025-04-28T11:22:17Z,,,,,2025-04-28 11:22:28+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22079,2025-04-28T12:14:37Z,,,,,2025-04-28 12:14:48+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22080,2025-04-28T13:01:26Z,,,,,2025-04-28 13:01:37+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22081,2025-04-28T13:03:52Z,,,,,2025-04-28 13:04:03+00:00,inbound,pstnphone,,,False,False,False,True,,direct,False,
-22082,2025-04-28T14:50:03Z,,2025-04-28 14:50:03+00:00,2025-04-28 14:50:03+00:00,,2025-04-28 14:50:47+00:00,outbound,pstnphone,Chris Kastanje,,True,False,False,False,44.0,direct,False,0.0
+id,createdAt,queued_at,assigned_at,answeredAt,queuedAt,closedAt,direction,channel,assigneeName,queueName,AnsweredWithin1Min,TakenFromQueue,TakenFromForward,RejectedOrForwarded,CallType,CallDurationSec,Binnen1MinFair,FairTTASeconds
+21723,2025-04-23T06:49:33Z,,,,,2025-04-23 06:49:40+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21724,2025-04-23T06:55:45Z,,,,,2025-04-23 06:55:55+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21725,2025-04-23T06:56:10Z,,,,,2025-04-23 06:56:16+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21726,2025-04-23T07:02:20Z,2025-04-23T07:03:08Z,2025-04-23 07:03:23+00:00,2025-04-23 07:03:23+00:00,2025-04-23T07:03:08Z,2025-04-23 07:08:10+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,287.0,False,15.0
+21727,2025-04-23T07:03:29Z,2025-04-23T07:04:12Z,2025-04-23 07:09:54+00:00,2025-04-23 07:09:54+00:00,2025-04-23T07:04:12Z,2025-04-23 07:20:37+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,643.0,False,342.0
+21728,2025-04-23T07:07:00Z,2025-04-23T07:07:52Z,2025-04-23 07:09:53+00:00,2025-04-23 07:09:53+00:00,2025-04-23T07:07:52Z,2025-04-23 07:12:51+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,178.0,False,121.0
+21729,2025-04-23T07:08:51Z,2025-04-23T07:09:56Z,,,2025-04-23T07:09:56Z,2025-04-23 07:15:18+00:00,inbound,pstnphone,,Customer service ,False,False,False,True,queue,,False,
+21730,2025-04-23T07:08:55Z,2025-04-23T07:09:51Z,2025-04-23 07:13:06+00:00,2025-04-23 07:13:06+00:00,2025-04-23T07:09:51Z,2025-04-23 07:16:13+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,187.0,False,195.0
+21731,2025-04-23T07:10:24Z,2025-04-23T07:11:12Z,2025-04-23 07:16:21+00:00,2025-04-23 07:16:21+00:00,2025-04-23T07:11:12Z,2025-04-23 07:19:33+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,192.0,False,309.0
+21732,2025-04-23T07:13:08Z,2025-04-23T07:13:57Z,2025-04-23 07:19:38+00:00,2025-04-23 07:19:38+00:00,2025-04-23T07:13:57Z,2025-04-23 07:25:30+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,352.0,False,341.0
+21733,2025-04-23T07:14:06Z,2025-04-23T07:15:22Z,2025-04-23 07:15:30+00:00,2025-04-23 07:15:30+00:00,2025-04-23T07:15:22Z,2025-04-23 07:23:44+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,queue,494.0,False,8.0
+21734,2025-04-23T07:15:26Z,2025-04-23T07:16:39Z,2025-04-23 07:20:41+00:00,2025-04-23 07:20:41+00:00,2025-04-23T07:16:39Z,2025-04-23 07:25:47+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,306.0,False,242.0
+21735,2025-04-23T07:17:30Z,2025-04-23T07:18:17Z,2025-04-23 07:25:56+00:00,2025-04-23 07:25:56+00:00,2025-04-23T07:18:17Z,2025-04-23 07:27:48+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,112.0,False,459.0
+21736,2025-04-23T07:17:31Z,2025-04-23T07:18:39Z,2025-04-23 07:27:27+00:00,2025-04-23 07:27:27+00:00,2025-04-23T07:18:39Z,2025-04-23 07:34:20+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,413.0,False,528.0
+21737,2025-04-23T07:19:18Z,2025-04-23T07:20:18Z,2025-04-23 07:20:26+00:00,2025-04-23 07:20:26+00:00,2025-04-23T07:20:18Z,2025-04-23 07:29:28+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,False,False,False,False,queue,542.0,False,8.0
+21738,2025-04-23T07:20:57Z,2025-04-23T07:21:45Z,2025-04-23 07:28:13+00:00,2025-04-23 07:28:13+00:00,2025-04-23T07:21:45Z,2025-04-23 07:31:40+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,207.0,False,388.0
+21739,2025-04-23T07:21:27Z,2025-04-23T07:22:30Z,2025-04-23 07:36:06+00:00,2025-04-23 07:36:06+00:00,2025-04-23T07:22:30Z,2025-04-23 07:37:08+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,62.0,False,816.0
+21740,2025-04-23T07:26:35Z,2025-04-23T07:27:49Z,2025-04-23 07:32:05+00:00,2025-04-23 07:32:05+00:00,2025-04-23T07:27:49Z,2025-04-23 07:36:48+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,queue,283.0,False,256.0
+21741,2025-04-23T07:27:01Z,,,,,2025-04-23 07:27:16+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21742,2025-04-23T07:29:17Z,2025-04-23T07:30:27Z,2025-04-23 07:37:39+00:00,2025-04-23 07:37:39+00:00,2025-04-23T07:30:27Z,2025-04-23 07:44:18+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,queue,399.0,False,432.0
+21743,2025-04-23T07:32:44Z,2025-04-23T07:33:31Z,2025-04-23 07:37:12+00:00,2025-04-23 07:37:12+00:00,2025-04-23T07:33:31Z,2025-04-23 07:41:39+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,267.0,False,221.0
+21744,2025-04-23T07:35:46Z,2025-04-23T07:36:40Z,2025-04-23 07:42:07+00:00,2025-04-23 07:42:07+00:00,2025-04-23T07:36:40Z,2025-04-23 07:43:30+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,83.0,False,327.0
+21745,2025-04-23T07:37:10Z,2025-04-23T07:38:03Z,2025-04-23 07:45:52+00:00,2025-04-23 07:45:52+00:00,2025-04-23T07:38:03Z,2025-04-23 07:50:16+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,264.0,False,469.0
+21746,2025-04-23T07:40:08Z,2025-04-23T07:40:56Z,,,2025-04-23T07:40:56Z,2025-04-23 07:44:56+00:00,inbound,pstnphone,,Customer service ,False,False,False,True,queue,,False,
+21747,2025-04-23T07:44:27Z,2025-04-23T07:45:37Z,2025-04-23 07:45:55+00:00,2025-04-23 07:45:55+00:00,2025-04-23T07:45:37Z,2025-04-23 07:53:33+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,458.0,False,18.0
+21748,2025-04-23T07:44:34Z,2025-04-23T07:45:44Z,2025-04-23 07:52:33+00:00,2025-04-23 07:52:33+00:00,2025-04-23T07:45:44Z,2025-04-23 07:58:39+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,queue,366.0,False,409.0
+21749,2025-04-23T07:45:10Z,,2025-04-23 07:45:10+00:00,2025-04-23 07:45:10+00:00,,2025-04-23 07:46:16+00:00,outbound,pstnphone,Chris Kastanje,,True,False,False,False,direct,66.0,False,0.0
+21750,2025-04-23T07:47:05Z,,2025-04-23 07:47:05+00:00,2025-04-23 07:47:05+00:00,,2025-04-23 07:48:18+00:00,outbound,pstnphone,Chris Kastanje,,True,False,False,False,direct,73.0,False,0.0
+21751,2025-04-23T07:49:51Z,2025-04-23T07:50:55Z,2025-04-23 07:54:22+00:00,2025-04-23 07:54:22+00:00,2025-04-23T07:50:55Z,2025-04-23 08:01:45+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,443.0,False,207.0
+21752,2025-04-23T07:59:40Z,2025-04-23T08:00:50Z,2025-04-23 08:04:05+00:00,2025-04-23 08:04:05+00:00,2025-04-23T08:00:50Z,2025-04-23 08:10:12+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,367.0,False,195.0
+21753,2025-04-23T07:59:49Z,2025-04-23T08:00:59Z,2025-04-23 08:04:21+00:00,2025-04-23 08:04:21+00:00,2025-04-23T08:00:59Z,2025-04-23 08:07:48+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,queue,207.0,False,202.0
+21754,2025-04-23T08:02:05Z,2025-04-23T08:03:33Z,2025-04-23 08:08:56+00:00,2025-04-23 08:08:56+00:00,2025-04-23T08:03:33Z,2025-04-23 08:13:50+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,queue,294.0,False,323.0
+21755,2025-04-23T08:02:36Z,,,,,2025-04-23 08:03:52+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21756,2025-04-23T08:13:41Z,2025-04-23T08:14:51Z,2025-04-23 08:15:27+00:00,2025-04-23 08:15:27+00:00,2025-04-23T08:14:51Z,2025-04-23 08:22:23+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,416.0,False,36.0
+21757,2025-04-23T08:15:53Z,2025-04-23T08:16:46Z,2025-04-23 08:18:49+00:00,2025-04-23 08:18:49+00:00,2025-04-23T08:16:46Z,2025-04-23 08:24:46+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,357.0,False,123.0
+21758,2025-04-23T08:19:01Z,2025-04-23T08:19:47Z,2025-04-23 08:25:39+00:00,2025-04-23 08:25:39+00:00,2025-04-23T08:19:47Z,2025-04-23 08:25:41+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,2.0,False,352.0
+21759,2025-04-23T08:25:26Z,2025-04-23T08:26:07Z,2025-04-23 08:26:17+00:00,2025-04-23 08:26:17+00:00,2025-04-23T08:26:07Z,2025-04-23 08:30:55+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,True,False,False,False,queue,278.0,False,10.0
+21760,2025-04-23T08:26:50Z,,2025-04-23 08:26:50+00:00,2025-04-23 08:26:50+00:00,,2025-04-23 08:27:55+00:00,outbound,pstnphone,Sierk van der Velde,,True,False,False,False,direct,65.0,False,0.0
+21761,2025-04-23T08:29:47Z,2025-04-23T08:30:35Z,2025-04-23 08:30:49+00:00,2025-04-23 08:30:49+00:00,2025-04-23T08:30:35Z,2025-04-23 08:38:16+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,447.0,False,14.0
+21762,2025-04-23T08:30:05Z,2025-04-23T08:31:09Z,2025-04-23 08:31:22+00:00,2025-04-23 08:31:22+00:00,2025-04-23T08:31:09Z,2025-04-23 08:37:15+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,queue,353.0,False,13.0
+21763,2025-04-23T08:30:10Z,2025-04-23T08:30:59Z,,,2025-04-23T08:30:59Z,2025-04-23 08:31:29+00:00,inbound,pstnphone,,Customer service ,False,False,False,True,queue,,False,
+21764,2025-04-23T08:35:33Z,,,,,2025-04-23 08:36:09+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21765,2025-04-23T08:38:21Z,,,,,2025-04-23 08:40:07+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21766,2025-04-23T08:40:46Z,2025-04-23T08:41:41Z,2025-04-23 08:41:55+00:00,2025-04-23 08:41:55+00:00,2025-04-23T08:41:41Z,2025-04-23 08:49:38+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,463.0,False,14.0
+21767,2025-04-23T08:43:36Z,2025-04-23T08:44:24Z,2025-04-23 08:44:49+00:00,2025-04-23 08:44:49+00:00,2025-04-23T08:44:24Z,2025-04-23 08:51:10+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,381.0,False,25.0
+21768,2025-04-23T08:45:18Z,2025-04-23T08:46:29Z,2025-04-23 08:51:57+00:00,2025-04-23 08:51:57+00:00,2025-04-23T08:46:29Z,2025-04-23 09:03:38+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,queue,701.0,False,328.0
+21769,2025-04-23T08:45:32Z,2025-04-23T08:47:22Z,2025-04-23 09:03:49+00:00,2025-04-23 09:03:49+00:00,2025-04-23T08:47:22Z,2025-04-23 09:07:58+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,249.0,False,987.0
+21770,2025-04-23T08:47:51Z,2025-04-23T08:49:01Z,2025-04-23 09:03:53+00:00,2025-04-23 09:03:53+00:00,2025-04-23T08:49:01Z,2025-04-23 09:04:40+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,queue,47.0,False,892.0
+21771,2025-04-23T08:48:04Z,,,,,2025-04-23 08:48:05+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21772,2025-04-23T08:48:08Z,2025-04-23T08:49:18Z,,,2025-04-23T08:49:18Z,2025-04-23 08:50:27+00:00,inbound,pstnphone,,Technical service ,False,False,False,True,queue,,False,
+21773,2025-04-23T08:48:37Z,,2025-04-23 08:48:37+00:00,2025-04-23 08:48:37+00:00,,2025-04-23 08:50:49+00:00,outbound,pstnphone,Chris Kastanje,,True,False,False,False,direct,132.0,False,0.0
+21774,2025-04-23T08:49:08Z,2025-04-23T08:50:13Z,2025-04-23 08:52:08+00:00,2025-04-23 08:52:08+00:00,2025-04-23T08:50:13Z,2025-04-23 08:52:49+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,41.0,False,115.0
+21775,2025-04-23T08:50:04Z,,2025-04-23 08:50:04+00:00,2025-04-23 08:50:04+00:00,,2025-04-23 08:51:09+00:00,outbound,pstnphone,Sierk van der Velde,,True,False,False,False,direct,65.0,False,0.0
+21776,2025-04-23T08:50:06Z,2025-04-23T08:50:59Z,2025-04-23 08:51:18+00:00,2025-04-23 08:51:18+00:00,2025-04-23T08:50:59Z,2025-04-23 09:03:39+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,741.0,False,19.0
+21777,2025-04-23T08:50:19Z,2025-04-23T08:51:08Z,2025-04-23 08:56:28+00:00,2025-04-23 08:56:28+00:00,2025-04-23T08:51:08Z,2025-04-23 09:00:38+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,250.0,False,320.0
+21778,2025-04-23T08:50:43Z,2025-04-23T08:51:41Z,2025-04-23 09:04:46+00:00,2025-04-23 09:04:46+00:00,2025-04-23T08:51:41Z,2025-04-23 09:15:44+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,queue,658.0,False,785.0
+21779,2025-04-23T08:52:33Z,2025-04-23T08:53:46Z,,,2025-04-23T08:53:46Z,2025-04-23 08:55:31+00:00,inbound,pstnphone,,Technical service ,False,False,False,True,queue,,False,
+21780,2025-04-23T08:52:43Z,2025-04-23T08:53:49Z,2025-04-23 09:08:02+00:00,2025-04-23 09:08:02+00:00,2025-04-23T08:53:49Z,2025-04-23 09:29:55+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,1313.0,False,853.0
+21781,2025-04-23T09:03:53Z,2025-04-23T09:05:02Z,2025-04-23 09:23:51+00:00,2025-04-23 09:23:51+00:00,2025-04-23T09:05:02Z,2025-04-23 09:29:33+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,queue,342.0,False,1129.0
+21782,2025-04-23T09:04:59Z,2025-04-23T09:20:15Z,2025-04-23 09:49:36+00:00,2025-04-23 09:49:36+00:00,2025-04-23T09:20:15Z,2025-04-23 09:49:38+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,2.0,False,1761.0
+21783,2025-04-23T09:07:55Z,2025-04-23T09:09:49Z,2025-04-23 09:30:03+00:00,2025-04-23 09:30:03+00:00,2025-04-23T09:09:49Z,2025-04-23 09:37:54+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,471.0,False,1214.0
+21784,2025-04-23T09:08:13Z,2025-04-23T09:08:59Z,2025-04-23 09:11:44+00:00,2025-04-23 09:11:44+00:00,2025-04-23T09:08:59Z,2025-04-23 09:13:06+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,82.0,False,165.0
+21785,2025-04-23T09:10:48Z,2025-04-23T09:11:40Z,2025-04-23 09:16:28+00:00,2025-04-23 09:16:28+00:00,2025-04-23T09:11:40Z,2025-04-23 09:18:56+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,148.0,False,288.0
+21786,2025-04-23T09:13:01Z,2025-04-23T09:13:54Z,2025-04-23 09:19:02+00:00,2025-04-23 09:19:02+00:00,2025-04-23T09:13:54Z,2025-04-23 09:23:06+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,244.0,False,308.0
+21787,2025-04-23T09:13:11Z,,,,,2025-04-23 09:13:44+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21788,2025-04-23T09:16:00Z,2025-04-23T09:17:11Z,2025-04-23 09:38:26+00:00,2025-04-23 09:38:26+00:00,2025-04-23T09:17:11Z,2025-04-23 09:48:32+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,606.0,False,1275.0
+21789,2025-04-23T09:16:20Z,2025-04-23T09:17:09Z,2025-04-23 09:23:12+00:00,2025-04-23 09:23:12+00:00,2025-04-23T09:17:09Z,2025-04-23 09:25:57+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,165.0,False,363.0
+21790,2025-04-23T09:17:35Z,,,,,2025-04-23 09:17:52+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21791,2025-04-23T09:17:44Z,2025-04-23T09:18:55Z,2025-04-23 09:35:06+00:00,2025-04-23 09:35:06+00:00,2025-04-23T09:18:55Z,2025-04-23 09:42:45+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,queue,459.0,False,971.0
+21792,2025-04-23T09:20:10Z,2025-04-23T09:21:09Z,2025-04-23 09:26:17+00:00,2025-04-23 09:26:17+00:00,2025-04-23T09:21:09Z,2025-04-23 09:28:47+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,150.0,False,308.0
+21793,2025-04-23T09:31:12Z,2025-04-23T09:32:25Z,2025-04-23 09:39:28+00:00,2025-04-23 09:39:28+00:00,2025-04-23T09:32:25Z,2025-04-23 09:42:57+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,209.0,False,423.0
+21794,2025-04-23T09:36:29Z,2025-04-23T09:37:22Z,2025-04-23 09:37:39+00:00,2025-04-23 09:37:39+00:00,2025-04-23T09:37:22Z,2025-04-23 09:43:05+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,326.0,False,17.0
+21795,2025-04-23T09:39:14Z,2025-04-23T09:40:27Z,2025-04-23 09:44:20+00:00,2025-04-23 09:44:20+00:00,2025-04-23T09:40:27Z,2025-04-23 09:49:31+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,311.0,False,233.0
+21796,2025-04-23T09:39:21Z,,,,,2025-04-23 09:39:34+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21797,2025-04-23T09:40:06Z,2025-04-23T09:45:26Z,2025-04-23 09:49:41+00:00,2025-04-23 09:49:41+00:00,2025-04-23T09:45:26Z,2025-04-23 09:49:42+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,1.0,False,255.0
+21798,2025-04-23T09:44:14Z,2025-04-23T09:46:08Z,2025-04-23 09:51:55+00:00,2025-04-23 09:51:55+00:00,2025-04-23T09:46:08Z,2025-04-23 09:52:50+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,55.0,False,347.0
+21799,2025-04-23T09:45:03Z,2025-04-23T09:46:13Z,2025-04-23 09:48:41+00:00,2025-04-23 09:48:41+00:00,2025-04-23T09:46:13Z,2025-04-23 10:11:20+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,1359.0,False,148.0
+21800,2025-04-23T09:47:21Z,2025-04-23T09:48:09Z,2025-04-23 09:49:09+00:00,2025-04-23 09:49:09+00:00,2025-04-23T09:48:09Z,2025-04-23 09:51:17+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,128.0,False,60.0
+21801,2025-04-23T09:48:27Z,,,,,2025-04-23 09:50:23+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21802,2025-04-23T09:50:00Z,2025-04-23T09:51:12Z,2025-04-23 09:51:28+00:00,2025-04-23 09:51:28+00:00,2025-04-23T09:51:12Z,2025-04-23 09:52:28+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,queue,60.0,False,16.0
+21803,2025-04-23T09:50:37Z,2025-04-23T09:51:38Z,2025-04-23 09:52:39+00:00,2025-04-23 09:52:39+00:00,2025-04-23T09:51:38Z,2025-04-23 09:57:29+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,queue,290.0,False,61.0
+21804,2025-04-23T09:53:18Z,2025-04-23T09:54:15Z,2025-04-23 09:54:43+00:00,2025-04-23 09:54:43+00:00,2025-04-23T09:54:15Z,2025-04-23 10:03:47+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,False,False,False,False,queue,544.0,False,28.0
+21805,2025-04-23T09:56:52Z,2025-04-23T09:57:45Z,2025-04-23 10:01:00+00:00,2025-04-23 10:01:00+00:00,2025-04-23T09:57:45Z,2025-04-23 10:01:34+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,queue,34.0,False,195.0
+21806,2025-04-23T09:57:56Z,2025-04-23T09:59:10Z,2025-04-23 10:07:41+00:00,2025-04-23 10:07:41+00:00,2025-04-23T09:59:10Z,2025-04-23 10:12:39+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,queue,298.0,False,511.0
+21807,2025-04-23T09:59:37Z,2025-04-23T10:00:41Z,2025-04-23 10:01:01+00:00,2025-04-23 10:01:01+00:00,2025-04-23T10:00:41Z,2025-04-23 10:02:13+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,72.0,False,20.0
+21808,2025-04-23T10:01:41Z,,2025-04-23 10:01:41+00:00,2025-04-23 10:01:41+00:00,,2025-04-23 10:05:28+00:00,outbound,pstnphone,Chris Kastanje,,True,False,False,False,direct,227.0,False,0.0
+21809,2025-04-23T10:14:44Z,,2025-04-23 10:14:44+00:00,2025-04-23 10:14:44+00:00,,2025-04-23 10:18:50+00:00,outbound,pstnphone,Chris Kastanje,,True,False,False,False,direct,246.0,False,0.0
+21810,2025-04-23T10:17:23Z,2025-04-23T10:18:30Z,2025-04-23 10:18:42+00:00,2025-04-23 10:18:42+00:00,2025-04-23T10:18:30Z,2025-04-23 10:57:55+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,2353.0,False,12.0
+21811,2025-04-23T10:28:03Z,2025-04-23T10:28:59Z,2025-04-23 10:31:57+00:00,2025-04-23 10:31:57+00:00,2025-04-23T10:28:59Z,2025-04-23 10:36:06+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,queue,249.0,False,178.0
+21812,2025-04-23T10:35:23Z,2025-04-23T10:36:31Z,2025-04-23 10:39:08+00:00,2025-04-23 10:39:08+00:00,2025-04-23T10:36:31Z,2025-04-23 10:44:14+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,queue,306.0,False,157.0
+21813,2025-04-23T11:20:50Z,,,,,2025-04-23 11:21:01+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21814,2025-04-23T11:32:24Z,,,,,2025-04-23 11:32:34+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21815,2025-04-23T12:45:13Z,,,,,2025-04-23 12:45:27+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21816,2025-04-23T12:50:34Z,,,,,2025-04-23 12:50:46+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21817,2025-04-23T12:51:40Z,,2025-04-23 12:51:40+00:00,2025-04-23 12:51:40+00:00,,2025-04-23 12:57:04+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,direct,324.0,False,0.0
+21818,2025-04-23T12:59:00Z,,,,,2025-04-23 12:59:11+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21819,2025-04-23T13:01:12Z,,2025-04-23 13:01:12+00:00,2025-04-23 13:01:12+00:00,,2025-04-23 13:07:50+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,direct,398.0,False,0.0
+21820,2025-04-23T13:06:31Z,,,,,2025-04-23 13:06:36+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21821,2025-04-23T13:22:33Z,,2025-04-23 13:22:33+00:00,2025-04-23 13:22:33+00:00,,2025-04-23 13:24:20+00:00,outbound,pstnphone,Chris Kastanje,,True,False,False,False,direct,107.0,False,0.0
+21822,2025-04-23T13:27:15Z,,,,,2025-04-23 13:27:22+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21823,2025-04-23T13:45:24Z,,,,,2025-04-23 13:45:35+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21824,2025-04-23T13:54:52Z,,2025-04-23 13:54:52+00:00,2025-04-23 13:54:52+00:00,,2025-04-23 13:58:07+00:00,outbound,pstnphone,Sierk van der Velde,,True,False,False,False,direct,195.0,False,0.0
+21825,2025-04-23T14:13:15Z,,,,,2025-04-23 14:13:28+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21826,2025-04-23T14:20:24Z,,2025-04-23 14:20:24+00:00,2025-04-23 14:20:24+00:00,,2025-04-23 14:49:15+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,direct,1731.0,False,0.0
+21827,2025-04-23T14:40:36Z,,,,,2025-04-23 14:40:47+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21828,2025-04-23T15:01:37Z,,,,,2025-04-23 15:01:41+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21829,2025-04-23T15:17:20Z,,,,,2025-04-23 15:17:31+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21830,2025-04-24T07:00:28Z,2025-04-24T07:01:10Z,2025-04-24 07:01:25+00:00,2025-04-24 07:01:25+00:00,2025-04-24T07:01:10Z,2025-04-24 07:06:46+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,True,False,False,False,queue,321.0,False,15.0
+21831,2025-04-24T07:05:43Z,2025-04-24T07:06:31Z,2025-04-24 07:10:14+00:00,2025-04-24 07:10:14+00:00,2025-04-24T07:06:31Z,2025-04-24 07:14:36+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,False,False,False,False,queue,262.0,False,223.0
+21832,2025-04-24T07:11:47Z,2025-04-24T07:12:45Z,2025-04-24 07:15:01+00:00,2025-04-24 07:15:01+00:00,2025-04-24T07:12:45Z,2025-04-24 07:31:38+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,997.0,False,136.0
+21833,2025-04-24T07:14:50Z,2025-04-24T07:15:33Z,2025-04-24 07:31:45+00:00,2025-04-24 07:31:45+00:00,2025-04-24T07:15:33Z,2025-04-24 07:34:20+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,155.0,False,972.0
+21834,2025-04-24T07:15:47Z,2025-04-24T07:16:31Z,2025-04-24 07:16:50+00:00,2025-04-24 07:16:50+00:00,2025-04-24T07:16:31Z,2025-04-24 07:19:32+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,False,False,False,False,queue,162.0,False,19.0
+21835,2025-04-24T07:18:27Z,,,,,2025-04-24 07:19:32+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21836,2025-04-24T07:19:39Z,2025-04-24T07:20:36Z,2025-04-24 07:20:45+00:00,2025-04-24 07:20:45+00:00,2025-04-24T07:20:36Z,2025-04-24 07:26:26+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,False,False,False,False,queue,341.0,False,9.0
+21837,2025-04-24T07:20:31Z,2025-04-24T07:21:24Z,2025-04-24 07:22:42+00:00,2025-04-24 07:22:42+00:00,2025-04-24T07:21:24Z,2025-04-24 07:28:32+00:00,inbound,pstnphone,Bart Jansen,Returns ,False,False,False,False,queue,350.0,False,78.0
+21838,2025-04-24T07:21:18Z,2025-04-24T07:29:14Z,2025-04-24 07:34:23+00:00,2025-04-24 07:34:23+00:00,2025-04-24T07:29:14Z,2025-04-24 07:34:25+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,2.0,False,309.0
+21839,2025-04-24T07:21:45Z,2025-04-24T07:22:37Z,2025-04-24 07:29:48+00:00,2025-04-24 07:29:48+00:00,2025-04-24T07:22:37Z,2025-04-24 07:34:22+00:00,inbound,pstnphone,Bart Jansen,Returns ,False,False,False,False,queue,274.0,False,431.0
+21840,2025-04-24T07:21:56Z,2025-04-24T07:22:46Z,2025-04-24 07:27:48+00:00,2025-04-24 07:27:48+00:00,2025-04-24T07:22:46Z,2025-04-24 07:29:34+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,False,False,False,False,queue,106.0,False,302.0
+21841,2025-04-24T07:32:21Z,,2025-04-24 07:32:21+00:00,2025-04-24 07:32:21+00:00,,2025-04-24 07:37:08+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,direct,287.0,False,0.0
+21842,2025-04-24T07:36:45Z,2025-04-24T07:37:35Z,2025-04-24 07:37:42+00:00,2025-04-24 07:37:42+00:00,2025-04-24T07:37:35Z,2025-04-24 07:40:29+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,True,False,False,False,queue,167.0,False,7.0
+21843,2025-04-24T07:37:02Z,2025-04-24T07:38:03Z,2025-04-24 07:40:25+00:00,2025-04-24 07:40:25+00:00,2025-04-24T07:38:03Z,2025-04-24 07:45:21+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,296.0,False,142.0
+21844,2025-04-24T07:37:51Z,,2025-04-24 07:37:51+00:00,2025-04-24 07:37:51+00:00,,2025-04-24 07:40:21+00:00,outbound,pstnphone,Roy Pietersz,,True,False,False,False,direct,150.0,False,0.0
+21845,2025-04-24T07:38:49Z,,,,,2025-04-24 07:44:15+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21846,2025-04-24T07:48:45Z,,2025-04-24 07:48:45+00:00,2025-04-24 07:48:45+00:00,,2025-04-24 07:51:09+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,direct,144.0,False,0.0
+21847,2025-04-24T07:53:43Z,2025-04-24T07:54:29Z,2025-04-24 07:54:38+00:00,2025-04-24 07:54:38+00:00,2025-04-24T07:54:29Z,2025-04-24 07:56:07+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,True,False,False,False,queue,89.0,False,9.0
+21848,2025-04-24T07:55:40Z,,2025-04-24 07:55:40+00:00,2025-04-24 07:55:40+00:00,,2025-04-24 07:59:49+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,direct,249.0,False,0.0
+21849,2025-04-24T07:56:39Z,2025-04-24T07:57:53Z,2025-04-24 07:58:39+00:00,2025-04-24 07:58:39+00:00,2025-04-24T07:57:53Z,2025-04-24 08:04:09+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,False,False,False,False,queue,330.0,False,46.0
+21850,2025-04-24T08:01:00Z,,,,,2025-04-24 08:02:01+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21851,2025-04-24T08:01:34Z,,,,,2025-04-24 08:01:42+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21852,2025-04-24T08:06:07Z,2025-04-24T08:06:52Z,2025-04-24 08:06:58+00:00,2025-04-24 08:06:58+00:00,2025-04-24T08:06:52Z,2025-04-24 08:10:33+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,True,False,False,False,queue,215.0,False,6.0
+21853,2025-04-24T08:07:14Z,2025-04-24T08:08:25Z,2025-04-24 08:10:37+00:00,2025-04-24 08:10:37+00:00,2025-04-24T08:08:25Z,2025-04-24 08:22:11+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,694.0,False,132.0
+21854,2025-04-24T08:12:22Z,2025-04-24T08:13:17Z,2025-04-24 08:23:06+00:00,2025-04-24 08:23:06+00:00,2025-04-24T08:13:17Z,2025-04-24 08:26:21+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,195.0,False,589.0
+21855,2025-04-24T08:14:00Z,2025-04-24T08:14:33Z,2025-04-24 08:14:57+00:00,2025-04-24 08:14:57+00:00,2025-04-24T08:14:33Z,2025-04-24 08:23:20+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,True,False,False,False,queue,503.0,False,24.0
+21856,2025-04-24T08:16:43Z,2025-04-24T08:17:48Z,2025-04-24 08:26:25+00:00,2025-04-24 08:26:25+00:00,2025-04-24T08:17:48Z,2025-04-24 08:28:39+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,134.0,False,517.0
+21857,2025-04-24T08:18:20Z,2025-04-24T08:25:36Z,2025-04-24 08:28:42+00:00,2025-04-24 08:28:42+00:00,2025-04-24T08:25:36Z,2025-04-24 08:28:44+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,2.0,False,186.0
+21858,2025-04-24T08:19:15Z,2025-04-24T08:20:04Z,2025-04-24 08:20:20+00:00,2025-04-24 08:20:20+00:00,2025-04-24T08:20:04Z,2025-04-24 08:24:07+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,False,False,False,False,queue,227.0,False,16.0
+21859,2025-04-24T08:39:10Z,,,,,2025-04-24 08:43:02+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21860,2025-04-24T08:41:00Z,2025-04-24T08:41:57Z,2025-04-24 08:42:36+00:00,2025-04-24 08:42:36+00:00,2025-04-24T08:41:57Z,2025-04-24 08:48:45+00:00,inbound,pstnphone,Bart Jansen,Returns ,False,False,False,False,queue,369.0,False,39.0
+21861,2025-04-24T08:41:57Z,2025-04-24T08:42:46Z,2025-04-24 08:42:55+00:00,2025-04-24 08:42:55+00:00,2025-04-24T08:42:46Z,2025-04-24 08:44:14+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,True,False,False,False,queue,79.0,False,9.0
+21862,2025-04-24T08:44:05Z,,,,,2025-04-24 08:46:18+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21863,2025-04-24T08:44:48Z,2025-04-24T08:45:37Z,2025-04-24 08:47:28+00:00,2025-04-24 08:47:28+00:00,2025-04-24T08:45:37Z,2025-04-24 08:49:24+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,False,False,False,False,queue,116.0,False,111.0
+21864,2025-04-24T08:46:46Z,2025-04-24T08:47:34Z,2025-04-24 08:51:41+00:00,2025-04-24 08:51:41+00:00,2025-04-24T08:47:34Z,2025-04-24 08:53:32+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,False,False,False,False,queue,111.0,False,247.0
+21865,2025-04-24T09:01:59Z,2025-04-24T09:03:51Z,2025-04-24 09:04:14+00:00,2025-04-24 09:04:14+00:00,2025-04-24T09:03:51Z,2025-04-24 09:06:07+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,113.0,False,23.0
+21866,2025-04-24T09:05:16Z,2025-04-24T09:06:08Z,2025-04-24 09:06:17+00:00,2025-04-24 09:06:17+00:00,2025-04-24T09:06:08Z,2025-04-24 09:13:22+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,False,False,False,False,queue,425.0,False,9.0
+21867,2025-04-24T09:13:15Z,2025-04-24T09:14:26Z,2025-04-24 09:15:06+00:00,2025-04-24 09:15:06+00:00,2025-04-24T09:14:26Z,2025-04-24 09:21:41+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,395.0,False,40.0
+21868,2025-04-24T09:21:28Z,2025-04-24T09:22:21Z,2025-04-24 09:22:34+00:00,2025-04-24 09:22:34+00:00,2025-04-24T09:22:21Z,2025-04-24 09:28:10+00:00,inbound,pstnphone,Bart Jansen,Returns ,False,False,False,False,queue,336.0,False,13.0
+21869,2025-04-24T09:22:53Z,2025-04-24T09:23:42Z,2025-04-24 09:23:51+00:00,2025-04-24 09:23:51+00:00,2025-04-24T09:23:42Z,2025-04-24 09:26:31+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,True,False,False,False,queue,160.0,False,9.0
+21870,2025-04-24T09:23:19Z,2025-04-24T09:24:28Z,2025-04-24 09:24:36+00:00,2025-04-24 09:24:36+00:00,2025-04-24T09:24:28Z,2025-04-24 09:28:11+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,215.0,False,8.0
+21871,2025-04-24T09:25:20Z,2025-04-24T09:26:15Z,2025-04-24 09:26:35+00:00,2025-04-24 09:26:35+00:00,2025-04-24T09:26:15Z,2025-04-24 09:28:26+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,False,False,False,False,queue,111.0,False,20.0
+21872,2025-04-24T09:31:22Z,2025-04-24T09:32:31Z,2025-04-24 09:32:53+00:00,2025-04-24 09:32:53+00:00,2025-04-24T09:32:31Z,2025-04-24 09:36:29+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,216.0,False,22.0
+21873,2025-04-24T09:32:54Z,2025-04-24T09:34:02Z,2025-04-24 09:36:33+00:00,2025-04-24 09:36:33+00:00,2025-04-24T09:34:02Z,2025-04-24 09:40:13+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,220.0,False,151.0
+21874,2025-04-24T09:36:49Z,2025-04-24T09:37:38Z,2025-04-24 09:37:47+00:00,2025-04-24 09:37:47+00:00,2025-04-24T09:37:38Z,2025-04-24 09:39:36+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,True,False,False,False,queue,109.0,False,9.0
+21875,2025-04-24T09:37:08Z,2025-04-24T09:37:53Z,2025-04-24 09:44:41+00:00,2025-04-24 09:44:41+00:00,2025-04-24T09:37:53Z,2025-04-24 09:57:13+00:00,inbound,pstnphone,Bart Jansen,Returns ,False,False,False,False,queue,752.0,False,408.0
+21876,2025-04-24T09:40:52Z,2025-04-24T09:41:42Z,2025-04-24 09:41:50+00:00,2025-04-24 09:41:50+00:00,2025-04-24T09:41:42Z,2025-04-24 09:43:46+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,True,False,False,False,queue,116.0,False,8.0
+21877,2025-04-24T09:48:42Z,2025-04-24T09:49:38Z,2025-04-24 09:49:45+00:00,2025-04-24 09:49:45+00:00,2025-04-24T09:49:38Z,2025-04-24 09:58:31+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,526.0,False,7.0
+21878,2025-04-24T09:52:26Z,2025-04-24T09:53:38Z,2025-04-24 10:00:55+00:00,2025-04-24 10:00:55+00:00,2025-04-24T09:53:38Z,2025-04-24 10:05:13+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,258.0,False,437.0
+21879,2025-04-24T09:55:44Z,2025-04-24T09:56:43Z,2025-04-24 09:56:54+00:00,2025-04-24 09:56:54+00:00,2025-04-24T09:56:43Z,2025-04-24 09:58:28+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,False,False,False,False,queue,94.0,False,11.0
+21880,2025-04-24T09:56:41Z,2025-04-24T10:00:42Z,2025-04-24 10:07:40+00:00,2025-04-24 10:07:40+00:00,2025-04-24T10:00:42Z,2025-04-24 10:07:42+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,2.0,False,418.0
+21881,2025-04-24T09:56:45Z,2025-04-24T09:57:42Z,2025-04-24 09:57:52+00:00,2025-04-24 09:57:52+00:00,2025-04-24T09:57:42Z,2025-04-24 10:19:18+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,False,False,False,False,queue,1286.0,False,10.0
+21882,2025-04-24T10:03:51Z,2025-04-24T10:04:49Z,2025-04-24 10:05:16+00:00,2025-04-24 10:05:16+00:00,2025-04-24T10:04:49Z,2025-04-24 10:07:36+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,140.0,False,27.0
+21883,2025-04-24T10:05:10Z,2025-04-24T10:05:56Z,2025-04-24 10:06:03+00:00,2025-04-24 10:06:03+00:00,2025-04-24T10:05:56Z,2025-04-24 10:13:46+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,True,False,False,False,queue,463.0,False,7.0
+21884,2025-04-24T10:06:40Z,,,,,2025-04-24 10:07:55+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21885,2025-04-24T10:11:59Z,2025-04-24T10:12:51Z,,,2025-04-24T10:12:51Z,2025-04-24 10:15:28+00:00,inbound,pstnphone,,Customer service ,False,False,False,True,queue,,False,
+21886,2025-04-24T10:14:21Z,2025-04-24T10:15:32Z,2025-04-24 10:15:40+00:00,2025-04-24 10:15:40+00:00,2025-04-24T10:15:32Z,2025-04-24 10:22:03+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,383.0,False,8.0
+21887,2025-04-24T10:27:47Z,2025-04-24T10:28:36Z,2025-04-24 10:28:45+00:00,2025-04-24 10:28:45+00:00,2025-04-24T10:28:36Z,2025-04-24 10:30:48+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,True,False,False,False,queue,123.0,False,9.0
+21888,2025-04-24T10:29:46Z,2025-04-24T10:31:03Z,2025-04-24 10:31:23+00:00,2025-04-24 10:31:23+00:00,2025-04-24T10:31:03Z,2025-04-24 10:34:32+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,189.0,False,20.0
+21889,2025-04-24T10:39:03Z,,2025-04-24 10:39:03+00:00,2025-04-24 10:39:03+00:00,,2025-04-24 10:40:21+00:00,outbound,pstnphone,Sierk van der Velde,,True,False,False,False,direct,78.0,False,0.0
+21890,2025-04-24T10:54:23Z,2025-04-24T10:55:02Z,2025-04-24 10:55:18+00:00,2025-04-24 10:55:18+00:00,2025-04-24T10:55:02Z,2025-04-24 10:58:30+00:00,inbound,pstnphone,Sierk van der Velde,Customer service ,True,False,False,False,queue,192.0,False,16.0
+21891,2025-04-24T10:54:37Z,2025-04-24T10:55:43Z,2025-04-24 10:55:54+00:00,2025-04-24 10:55:54+00:00,2025-04-24T10:55:43Z,2025-04-24 10:56:55+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,61.0,False,11.0
+21892,2025-04-24T11:01:03Z,,,,,2025-04-24 11:01:14+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21893,2025-04-24T11:14:02Z,,,,,2025-04-24 11:14:13+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21894,2025-04-24T11:34:50Z,,,,,2025-04-24 11:35:01+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21895,2025-04-24T11:35:09Z,,2025-04-24 11:35:09+00:00,2025-04-24 11:35:09+00:00,,2025-04-24 11:39:06+00:00,outbound,pstnphone,Roy Pietersz,,True,False,False,False,direct,237.0,False,0.0
+21896,2025-04-24T11:38:13Z,,,,,2025-04-24 11:38:20+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21897,2025-04-24T11:38:26Z,,,,,2025-04-24 11:38:36+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21898,2025-04-24T11:41:45Z,,,,,2025-04-24 11:41:54+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21899,2025-04-24T11:43:43Z,,,,,2025-04-24 11:43:48+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21900,2025-04-24T11:57:34Z,,,,,2025-04-24 11:57:38+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21901,2025-04-24T12:00:29Z,,,,,2025-04-24 12:00:57+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21902,2025-04-24T12:13:02Z,,,,,2025-04-24 12:13:13+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21903,2025-04-24T12:15:22Z,,2025-04-24 12:15:22+00:00,2025-04-24 12:15:22+00:00,,2025-04-24 12:17:36+00:00,outbound,pstnphone,Sierk van der Velde,,True,False,False,False,direct,134.0,False,0.0
+21904,2025-04-24T12:17:38Z,,2025-04-24 12:17:38+00:00,2025-04-24 12:17:38+00:00,,2025-04-24 12:18:05+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,direct,27.0,False,0.0
+21905,2025-04-24T12:18:13Z,,2025-04-24 12:18:13+00:00,2025-04-24 12:18:13+00:00,,2025-04-24 12:18:39+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,direct,26.0,False,0.0
+21906,2025-04-24T12:24:20Z,,,,,2025-04-24 12:24:31+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21907,2025-04-24T12:30:39Z,,2025-04-24 12:30:39+00:00,2025-04-24 12:30:39+00:00,,2025-04-24 12:40:16+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,direct,577.0,False,0.0
+21908,2025-04-24T12:33:14Z,,,,,2025-04-24 12:33:25+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21909,2025-04-24T12:53:51Z,,,,,2025-04-24 12:54:02+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21910,2025-04-24T13:18:00Z,,,,,2025-04-24 13:18:28+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21911,2025-04-24T13:18:51Z,,2025-04-24 13:18:51+00:00,2025-04-24 13:18:51+00:00,,2025-04-24 13:19:35+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,direct,44.0,False,0.0
+21912,2025-04-24T13:23:42Z,,2025-04-24 13:23:42+00:00,2025-04-24 13:23:42+00:00,,2025-04-24 13:41:05+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,direct,1043.0,False,0.0
+21913,2025-04-24T13:27:29Z,,,,,2025-04-24 13:27:35+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21914,2025-04-24T13:41:31Z,,,,,2025-04-24 13:41:45+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21915,2025-04-24T13:57:31Z,,,,,2025-04-24 13:57:37+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21916,2025-04-24T14:11:42Z,,2025-04-24 14:11:42+00:00,2025-04-24 14:11:42+00:00,,2025-04-24 14:13:13+00:00,outbound,pstnphone,Bart Jansen,,True,False,False,False,direct,91.0,False,0.0
+21917,2025-04-24T14:39:10Z,,2025-04-24 14:39:10+00:00,2025-04-24 14:39:10+00:00,,2025-04-24 14:40:23+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,direct,73.0,False,0.0
+21918,2025-04-24T14:41:21Z,,2025-04-24 14:41:21+00:00,2025-04-24 14:41:21+00:00,,2025-04-24 14:42:39+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,direct,78.0,False,0.0
+21919,2025-04-24T14:42:09Z,,,,,2025-04-24 14:42:32+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21920,2025-04-24T14:46:42Z,,2025-04-24 14:46:42+00:00,2025-04-24 14:46:42+00:00,,2025-04-24 14:49:32+00:00,outbound,pstnphone,Jeremy Van t Hul,,True,False,False,False,direct,170.0,False,0.0
+21921,2025-04-25T06:41:10Z,,2025-04-25 06:41:10+00:00,2025-04-25 06:41:10+00:00,,2025-04-25 06:43:02+00:00,outbound,pstnphone,Bart Jansen,,True,False,False,False,direct,112.0,False,0.0
+21922,2025-04-25T07:00:04Z,2025-04-25T07:00:50Z,2025-04-25 07:01:45+00:00,2025-04-25 07:01:45+00:00,2025-04-25T07:00:50Z,2025-04-25 07:03:32+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,107.0,False,55.0
+21923,2025-04-25T07:08:32Z,2025-04-25T07:09:21Z,2025-04-25 07:09:37+00:00,2025-04-25 07:09:37+00:00,2025-04-25T07:09:21Z,2025-04-25 07:11:35+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,118.0,False,16.0
+21924,2025-04-25T07:12:11Z,2025-04-25T07:12:57Z,2025-04-25 07:13:56+00:00,2025-04-25 07:13:56+00:00,2025-04-25T07:12:57Z,2025-04-25 07:15:04+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,68.0,False,59.0
+21925,2025-04-25T07:14:25Z,2025-04-25T07:15:44Z,2025-04-25 07:15:54+00:00,2025-04-25 07:15:54+00:00,2025-04-25T07:15:44Z,2025-04-25 07:25:08+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,queue,554.0,False,10.0
+21926,2025-04-25T07:15:40Z,2025-04-25T07:16:40Z,2025-04-25 07:16:51+00:00,2025-04-25 07:16:51+00:00,2025-04-25T07:16:40Z,2025-04-25 07:22:42+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,False,False,False,False,queue,351.0,False,11.0
+21927,2025-04-25T07:18:26Z,2025-04-25T07:19:22Z,2025-04-25 07:19:27+00:00,2025-04-25 07:19:27+00:00,2025-04-25T07:19:22Z,2025-04-25 07:48:26+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,1739.0,False,5.0
+21928,2025-04-25T07:20:30Z,,,,,2025-04-25 07:21:36+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21929,2025-04-25T07:21:51Z,2025-04-25T07:22:33Z,2025-04-25 07:22:51+00:00,2025-04-25 07:22:51+00:00,2025-04-25T07:22:33Z,2025-04-25 07:24:11+00:00,inbound,pstnphone,Danique Kos,Customer service ,True,False,False,False,queue,80.0,False,18.0
+21930,2025-04-25T07:25:11Z,2025-04-25T07:26:21Z,2025-04-25 07:27:26+00:00,2025-04-25 07:27:26+00:00,2025-04-25T07:26:21Z,2025-04-25 07:31:13+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,queue,227.0,False,65.0
+21931,2025-04-25T07:25:42Z,2025-04-25T07:26:55Z,2025-04-25 07:37:04+00:00,2025-04-25 07:37:04+00:00,2025-04-25T07:26:55Z,2025-04-25 07:39:39+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,queue,155.0,False,609.0
+21932,2025-04-25T07:27:51Z,2025-04-25T07:28:47Z,2025-04-25 07:36:35+00:00,2025-04-25 07:36:35+00:00,2025-04-25T07:28:47Z,2025-04-25 07:38:42+00:00,inbound,pstnphone,Danique Kos,Returns ,False,False,False,False,queue,127.0,False,468.0
+21933,2025-04-25T07:31:36Z,2025-04-25T07:32:49Z,2025-04-25 07:39:47+00:00,2025-04-25 07:39:47+00:00,2025-04-25T07:32:49Z,2025-04-25 07:46:14+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,queue,387.0,False,418.0
+21934,2025-04-25T07:33:18Z,2025-04-25T07:34:29Z,2025-04-25 07:49:00+00:00,2025-04-25 07:49:00+00:00,2025-04-25T07:34:29Z,2025-04-25 07:58:35+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,575.0,False,871.0
+21935,2025-04-25T07:33:58Z,2025-04-25T07:34:51Z,2025-04-25 07:40:00+00:00,2025-04-25 07:40:00+00:00,2025-04-25T07:34:51Z,2025-04-25 07:44:01+00:00,inbound,pstnphone,Danique Kos,Returns ,False,False,False,False,queue,241.0,False,309.0
+21936,2025-04-25T07:39:38Z,2025-04-25T07:40:28Z,2025-04-25 07:44:16+00:00,2025-04-25 07:44:16+00:00,2025-04-25T07:40:28Z,2025-04-25 07:47:56+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,220.0,False,228.0
+21937,2025-04-25T07:39:53Z,2025-04-25T07:40:56Z,2025-04-25 07:50:43+00:00,2025-04-25 07:50:43+00:00,2025-04-25T07:40:56Z,2025-04-25 08:04:38+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,835.0,False,587.0
+21938,2025-04-25T07:43:30Z,2025-04-25T07:44:42Z,2025-04-25 08:03:43+00:00,2025-04-25 08:03:43+00:00,2025-04-25T07:44:42Z,2025-04-25 08:12:28+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,525.0,False,1141.0
+21939,2025-04-25T07:51:49Z,,2025-04-25 07:51:49+00:00,2025-04-25 07:51:49+00:00,,2025-04-25 07:52:03+00:00,outbound,pstnphone,Bart Jansen,,True,False,False,False,direct,14.0,False,0.0
+21940,2025-04-25T07:54:11Z,,2025-04-25 07:54:11+00:00,2025-04-25 07:54:11+00:00,,2025-04-25 07:54:28+00:00,outbound,pstnphone,Bart Jansen,,True,False,False,False,direct,17.0,False,0.0
+21941,2025-04-25T07:54:16Z,2025-04-25T07:55:28Z,2025-04-25 08:05:34+00:00,2025-04-25 08:05:34+00:00,2025-04-25T07:55:28Z,2025-04-25 08:11:30+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,356.0,False,606.0
+21942,2025-04-25T07:54:52Z,2025-04-25T07:56:07Z,2025-04-25 08:11:37+00:00,2025-04-25 08:11:37+00:00,2025-04-25T07:56:07Z,2025-04-25 08:19:19+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,queue,462.0,False,930.0
+21943,2025-04-25T07:54:58Z,,2025-04-25 07:54:58+00:00,2025-04-25 07:54:58+00:00,,2025-04-25 07:57:09+00:00,outbound,pstnphone,Bart Jansen,,True,False,False,False,direct,131.0,False,0.0
+21944,2025-04-25T07:56:41Z,2025-04-25T08:00:14Z,2025-04-25 08:13:51+00:00,2025-04-25 08:13:51+00:00,2025-04-25T08:00:14Z,2025-04-25 08:14:02+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,11.0,False,817.0
+21945,2025-04-25T07:57:29Z,2025-04-25T07:58:17Z,2025-04-25 07:58:42+00:00,2025-04-25 07:58:42+00:00,2025-04-25T07:58:17Z,2025-04-25 08:01:03+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,141.0,False,25.0
+21946,2025-04-25T07:59:11Z,2025-04-25T08:00:00Z,2025-04-25 08:07:16+00:00,2025-04-25 08:07:16+00:00,2025-04-25T08:00:00Z,2025-04-25 08:09:28+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,132.0,False,436.0
+21947,2025-04-25T08:03:14Z,2025-04-25T08:04:26Z,2025-04-25 08:12:30+00:00,2025-04-25 08:12:30+00:00,2025-04-25T08:04:26Z,2025-04-25 08:16:10+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,220.0,False,484.0
+21948,2025-04-25T08:06:12Z,2025-04-25T08:07:05Z,2025-04-25 08:10:02+00:00,2025-04-25 08:10:02+00:00,2025-04-25T08:07:05Z,2025-04-25 08:10:59+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,57.0,False,177.0
+21949,2025-04-25T08:07:08Z,,,,,2025-04-25 08:08:27+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21950,2025-04-25T08:09:04Z,,,,,2025-04-25 08:09:13+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21951,2025-04-25T08:11:40Z,2025-04-25T08:12:38Z,2025-04-25 08:12:53+00:00,2025-04-25 08:12:53+00:00,2025-04-25T08:12:38Z,2025-04-25 08:13:28+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,35.0,False,15.0
+21952,2025-04-25T08:15:42Z,2025-04-25T08:16:41Z,2025-04-25 08:16:49+00:00,2025-04-25 08:16:49+00:00,2025-04-25T08:16:41Z,2025-04-25 08:23:43+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,False,False,False,False,queue,414.0,False,8.0
+21953,2025-04-25T08:17:00Z,2025-04-25T08:17:57Z,,,2025-04-25T08:17:57Z,2025-04-25 08:21:22+00:00,inbound,pstnphone,,Returns ,False,False,False,True,queue,,False,
+21954,2025-04-25T08:19:39Z,,2025-04-25 08:19:39+00:00,2025-04-25 08:19:39+00:00,,2025-04-25 08:38:08+00:00,outbound,pstnphone,Roy Pietersz,,True,False,False,False,direct,1109.0,False,0.0
+21955,2025-04-25T08:21:50Z,,2025-04-25 08:21:50+00:00,2025-04-25 08:21:50+00:00,,2025-04-25 08:32:34+00:00,outbound,pstnphone,Bart Jansen,,True,False,False,False,direct,644.0,False,0.0
+21956,2025-04-25T08:24:49Z,2025-04-25T08:26:16Z,2025-04-25 08:26:45+00:00,2025-04-25 08:26:45+00:00,2025-04-25T08:26:16Z,2025-04-25 08:39:38+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,773.0,False,29.0
+21957,2025-04-25T08:35:46Z,,,,,2025-04-25 08:36:40+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21958,2025-04-25T08:36:46Z,2025-04-25T08:37:46Z,2025-04-25 08:37:59+00:00,2025-04-25 08:37:59+00:00,2025-04-25T08:37:46Z,2025-04-25 08:45:34+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,False,False,False,False,queue,455.0,False,13.0
+21959,2025-04-25T08:40:08Z,2025-04-25T08:41:20Z,2025-04-25 08:41:37+00:00,2025-04-25 08:41:37+00:00,2025-04-25T08:41:20Z,2025-04-25 08:46:09+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,queue,272.0,False,17.0
+21960,2025-04-25T08:41:05Z,,,,,2025-04-25 08:45:51+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21961,2025-04-25T08:42:06Z,,,,,2025-04-25 08:42:18+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21962,2025-04-25T08:45:05Z,2025-04-25T08:46:06Z,2025-04-25 08:46:24+00:00,2025-04-25 08:46:24+00:00,2025-04-25T08:46:06Z,2025-04-25 08:50:29+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,245.0,False,18.0
+21963,2025-04-25T08:45:29Z,2025-04-25T08:46:26Z,2025-04-25 08:46:40+00:00,2025-04-25 08:46:40+00:00,2025-04-25T08:46:26Z,2025-04-25 08:54:01+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,False,False,False,False,queue,441.0,False,14.0
+21964,2025-04-25T08:48:54Z,,,,,2025-04-25 08:52:16+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21965,2025-04-25T08:50:03Z,2025-04-25T08:50:59Z,2025-04-25 08:51:25+00:00,2025-04-25 08:51:25+00:00,2025-04-25T08:50:59Z,2025-04-25 08:53:48+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,143.0,False,26.0
+21966,2025-04-25T08:54:20Z,2025-04-25T08:55:20Z,2025-04-25 08:55:40+00:00,2025-04-25 08:55:40+00:00,2025-04-25T08:55:20Z,2025-04-25 09:06:53+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,False,False,False,False,queue,673.0,False,20.0
+21967,2025-04-25T08:55:10Z,,,,,2025-04-25 08:56:31+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21968,2025-04-25T08:56:45Z,2025-04-25T08:57:38Z,2025-04-25 08:57:55+00:00,2025-04-25 08:57:55+00:00,2025-04-25T08:57:38Z,2025-04-25 08:58:52+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,57.0,False,17.0
+21969,2025-04-25T08:58:54Z,,,,,2025-04-25 08:59:13+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21970,2025-04-25T08:59:49Z,2025-04-25T09:00:48Z,2025-04-25 09:06:58+00:00,2025-04-25 09:06:58+00:00,2025-04-25T09:00:48Z,2025-04-25 09:24:55+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,False,False,False,False,queue,1077.0,False,370.0
+21971,2025-04-25T09:02:44Z,2025-04-25T09:03:54Z,2025-04-25 09:04:02+00:00,2025-04-25 09:04:02+00:00,2025-04-25T09:03:54Z,2025-04-25 09:08:09+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,247.0,False,8.0
+21972,2025-04-25T09:03:30Z,2025-04-25T09:04:24Z,2025-04-25 09:10:29+00:00,2025-04-25 09:10:29+00:00,2025-04-25T09:04:24Z,2025-04-25 09:11:56+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,87.0,False,365.0
+21973,2025-04-25T09:05:38Z,2025-04-25T09:06:25Z,2025-04-25 09:13:06+00:00,2025-04-25 09:13:06+00:00,2025-04-25T09:06:25Z,2025-04-25 09:15:58+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,172.0,False,401.0
+21974,2025-04-25T09:09:32Z,,,,,2025-04-25 09:09:37+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21975,2025-04-25T09:10:22Z,,,,,2025-04-25 09:11:01+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21976,2025-04-25T09:11:14Z,,2025-04-25 09:11:14+00:00,2025-04-25 09:11:14+00:00,,2025-04-25 09:13:50+00:00,outbound,pstnphone,Roy Pietersz,,True,False,False,False,direct,156.0,False,0.0
+21977,2025-04-25T09:15:10Z,2025-04-25T09:15:57Z,2025-04-25 09:16:13+00:00,2025-04-25 09:16:13+00:00,2025-04-25T09:15:57Z,2025-04-25 09:35:25+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,1152.0,False,16.0
+21978,2025-04-25T09:16:09Z,,2025-04-25 09:16:09+00:00,2025-04-25 09:16:09+00:00,,2025-04-25 09:18:09+00:00,outbound,pstnphone,Roy Pietersz,,True,False,False,False,direct,120.0,False,0.0
+21979,2025-04-25T09:17:14Z,2025-04-25T09:17:47Z,2025-04-25 09:27:01+00:00,2025-04-25 09:27:01+00:00,2025-04-25T09:17:47Z,2025-04-25 09:31:34+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,False,False,False,False,queue,273.0,False,554.0
+21980,2025-04-25T09:17:48Z,2025-04-25T09:18:37Z,2025-04-25 09:18:50+00:00,2025-04-25 09:18:50+00:00,2025-04-25T09:18:37Z,2025-04-25 09:21:01+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,131.0,False,13.0
+21981,2025-04-25T09:21:14Z,2025-04-25T09:22:20Z,2025-04-25 09:23:13+00:00,2025-04-25 09:23:13+00:00,2025-04-25T09:22:20Z,2025-04-25 09:28:07+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,294.0,False,53.0
+21982,2025-04-25T09:21:33Z,,2025-04-25 09:21:33+00:00,2025-04-25 09:21:33+00:00,,2025-04-25 09:27:06+00:00,outbound,pstnphone,Roy Pietersz,,True,False,False,False,direct,333.0,False,0.0
+21983,2025-04-25T09:28:36Z,,2025-04-25 09:28:36+00:00,2025-04-25 09:28:36+00:00,,2025-04-25 09:36:36+00:00,outbound,pstnphone,Jeremy Van t Hul,,True,False,False,False,direct,480.0,False,0.0
+21984,2025-04-25T09:29:28Z,,,,,2025-04-25 09:29:47+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21985,2025-04-25T09:38:11Z,2025-04-25T09:39:23Z,2025-04-25 09:39:37+00:00,2025-04-25 09:39:37+00:00,2025-04-25T09:39:23Z,2025-04-25 09:50:40+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,663.0,False,14.0
+21986,2025-04-25T09:38:47Z,,,,,2025-04-25 09:41:27+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21987,2025-04-25T09:40:01Z,2025-04-25T09:40:56Z,2025-04-25 09:44:40+00:00,2025-04-25 09:44:40+00:00,2025-04-25T09:40:56Z,2025-04-25 09:54:17+00:00,inbound,pstnphone,Bart Jansen,Returns ,False,False,False,False,queue,577.0,False,224.0
+21988,2025-04-25T09:44:04Z,2025-04-25T09:45:18Z,2025-04-25 09:46:46+00:00,2025-04-25 09:46:46+00:00,2025-04-25T09:45:18Z,2025-04-25 10:03:44+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,queue,1018.0,False,88.0
+21989,2025-04-25T09:45:25Z,2025-04-25T09:46:05Z,2025-04-25 09:46:16+00:00,2025-04-25 09:46:16+00:00,2025-04-25T09:46:05Z,2025-04-25 09:55:57+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,True,False,False,False,queue,581.0,False,11.0
+21990,2025-04-25T09:49:05Z,,,,,2025-04-25 09:51:30+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21991,2025-04-25T09:50:10Z,,,,,2025-04-25 09:50:59+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21992,2025-04-25T09:52:02Z,2025-04-25T09:53:14Z,2025-04-25 09:53:29+00:00,2025-04-25 09:53:29+00:00,2025-04-25T09:53:14Z,2025-04-25 09:55:38+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,129.0,False,15.0
+21993,2025-04-25T09:52:20Z,,,,,2025-04-25 09:53:12+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21994,2025-04-25T09:53:20Z,2025-04-25T09:54:26Z,2025-04-25 09:56:15+00:00,2025-04-25 09:56:15+00:00,2025-04-25T09:54:26Z,2025-04-25 09:58:10+00:00,inbound,pstnphone,Danique Kos,Customer service ,False,False,False,False,queue,115.0,False,109.0
+21995,2025-04-25T10:01:13Z,2025-04-25T10:01:43Z,2025-04-25 10:01:57+00:00,2025-04-25 10:01:57+00:00,2025-04-25T10:01:43Z,2025-04-25 10:09:51+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,True,False,False,False,queue,474.0,False,14.0
+21996,2025-04-25T10:03:21Z,2025-04-25T10:04:30Z,2025-04-25 10:04:43+00:00,2025-04-25 10:04:43+00:00,2025-04-25T10:04:30Z,2025-04-25 10:08:25+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,222.0,False,13.0
+21997,2025-04-25T10:07:13Z,,,,,2025-04-25 10:09:01+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+21998,2025-04-25T10:09:55Z,,2025-04-25 10:09:55+00:00,2025-04-25 10:09:55+00:00,,2025-04-25 10:11:59+00:00,outbound,pstnphone,Bart Jansen,,True,False,False,False,direct,124.0,False,0.0
+21999,2025-04-25T10:10:48Z,2025-04-25T10:11:56Z,2025-04-25 10:12:28+00:00,2025-04-25 10:12:28+00:00,2025-04-25T10:11:56Z,2025-04-25 10:17:22+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,294.0,False,32.0
+22000,2025-04-25T10:12:08Z,,2025-04-25 10:12:08+00:00,2025-04-25 10:12:08+00:00,,2025-04-25 10:13:03+00:00,outbound,pstnphone,Bart Jansen,,True,False,False,False,direct,55.0,False,0.0
+22001,2025-04-25T10:12:18Z,2025-04-25T10:13:12Z,2025-04-25 10:19:20+00:00,2025-04-25 10:19:20+00:00,2025-04-25T10:13:12Z,2025-04-25 10:29:16+00:00,inbound,pstnphone,Chris Kastanje,Technical service ,False,False,False,False,queue,596.0,False,368.0
+22002,2025-04-25T10:19:19Z,,2025-04-25 10:19:19+00:00,2025-04-25 10:19:19+00:00,,2025-04-25 10:20:04+00:00,outbound,pstnphone,Danique Kos,,True,False,False,False,direct,45.0,False,0.0
+22003,2025-04-25T10:25:51Z,,2025-04-25 10:25:51+00:00,2025-04-25 10:25:51+00:00,,2025-04-25 10:26:32+00:00,outbound,pstnphone,Jeremy Van t Hul,,True,False,False,False,direct,41.0,False,0.0
+22004,2025-04-25T10:27:03Z,2025-04-25T10:27:58Z,2025-04-25 10:28:10+00:00,2025-04-25 10:28:10+00:00,2025-04-25T10:27:58Z,2025-04-25 10:32:21+00:00,inbound,pstnphone,Bart Jansen,Returns ,False,False,False,False,queue,251.0,False,12.0
+22005,2025-04-25T10:45:03Z,,,,,2025-04-25 10:45:07+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22006,2025-04-25T10:45:18Z,2025-04-25T10:46:37Z,2025-04-25 10:46:57+00:00,2025-04-25 10:46:57+00:00,2025-04-25T10:46:37Z,2025-04-25 10:52:16+00:00,inbound,pstnphone,Sierk van der Velde,Technical service ,False,False,False,False,queue,319.0,False,20.0
+22007,2025-04-25T10:58:02Z,2025-04-25T10:58:52Z,2025-04-25 10:59:02+00:00,2025-04-25 10:59:02+00:00,2025-04-25T10:58:52Z,2025-04-25 11:23:55+00:00,inbound,pstnphone,Lars Ahlers ,Germany ,True,False,False,False,queue,1493.0,False,10.0
+22008,2025-04-25T11:02:05Z,,,,,2025-04-25 11:02:16+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22009,2025-04-25T11:07:51Z,,,,,2025-04-25 11:08:09+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22010,2025-04-25T11:09:18Z,,2025-04-25 11:09:18+00:00,2025-04-25 11:09:18+00:00,,2025-04-25 11:10:22+00:00,outbound,pstnphone,Danique Kos,,True,False,False,False,direct,64.0,False,0.0
+22011,2025-04-25T11:13:10Z,,2025-04-25 11:13:10+00:00,2025-04-25 11:13:10+00:00,,2025-04-25 11:13:51+00:00,outbound,pstnphone,Danique Kos,,True,False,False,False,direct,41.0,False,0.0
+22012,2025-04-25T11:28:46Z,,2025-04-25 11:28:46+00:00,2025-04-25 11:28:46+00:00,,2025-04-25 11:29:07+00:00,outbound,pstnphone,Roy Pietersz,,True,False,False,False,direct,21.0,False,0.0
+22013,2025-04-25T11:29:15Z,,2025-04-25 11:29:15+00:00,2025-04-25 11:29:15+00:00,,2025-04-25 11:39:16+00:00,outbound,pstnphone,Roy Pietersz,,True,False,False,False,direct,601.0,False,0.0
+22014,2025-04-25T11:30:16Z,,,,,2025-04-25 11:30:26+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22015,2025-04-25T11:36:44Z,,,,,2025-04-25 11:36:50+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22016,2025-04-25T11:37:31Z,,,,,2025-04-25 11:37:41+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22017,2025-04-25T11:37:49Z,,,,,2025-04-25 11:38:01+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22018,2025-04-25T11:45:15Z,,,,,2025-04-25 11:45:25+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22019,2025-04-25T11:52:11Z,,,,,2025-04-25 11:52:22+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22020,2025-04-25T12:13:38Z,,2025-04-25 12:13:38+00:00,2025-04-25 12:13:38+00:00,,2025-04-25 12:14:00+00:00,outbound,pstnphone,Jeremy Van t Hul,,True,False,False,False,direct,22.0,False,0.0
+22021,2025-04-25T12:14:20Z,,2025-04-25 12:14:20+00:00,2025-04-25 12:14:20+00:00,,2025-04-25 12:15:27+00:00,outbound,pstnphone,Jeremy Van t Hul,,True,False,False,False,direct,67.0,False,0.0
+22022,2025-04-25T12:18:09Z,,2025-04-25 12:18:09+00:00,2025-04-25 12:18:09+00:00,,2025-04-25 12:21:30+00:00,outbound,pstnphone,Bart Jansen,,True,False,False,False,direct,201.0,False,0.0
+22023,2025-04-25T12:19:30Z,,2025-04-25 12:19:30+00:00,2025-04-25 12:19:30+00:00,,2025-04-25 12:20:26+00:00,outbound,pstnphone,Jeremy Van t Hul,,True,False,False,False,direct,56.0,False,0.0
+22024,2025-04-25T12:20:33Z,,2025-04-25 12:20:33+00:00,2025-04-25 12:20:33+00:00,,2025-04-25 12:22:23+00:00,outbound,pstnphone,Jeremy Van t Hul,,True,False,False,False,direct,110.0,False,0.0
+22025,2025-04-25T12:22:58Z,,2025-04-25 12:22:58+00:00,2025-04-25 12:22:58+00:00,,2025-04-25 12:23:10+00:00,outbound,pstnphone,Bart Jansen,,True,False,False,False,direct,12.0,False,0.0
+22026,2025-04-25T12:23:26Z,,2025-04-25 12:23:26+00:00,2025-04-25 12:23:26+00:00,,2025-04-25 12:29:33+00:00,outbound,pstnphone,Bart Jansen,,True,False,False,False,direct,367.0,False,0.0
+22027,2025-04-25T12:26:09Z,,,,,2025-04-25 12:26:19+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22028,2025-04-25T12:32:46Z,,2025-04-25 12:32:46+00:00,2025-04-25 12:32:46+00:00,,2025-04-25 12:34:47+00:00,outbound,pstnphone,Jeremy Van t Hul,,True,False,False,False,direct,121.0,False,0.0
+22029,2025-04-25T12:58:05Z,,2025-04-25 12:58:05+00:00,2025-04-25 12:58:05+00:00,,2025-04-25 13:00:37+00:00,outbound,pstnphone,Danique Kos,,True,False,False,False,direct,152.0,False,0.0
+22030,2025-04-25T13:01:31Z,,,,,2025-04-25 13:01:39+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22031,2025-04-25T13:06:50Z,,2025-04-25 13:06:50+00:00,2025-04-25 13:06:50+00:00,,2025-04-25 13:10:03+00:00,outbound,pstnphone,Chris Kastanje,,True,False,False,False,direct,193.0,False,0.0
+22032,2025-04-25T13:07:26Z,,,,,2025-04-25 13:07:31+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22033,2025-04-25T13:08:46Z,,2025-04-25 13:08:46+00:00,2025-04-25 13:08:46+00:00,,2025-04-25 13:10:08+00:00,outbound,pstnphone,Roy Pietersz,,True,False,False,False,direct,82.0,False,0.0
+22034,2025-04-25T13:11:23Z,,2025-04-25 13:11:23+00:00,2025-04-25 13:11:23+00:00,,2025-04-25 13:16:53+00:00,outbound,pstnphone,Roy Pietersz,,True,False,False,False,direct,330.0,False,0.0
+22035,2025-04-25T13:11:36Z,,2025-04-25 13:11:36+00:00,2025-04-25 13:11:36+00:00,,2025-04-25 13:23:02+00:00,outbound,pstnphone,Chris Kastanje,,True,False,False,False,direct,686.0,False,0.0
+22036,2025-04-25T13:12:01Z,,2025-04-25 13:12:01+00:00,2025-04-25 13:12:01+00:00,,2025-04-25 13:18:25+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,direct,384.0,False,0.0
+22037,2025-04-25T13:14:14Z,,,,,2025-04-25 13:14:44+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22038,2025-04-25T13:15:42Z,,,,,2025-04-25 13:16:12+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22039,2025-04-25T13:20:50Z,,2025-04-25 13:20:50+00:00,2025-04-25 13:20:50+00:00,,2025-04-25 13:26:20+00:00,outbound,pstnphone,Bart Jansen,,True,False,False,False,direct,330.0,False,0.0
+22040,2025-04-25T13:23:11Z,,2025-04-25 13:23:11+00:00,2025-04-25 13:23:11+00:00,,2025-04-25 13:23:55+00:00,outbound,pstnphone,Chris Kastanje,,True,False,False,False,direct,44.0,False,0.0
+22041,2025-04-25T13:36:34Z,,2025-04-25 13:36:34+00:00,2025-04-25 13:36:34+00:00,,2025-04-25 13:38:45+00:00,outbound,pstnphone,Chris Kastanje,,True,False,False,False,direct,131.0,False,0.0
+22042,2025-04-25T13:36:48Z,,2025-04-25 13:36:48+00:00,2025-04-25 13:36:48+00:00,,2025-04-25 14:01:09+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,direct,1461.0,False,0.0
+22043,2025-04-25T13:47:56Z,,2025-04-25 13:47:56+00:00,2025-04-25 13:47:56+00:00,,2025-04-25 13:50:52+00:00,outbound,pstnphone,Chris Kastanje,,True,False,False,False,direct,176.0,False,0.0
+22044,2025-04-25T14:03:26Z,,2025-04-25 14:03:26+00:00,2025-04-25 14:03:26+00:00,,2025-04-25 14:04:09+00:00,outbound,pstnphone,Jeremy Van t Hul,,True,False,False,False,direct,43.0,False,0.0
+22045,2025-04-25T14:05:50Z,,,,,2025-04-25 14:06:18+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22046,2025-04-25T14:08:07Z,,2025-04-25 14:08:07+00:00,2025-04-25 14:08:07+00:00,,2025-04-25 14:40:29+00:00,outbound,pstnphone,Lars Ahlers ,,True,False,False,False,direct,1942.0,False,0.0
+22047,2025-04-25T14:30:07Z,,,,,2025-04-25 14:30:18+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22048,2025-04-25T14:30:40Z,,,,,2025-04-25 14:30:45+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22049,2025-04-25T15:03:41Z,,,,,2025-04-25 15:03:53+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22050,2025-04-28T06:34:05Z,,,,,2025-04-28 06:34:14+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22051,2025-04-28T07:08:24Z,2025-04-28T07:09:10Z,2025-04-28 07:16:58+00:00,2025-04-28 07:16:58+00:00,2025-04-28T07:09:10Z,2025-04-28 07:18:39+00:00,inbound,pstnphone,Romy van Es,Customer service ,False,False,False,False,queue,101.0,False,468.0
+22052,2025-04-28T07:33:48Z,2025-04-28T07:34:54Z,2025-04-28 07:35:07+00:00,2025-04-28 07:35:07+00:00,2025-04-28T07:34:54Z,2025-04-28 07:43:54+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,527.0,False,13.0
+22053,2025-04-28T07:34:11Z,2025-04-28T07:35:07Z,2025-04-28 07:43:56+00:00,2025-04-28 07:43:56+00:00,2025-04-28T07:35:07Z,2025-04-28 07:47:50+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,234.0,False,529.0
+22054,2025-04-28T07:39:50Z,,2025-04-28 07:39:50+00:00,2025-04-28 07:39:50+00:00,,2025-04-28 07:44:44+00:00,outbound,pstnphone,Marcus Preyer ,,True,False,False,False,direct,294.0,False,0.0
+22055,2025-04-28T08:08:12Z,2025-04-28T08:09:01Z,2025-04-28 08:09:10+00:00,2025-04-28 08:09:10+00:00,2025-04-28T08:09:01Z,2025-04-28 08:12:34+00:00,inbound,pstnphone,Romy van Es,Customer service ,True,False,False,False,queue,204.0,False,9.0
+22056,2025-04-28T08:12:53Z,,,,,2025-04-28 08:14:03+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22057,2025-04-28T08:14:06Z,2025-04-28T08:14:59Z,2025-04-28 08:15:07+00:00,2025-04-28 08:15:07+00:00,2025-04-28T08:14:59Z,2025-04-28 08:16:03+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,56.0,False,8.0
+22058,2025-04-28T08:16:09Z,2025-04-28T08:17:17Z,2025-04-28 08:17:27+00:00,2025-04-28 08:17:27+00:00,2025-04-28T08:17:17Z,2025-04-28 08:21:21+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,234.0,False,10.0
+22059,2025-04-28T08:18:04Z,2025-04-28T08:18:49Z,2025-04-28 08:18:55+00:00,2025-04-28 08:18:55+00:00,2025-04-28T08:18:49Z,2025-04-28 08:23:09+00:00,inbound,pstnphone,Romy van Es,Customer service ,True,False,False,False,queue,254.0,False,6.0
+22060,2025-04-28T08:24:18Z,2025-04-28T08:25:41Z,2025-04-28 08:29:22+00:00,2025-04-28 08:29:22+00:00,2025-04-28T08:25:41Z,2025-04-28 08:34:04+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,282.0,False,221.0
+22061,2025-04-28T08:51:28Z,,,,,2025-04-28 08:51:59+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22062,2025-04-28T08:55:22Z,2025-04-28T08:56:33Z,2025-04-28 08:56:35+00:00,2025-04-28 08:56:35+00:00,2025-04-28T08:56:33Z,2025-04-28 09:09:19+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,764.0,False,2.0
+22063,2025-04-28T09:03:03Z,,,,,2025-04-28 09:04:24+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22064,2025-04-28T09:04:31Z,2025-04-28T09:05:30Z,2025-04-28 09:09:21+00:00,2025-04-28 09:09:21+00:00,2025-04-28T09:05:30Z,2025-04-28 09:12:51+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,210.0,False,231.0
+22065,2025-04-28T09:14:33Z,2025-04-28T09:15:39Z,2025-04-28 09:15:48+00:00,2025-04-28 09:15:48+00:00,2025-04-28T09:15:39Z,2025-04-28 09:26:35+00:00,inbound,pstnphone,Romy van Es,Customer service ,False,False,False,False,queue,647.0,False,9.0
+22066,2025-04-28T09:15:28Z,2025-04-28T09:16:21Z,2025-04-28 09:28:57+00:00,2025-04-28 09:28:57+00:00,2025-04-28T09:16:21Z,2025-04-28 09:32:03+00:00,inbound,pstnphone,Romy van Es,Customer service ,False,False,False,False,queue,186.0,False,756.0
+22067,2025-04-28T09:31:53Z,2025-04-28T09:32:40Z,2025-04-28 09:36:11+00:00,2025-04-28 09:36:11+00:00,2025-04-28T09:32:40Z,2025-04-28 09:43:30+00:00,inbound,pstnphone,Romy van Es,Customer service ,False,False,False,False,queue,439.0,False,211.0
+22068,2025-04-28T09:33:10Z,2025-04-28T09:34:14Z,2025-04-28 09:34:21+00:00,2025-04-28 09:34:21+00:00,2025-04-28T09:34:14Z,2025-04-28 09:37:11+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,170.0,False,7.0
+22069,2025-04-28T09:37:32Z,2025-04-28T09:38:25Z,2025-04-28 09:45:34+00:00,2025-04-28 09:45:34+00:00,2025-04-28T09:38:25Z,2025-04-28 09:55:28+00:00,inbound,pstnphone,Romy van Es,Customer service ,False,False,False,False,queue,594.0,False,429.0
+22070,2025-04-28T09:39:05Z,2025-04-28T09:40:56Z,2025-04-28 09:41:00+00:00,2025-04-28 09:41:00+00:00,2025-04-28T09:40:56Z,2025-04-28 09:46:01+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,301.0,False,4.0
+22071,2025-04-28T09:44:51Z,2025-04-28T09:45:42Z,2025-04-28 09:46:27+00:00,2025-04-28 09:46:27+00:00,2025-04-28T09:45:42Z,2025-04-28 09:49:05+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,158.0,False,45.0
+22072,2025-04-28T09:54:39Z,2025-04-28T09:55:22Z,,,2025-04-28T09:55:22Z,2025-04-28 10:17:54+00:00,inbound,pstnphone,,Returns ,False,False,False,True,queue,,False,
+22073,2025-04-28T10:06:11Z,2025-04-28T10:07:23Z,2025-04-28 10:07:34+00:00,2025-04-28 10:07:34+00:00,2025-04-28T10:07:23Z,2025-04-28 10:15:52+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,498.0,False,11.0
+22074,2025-04-28T10:18:57Z,,2025-04-28 10:18:57+00:00,2025-04-28 10:18:57+00:00,,2025-04-28 10:20:36+00:00,outbound,pstnphone,Romy van Es,,True,False,False,False,direct,99.0,False,0.0
+22075,2025-04-28T10:19:36Z,2025-04-28T10:24:43Z,2025-04-28 10:24:48+00:00,2025-04-28 10:24:48+00:00,2025-04-28T10:24:43Z,2025-04-28 10:24:50+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,2.0,False,5.0
+22076,2025-04-28T10:42:14Z,,,,,2025-04-28 10:42:27+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22077,2025-04-28T10:44:23Z,2025-04-28T10:45:20Z,2025-04-28 10:50:56+00:00,2025-04-28 10:50:56+00:00,2025-04-28T10:45:20Z,2025-04-28 10:55:44+00:00,inbound,pstnphone,Roy Pietersz,Technical service ,False,False,False,False,queue,288.0,False,336.0
+22078,2025-04-28T11:22:17Z,,,,,2025-04-28 11:22:28+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22079,2025-04-28T12:14:37Z,,,,,2025-04-28 12:14:48+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22080,2025-04-28T13:01:26Z,,,,,2025-04-28 13:01:37+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22081,2025-04-28T13:03:52Z,,,,,2025-04-28 13:04:03+00:00,inbound,pstnphone,,,False,False,False,True,direct,,False,
+22082,2025-04-28T14:50:03Z,,2025-04-28 14:50:03+00:00,2025-04-28 14:50:03+00:00,,2025-04-28 14:50:47+00:00,outbound,pstnphone,Chris Kastanje,,True,False,False,False,direct,44.0,False,0.0
