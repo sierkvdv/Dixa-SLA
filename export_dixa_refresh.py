@@ -228,7 +228,7 @@ def map_row(rec: dict) -> Dict[str, Any]:
     taken_from_forward = (queued_ms  is None     and answered_ms is not None)
     rejected_or_fwd    = (answered_ms is None) or taken_from_forward
 
-    return {
+    row = {
       "id": rec.get("id"),
       "createdAt": ms_to_iso(created_ms),
       "queued_at":   ms_to_iso(queued_ms),
@@ -245,6 +245,8 @@ def map_row(rec: dict) -> Dict[str, Any]:
       "TakenFromForward":   taken_from_forward,
       "RejectedOrForwarded": rejected_or_fwd
     }
+
+    return row
 
 
 def date_windows(start_d: date, end_d: date, step_days: int):
@@ -320,6 +322,8 @@ def compute_columns(df: pd.DataFrame) -> pd.DataFrame:
     # Parse datetimes
     created = pd.to_datetime(df["createdAt"], utc=True, errors="coerce") if "createdAt" in df.columns else pd.Series(pd.NaT, index=df.index)
     answered = pd.to_datetime(df.get("answeredAt"), utc=True, errors="coerce")
+    assigned_plain = pd.to_datetime(df.get("assigned_at"), utc=True, errors="coerce") if "assigned_at" in df.columns else pd.Series(pd.NaT, index=df.index)
+    closed = pd.to_datetime(df.get("closedAt"), utc=True, errors="coerce") if "closedAt" in df.columns else pd.Series(pd.NaT, index=df.index)
 
     # Computed using enriched fields where available
     within_1m = (answered - created).dt.total_seconds() <= 60
@@ -338,10 +342,27 @@ def compute_columns(df: pd.DataFrame) -> pd.DataFrame:
     taken_from_forward = assignment_reason_lower == "forward"
     rejected_or_forwarded = answered.isna() | assignment_reason_lower.isin(["forward", "rejected"])  # type: ignore[attr-defined]
 
+    # Ensure pandas datetimes then compute CallDurationSec as closedAt - answeredAt
+    df["closedAt"] = pd.to_datetime(df["closedAt"], errors="coerce")
+    df["answeredAt"] = pd.to_datetime(df["answeredAt"], errors="coerce")
+    df["CallDurationSec"] = (df["closedAt"] - df["answeredAt"]).dt.total_seconds()
+
     df["AnsweredWithin1Min"] = within_1m
     df["TakenFromQueue"] = taken_from_queue
     df["TakenFromForward"] = taken_from_forward
     df["RejectedOrForwarded"] = rejected_or_forwarded
+
+    # CallType derived from assignment reason (queue/forward/direct)
+    call_type = pd.Series("direct", index=df.index)
+    call_type = call_type.mask(assignment_reason_lower == "queue", "queue")
+    call_type = call_type.mask(assignment_reason_lower == "forward", "forward")
+    df["CallType"] = call_type
+
+    # Binnen1MinFair: FairTTASeconds <= 60 and CallType == 'direct'
+    fair = pd.to_numeric(df.get("FairTTASeconds"), errors="coerce")
+    df["Binnen1MinFair"] = (fair <= 60) & (df["CallType"].astype(str) == "direct")
+
+    # CallDurationSec already computed above
 
     # FairTTASeconds: time-to-answer from queuedAt (fallback createdAt) to answeredAt (fallback assignment.assignedAt)
     queued = pd.to_datetime(df.get("queuedAt"), utc=True, errors="coerce") if "queuedAt" in df.columns else pd.Series(pd.NaT, index=df.index)
@@ -469,6 +490,9 @@ def main(argv: Optional[List[str]] = None) -> None:
                 "TakenFromForward",
                 "RejectedOrForwarded",
                 "FairTTASeconds",
+                "CallDurationSec",
+                "CallType",
+                "Binnen1MinFair",
             ]
             # Backfill assignmentReason from assignment.reason if missing
             if "assignmentReason" not in df_all.columns and "assignment.reason" in df_all.columns:
