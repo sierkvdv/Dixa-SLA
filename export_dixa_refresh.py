@@ -319,11 +319,19 @@ def compute_columns(df: pd.DataFrame) -> pd.DataFrame:
                 df[col] = pd.Series(dtype="bool")
         return df
 
-    # Parse datetimes
-    created = pd.to_datetime(df["createdAt"], utc=True, errors="coerce") if "createdAt" in df.columns else pd.Series(pd.NaT, index=df.index)
-    answered = pd.to_datetime(df.get("answeredAt"), utc=True, errors="coerce")
-    assigned_plain = pd.to_datetime(df.get("assigned_at"), utc=True, errors="coerce") if "assigned_at" in df.columns else pd.Series(pd.NaT, index=df.index)
-    closed = pd.to_datetime(df.get("closedAt"), utc=True, errors="coerce") if "closedAt" in df.columns else pd.Series(pd.NaT, index=df.index)
+    # Parse datetimes using Series(values) to avoid DatetimeArray/ndarray mismatches
+    def to_dt_series(col: str) -> pd.Series:
+        if col in df.columns:
+            s = pd.Series(df[col].values, index=df.index)
+            return pd.to_datetime(s, utc=True, errors="coerce")
+        # Return an empty datetime64[ns, UTC] series to ensure aligned dtypes
+        empty_idx = pd.DatetimeIndex([pd.NaT] * len(df), tz="UTC")
+        return pd.Series(empty_idx, index=df.index)
+
+    created = to_dt_series("createdAt")
+    answered = to_dt_series("answeredAt")
+    assigned_plain = to_dt_series("assigned_at") if "assigned_at" in df.columns else pd.Series(pd.NaT, index=df.index)
+    closed = to_dt_series("closedAt")
 
     # Computed using enriched fields where available
     within_1m = (answered - created).dt.total_seconds() <= 60
@@ -342,17 +350,18 @@ def compute_columns(df: pd.DataFrame) -> pd.DataFrame:
     taken_from_forward = assignment_reason_lower == "forward"
     rejected_or_forwarded = answered.isna() | assignment_reason_lower.isin(["forward", "rejected"])  # type: ignore[attr-defined]
 
-    # Ensure pandas datetimes (UTC) then compute CallDurationSec as closedAt - answeredAt
+    # Ensure pandas datetimes (UTC) for other computations and compute CallDurationSec here
     df["closedAt"] = pd.to_datetime(df["closedAt"], utc=True, errors="coerce")
     df["answeredAt"] = pd.to_datetime(df["answeredAt"], utc=True, errors="coerce")
     if "assigned_at" in df.columns:
         df["assigned_at"] = pd.to_datetime(df["assigned_at"], utc=True, errors="coerce")
-    # Primary: closedAt - answeredAt (seconds)
-    df["CallDurationSec"] = (df["closedAt"] - df["answeredAt"]).dt.total_seconds()
+    # Primary: closed - answered (seconds) using the already-cast local Series
+    call_duration = (closed - answered).dt.total_seconds()
     # Fallback for rows without answeredAt: use assigned_at when available
     if "assigned_at" in df.columns:
-        fallback = (df["closedAt"] - df["assigned_at"]).dt.total_seconds()
-        df["CallDurationSec"] = df["CallDurationSec"].fillna(fallback)
+        fallback = (closed - assigned_plain).dt.total_seconds()
+        call_duration = call_duration.fillna(fallback)
+    df["CallDurationSec"] = call_duration
 
     df["AnsweredWithin1Min"] = within_1m
     df["TakenFromQueue"] = taken_from_queue
@@ -372,12 +381,14 @@ def compute_columns(df: pd.DataFrame) -> pd.DataFrame:
     # CallDurationSec already computed above
 
     # FairTTASeconds: time-to-answer from queuedAt (fallback createdAt) to answeredAt (fallback assignment.assignedAt)
-    queued = pd.to_datetime(df.get("queuedAt"), utc=True, errors="coerce") if "queuedAt" in df.columns else pd.Series(pd.NaT, index=df.index)
-    assigned_detail = pd.to_datetime(df.get("assignment.assignedAt"), utc=True, errors="coerce") if "assignment.assignedAt" in df.columns else pd.Series(pd.NaT, index=df.index)
+    queued = to_dt_series("queuedAt")
+    assigned_detail = to_dt_series("assignment.assignedAt")
     effective_answered = answered.combine_first(assigned_detail)
     start_time = queued.combine_first(created)
+    # Compute fair seconds using datetime-aware Series with aligned dtypes
+    effective_answered = answered.where(~answered.isna(), assigned_detail)
+    start_time = queued.where(~queued.isna(), created)
     fair_seconds = (effective_answered - start_time).dt.total_seconds()
-    # If no answered timestamp at all, leave empty (NaN)
     fair_seconds = fair_seconds.where(~effective_answered.isna(), other=pd.NA)
     df["FairTTASeconds"] = fair_seconds
 
@@ -534,7 +545,9 @@ if __name__ == "__main__":
     try:
         main()
     except Exception as e:
+        import traceback
         print(f"Fatal error: {e}")
+        traceback.print_exc()
         sys.exit(1)
 
 
